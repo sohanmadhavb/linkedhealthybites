@@ -1,0 +1,1007 @@
+@prefix swvs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix scires: <http://vivoweb.org/ontology/scientific-research#> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix dcelem: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ero: <http://purl.obolibrary.org/obo/> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix skco: <http://www.w3.org/2004/02/skos/core#> .
+@prefix syll: <http://lod.isi.edu/ontology/syllabus/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix pvs: <http://vivoweb.org/ontology/provenance-support#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix scirr: <http://vivoweb.org/ontology/scientific-research-resource#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a5jtql4rx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "violations_plus.csv" ;
+	km-dev:modelPublicationTime "1449146537116"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"ViolationTypeID\"}],[{\"columnName\":\"risk_category\"}],[{\"columnName\":\"description\"}],[{\"columnName\":\"business_id\"}],[{\"columnName\":\"date\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"ViolationTypeID\"}],[{\"columnName\":\"risk_category\"}],[{\"columnName\":\"description\"}],[{\"columnName\":\"business_uri_identifier\"}],[{\"columnName\":\"business_id\"}],[{\"columnName\":\"date\"}]]" ;
+	km-dev:hasModelLabel "violations" ;
+	km-dev:hasBaseURI "http://www.semanticweb.org/asu/health-inspection-data/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"business_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"business_uri_identifier\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"violation/\\\"+getValue(\\\"business_id\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_uri_identifier\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"violations\",
+                    \"hasBaseURI\": false,
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"viol\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://www.semanticweb.org/asu/health-inspection-data/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"business_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant/Restaurant1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"business_uri_identifier\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_uri_identifier\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_uri_identifier\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"date\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDate\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDate1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDate/ViolationDate1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"date\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"date\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ViolationTypeID\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationType\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationType1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationType/ViolationType1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ViolationTypeID\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ViolationTypeID\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"risk_category\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory/ViolationRiskCategory1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"risk_category\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"risk_category\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"description\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription/ViolationDescription1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"description\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"description\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS317057AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDate1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasViolationDated\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDate\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS317057AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasViolationDescribedAs\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS317057AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasViolationRiskCategoriedUnder\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS317057AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationType1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasViolatedTypeOf\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#ViolationType\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 a rr:TriplesMap .
+
+_:node1a5jtql4rx1 km-dev:hasTriplesMap km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 .
+
+km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx2 rr:tableName "violations_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasLogicalTable _:node1a5jtql4rx2 .
+
+km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 rr:logicalTable _:node1a5jtql4rx2 ;
+	rr:subjectMap _:node1a5jtql4rx3 .
+
+_:node1a5jtql4rx1 km-dev:hasSubjectMap _:node1a5jtql4rx3 .
+
+_:node1a5jtql4rx3 km-dev:isPartOfMapping _:node1a5jtql4rx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#Restaurant1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#Restaurant> ;
+	rr:template "violation/{business_id}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_e28b4bd7-fc15-43af-9d4d-c007ac1cc3c6 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasViolatedTypeOf> .
+
+km-dev:RefObjectMap_484310c5-9d30-4e60-850c-2b7ab895b5e2 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c6861bb5-a1b5-4fef-82ae-b785da768c7e ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap km-dev:RefObjectMap_484310c5-9d30-4e60-850c-2b7ab895b5e2 .
+
+km-dev:PredicateObjectMap_e28b4bd7-fc15-43af-9d4d-c007ac1cc3c6 rr:objectMap km-dev:RefObjectMap_484310c5-9d30-4e60-850c-2b7ab895b5e2 .
+
+km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 rr:predicateObjectMap km-dev:PredicateObjectMap_e28b4bd7-fc15-43af-9d4d-c007ac1cc3c6 .
+
+km-dev:PredicateObjectMap_e28b4bd7-fc15-43af-9d4d-c007ac1cc3c6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e28b4bd7-fc15-43af-9d4d-c007ac1cc3c6 .
+
+km-dev:PredicateObjectMap_ae7758a5-15d5-4795-b818-d59bb0ae5c91 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasViolationDated> .
+
+km-dev:RefObjectMap_ca7a79e6-c4e5-4553-b2d6-b505d74f9062 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6c76e093-e6f7-4018-a3d5-25898909c4ae ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap km-dev:RefObjectMap_ca7a79e6-c4e5-4553-b2d6-b505d74f9062 .
+
+km-dev:PredicateObjectMap_ae7758a5-15d5-4795-b818-d59bb0ae5c91 rr:objectMap km-dev:RefObjectMap_ca7a79e6-c4e5-4553-b2d6-b505d74f9062 .
+
+km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 rr:predicateObjectMap km-dev:PredicateObjectMap_ae7758a5-15d5-4795-b818-d59bb0ae5c91 .
+
+km-dev:PredicateObjectMap_ae7758a5-15d5-4795-b818-d59bb0ae5c91 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ae7758a5-15d5-4795-b818-d59bb0ae5c91 .
+
+km-dev:PredicateObjectMap_4b5f6f16-e8aa-4634-8334-20a22d3032df rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasViolationDescribedAs> .
+
+km-dev:RefObjectMap_4e6f0698-75f4-4f0a-82d1-bcbaf7efb8e9 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_788fba9e-fc77-4c1b-bfcd-829a886f6154 ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap km-dev:RefObjectMap_4e6f0698-75f4-4f0a-82d1-bcbaf7efb8e9 .
+
+km-dev:PredicateObjectMap_4b5f6f16-e8aa-4634-8334-20a22d3032df rr:objectMap km-dev:RefObjectMap_4e6f0698-75f4-4f0a-82d1-bcbaf7efb8e9 .
+
+km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 rr:predicateObjectMap km-dev:PredicateObjectMap_4b5f6f16-e8aa-4634-8334-20a22d3032df .
+
+km-dev:PredicateObjectMap_4b5f6f16-e8aa-4634-8334-20a22d3032df a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4b5f6f16-e8aa-4634-8334-20a22d3032df .
+
+km-dev:PredicateObjectMap_690f16ef-a9a1-499a-b261-5e46ff93ff21 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasViolationRiskCategoriedUnder> .
+
+km-dev:RefObjectMap_449efef9-9ea0-49f5-a6ad-8ed5e9d2b631 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_b2156ea3-b256-4682-8f4a-84e4503b7772 ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap km-dev:RefObjectMap_449efef9-9ea0-49f5-a6ad-8ed5e9d2b631 .
+
+km-dev:PredicateObjectMap_690f16ef-a9a1-499a-b261-5e46ff93ff21 rr:objectMap km-dev:RefObjectMap_449efef9-9ea0-49f5-a6ad-8ed5e9d2b631 .
+
+km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 rr:predicateObjectMap km-dev:PredicateObjectMap_690f16ef-a9a1-499a-b261-5e46ff93ff21 .
+
+km-dev:PredicateObjectMap_690f16ef-a9a1-499a-b261-5e46ff93ff21 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_690f16ef-a9a1-499a-b261-5e46ff93ff21 .
+
+km-dev:PredicateObjectMap_4d402eb8-878c-4b8f-a23f-59c846217ee2 rr:predicate rdfs:label .
+
+_:node1a5jtql4rx4 rr:column "business_id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap _:node1a5jtql4rx4 .
+
+km-dev:PredicateObjectMap_4d402eb8-878c-4b8f-a23f-59c846217ee2 rr:objectMap _:node1a5jtql4rx4 .
+
+km-dev:TriplesMap_45e8ab2b-1ec3-4669-a3be-0350dcb8a0c6 rr:predicateObjectMap km-dev:PredicateObjectMap_4d402eb8-878c-4b8f-a23f-59c846217ee2 .
+
+km-dev:PredicateObjectMap_4d402eb8-878c-4b8f-a23f-59c846217ee2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4d402eb8-878c-4b8f-a23f-59c846217ee2 .
+
+km-dev:TriplesMap_c6861bb5-a1b5-4fef-82ae-b785da768c7e a rr:TriplesMap .
+
+_:node1a5jtql4rx1 km-dev:hasTriplesMap km-dev:TriplesMap_c6861bb5-a1b5-4fef-82ae-b785da768c7e .
+
+km-dev:TriplesMap_c6861bb5-a1b5-4fef-82ae-b785da768c7e km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx5 rr:tableName "violations_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasLogicalTable _:node1a5jtql4rx5 .
+
+km-dev:TriplesMap_c6861bb5-a1b5-4fef-82ae-b785da768c7e rr:logicalTable _:node1a5jtql4rx5 ;
+	rr:subjectMap _:node1a5jtql4rx6 .
+
+_:node1a5jtql4rx1 km-dev:hasSubjectMap _:node1a5jtql4rx6 .
+
+_:node1a5jtql4rx6 km-dev:isPartOfMapping _:node1a5jtql4rx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#ViolationType1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#ViolationType> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "ViolationType1" .
+
+km-dev:PredicateObjectMap_421cf9e0-9062-4d16-94cc-3ea19523695f rr:predicate rdfs:label .
+
+_:node1a5jtql4rx7 rr:column "ViolationTypeID" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap _:node1a5jtql4rx7 .
+
+km-dev:PredicateObjectMap_421cf9e0-9062-4d16-94cc-3ea19523695f rr:objectMap _:node1a5jtql4rx7 .
+
+km-dev:TriplesMap_c6861bb5-a1b5-4fef-82ae-b785da768c7e rr:predicateObjectMap km-dev:PredicateObjectMap_421cf9e0-9062-4d16-94cc-3ea19523695f .
+
+km-dev:PredicateObjectMap_421cf9e0-9062-4d16-94cc-3ea19523695f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_421cf9e0-9062-4d16-94cc-3ea19523695f .
+
+km-dev:TriplesMap_6c76e093-e6f7-4018-a3d5-25898909c4ae a rr:TriplesMap .
+
+_:node1a5jtql4rx1 km-dev:hasTriplesMap km-dev:TriplesMap_6c76e093-e6f7-4018-a3d5-25898909c4ae .
+
+km-dev:TriplesMap_6c76e093-e6f7-4018-a3d5-25898909c4ae km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx8 rr:tableName "violations_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasLogicalTable _:node1a5jtql4rx8 .
+
+km-dev:TriplesMap_6c76e093-e6f7-4018-a3d5-25898909c4ae rr:logicalTable _:node1a5jtql4rx8 ;
+	rr:subjectMap _:node1a5jtql4rx9 .
+
+_:node1a5jtql4rx1 km-dev:hasSubjectMap _:node1a5jtql4rx9 .
+
+_:node1a5jtql4rx9 km-dev:isPartOfMapping _:node1a5jtql4rx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#ViolationDate1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#ViolationDate> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "ViolationDate1" .
+
+km-dev:PredicateObjectMap_e4ba33c1-9c60-4067-ae2d-5de00d3c3d87 rr:predicate rdfs:label .
+
+_:node1a5jtql4rx10 rr:column "date" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap _:node1a5jtql4rx10 .
+
+km-dev:PredicateObjectMap_e4ba33c1-9c60-4067-ae2d-5de00d3c3d87 rr:objectMap _:node1a5jtql4rx10 .
+
+km-dev:TriplesMap_6c76e093-e6f7-4018-a3d5-25898909c4ae rr:predicateObjectMap km-dev:PredicateObjectMap_e4ba33c1-9c60-4067-ae2d-5de00d3c3d87 .
+
+km-dev:PredicateObjectMap_e4ba33c1-9c60-4067-ae2d-5de00d3c3d87 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e4ba33c1-9c60-4067-ae2d-5de00d3c3d87 .
+
+km-dev:TriplesMap_788fba9e-fc77-4c1b-bfcd-829a886f6154 a rr:TriplesMap .
+
+_:node1a5jtql4rx1 km-dev:hasTriplesMap km-dev:TriplesMap_788fba9e-fc77-4c1b-bfcd-829a886f6154 .
+
+km-dev:TriplesMap_788fba9e-fc77-4c1b-bfcd-829a886f6154 km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx11 rr:tableName "violations_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasLogicalTable _:node1a5jtql4rx11 .
+
+km-dev:TriplesMap_788fba9e-fc77-4c1b-bfcd-829a886f6154 rr:logicalTable _:node1a5jtql4rx11 ;
+	rr:subjectMap _:node1a5jtql4rx12 .
+
+_:node1a5jtql4rx1 km-dev:hasSubjectMap _:node1a5jtql4rx12 .
+
+_:node1a5jtql4rx12 km-dev:isPartOfMapping _:node1a5jtql4rx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "ViolationDescription1" .
+
+km-dev:PredicateObjectMap_ec445a91-5e4f-4077-8ee9-a95aa90a53c4 rr:predicate rdfs:label .
+
+_:node1a5jtql4rx13 rr:column "description" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap _:node1a5jtql4rx13 .
+
+km-dev:PredicateObjectMap_ec445a91-5e4f-4077-8ee9-a95aa90a53c4 rr:objectMap _:node1a5jtql4rx13 .
+
+km-dev:TriplesMap_788fba9e-fc77-4c1b-bfcd-829a886f6154 rr:predicateObjectMap km-dev:PredicateObjectMap_ec445a91-5e4f-4077-8ee9-a95aa90a53c4 .
+
+km-dev:PredicateObjectMap_ec445a91-5e4f-4077-8ee9-a95aa90a53c4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ec445a91-5e4f-4077-8ee9-a95aa90a53c4 .
+
+km-dev:TriplesMap_b2156ea3-b256-4682-8f4a-84e4503b7772 a rr:TriplesMap .
+
+_:node1a5jtql4rx1 km-dev:hasTriplesMap km-dev:TriplesMap_b2156ea3-b256-4682-8f4a-84e4503b7772 .
+
+km-dev:TriplesMap_b2156ea3-b256-4682-8f4a-84e4503b7772 km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx14 rr:tableName "violations_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasLogicalTable _:node1a5jtql4rx14 .
+
+km-dev:TriplesMap_b2156ea3-b256-4682-8f4a-84e4503b7772 rr:logicalTable _:node1a5jtql4rx14 ;
+	rr:subjectMap _:node1a5jtql4rx15 .
+
+_:node1a5jtql4rx1 km-dev:hasSubjectMap _:node1a5jtql4rx15 .
+
+_:node1a5jtql4rx15 km-dev:isPartOfMapping _:node1a5jtql4rx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "ViolationRiskCategory1" .
+
+km-dev:PredicateObjectMap_321a030a-72e1-4391-b1cf-2144a108727d rr:predicate rdfs:label .
+
+_:node1a5jtql4rx16 rr:column "risk_category" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasObjectMap _:node1a5jtql4rx16 .
+
+km-dev:PredicateObjectMap_321a030a-72e1-4391-b1cf-2144a108727d rr:objectMap _:node1a5jtql4rx16 .
+
+km-dev:TriplesMap_b2156ea3-b256-4682-8f4a-84e4503b7772 rr:predicateObjectMap km-dev:PredicateObjectMap_321a030a-72e1-4391-b1cf-2144a108727d .
+
+km-dev:PredicateObjectMap_321a030a-72e1-4391-b1cf-2144a108727d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5jtql4rx1 .
+
+_:node1a5jtql4rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_321a030a-72e1-4391-b1cf-2144a108727d .

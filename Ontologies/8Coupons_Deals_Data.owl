@@ -1,0 +1,718 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/asu/8coupons-deals-data#"
+     xml:base="http://www.semanticweb.org/asu/8coupons-deals-data"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDInStore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDInStore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDOriginalPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDOriginalPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDPostDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDPostDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealPostDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDProvider -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDProvider">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDStoreUrl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDStoreUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealStoreUrl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDUrl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealUrl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDeal">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#belongsTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDisclaimer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDisclaimer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealDisclaimer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDiscount -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDiscount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDown -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDown">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealDown"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasExpiry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasExpiry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasImage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasImage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealShowImage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasImageStandardBig -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasImageStandardBig">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardBig"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasImageStandardSmall -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasImageStandardSmall">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasInfo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasInfo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantCity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRHomepage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRHomepage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantHomepage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRLatitude -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRLatitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantLatitude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRLongitude -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRLongitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantLongitude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRName">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantName"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRPhone -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRPhone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantPhone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantState"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasSavings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasSavings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasUp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasUp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealUp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealDisclaimer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealDisclaimer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealDisclaimer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealDiscount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealDiscount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealDown -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealDown">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealDown"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealExpiry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealExpiry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealImage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealImage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealShowImage"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealImageStandardBig -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealImageStandardBig">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardBig"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealImageStandardSmall -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealImageStandardSmall">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealInStore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealInStore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealInfo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealOriginalPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealOriginalPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealPostDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealPostDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealPostDate"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealProvider -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealProvider">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealSavings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealSavings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealStoreUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealStoreUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealStoreUrl"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealUp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealUp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealUp"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealUrl"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantCity"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantHomepage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantHomepage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantHomepage"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantLatitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantLatitude"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantLongitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantLongitude"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantName"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantPhone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantPhone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantPhone"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRestaurantState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantState"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasRestuarantAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasRestuarantAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantAddress"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#Deal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealDisclaimer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealDisclaimer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealDown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealDown"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardBig -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardBig"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealPostDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealPostDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealShowImage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealShowImage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealStoreUrl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealStoreUrl"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealUp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealUp"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#DealUrl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#DealUrl"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantAddress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantCity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantHomepage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantHomepage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantLatitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantLatitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantLongitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantLongitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantPhone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantPhone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#RestaurantState"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
