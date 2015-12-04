@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/asu/yelp-review-data#"
+     xml:base="http://www.semanticweb.org/asu/yelp-review-data"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asu/yelp-review-data"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasCount -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#ReviewCount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasCuisine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasCuisine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantCuisine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasImageUrl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantImageUrl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasPhone -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasPhone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantPhone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#ReviewRating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasRatingImageUrl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasRatingImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#ReviewRatingImageUrl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasSnippetImageUrl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasSnippetImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#ReviewSnippetImageUrl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasUrl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantUrl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantAddress"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantCuisine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantCuisine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantCuisine"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantImageUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantImageUrl"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantPhone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantPhone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantPhone"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#RestaurantUrl"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasReviewCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasReviewCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#ReviewCount"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasReviewRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasReviewRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#ReviewRating"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasReviewRatingImageUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasReviewRatingImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#ReviewRatingImageUrl"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#hasReviewSnippetImageUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/yelp-review-data#hasReviewSnippetImageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#ReviewSnippetImageUrl"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#RestaurantAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#RestaurantAddress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#RestaurantCuisine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#RestaurantCuisine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#RestaurantImageUrl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#RestaurantImageUrl"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#RestaurantPhone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#RestaurantPhone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#RestaurantUrl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#RestaurantUrl"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#ReviewCount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#ReviewCount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#ReviewRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#ReviewRating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#ReviewRatingImageUrl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#ReviewRatingImageUrl"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/yelp-review-data#ReviewSnippetImageUrl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/yelp-review-data#ReviewSnippetImageUrl"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
