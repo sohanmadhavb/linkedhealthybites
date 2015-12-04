@@ -32,12 +32,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1a5mgkuq8x1 a km-dev:R2RMLMapping ;
+_:node1a5n9rq5mx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "Deals.csv" ;
-	km-dev:modelPublicationTime "1449233382216"^^xsd:long ;
+	km-dev:modelPublicationTime "1449259821238"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"dealtitle\"}],[{\"columnName\":\"dealprice\"}],[{\"columnName\":\"dealdiscount\"}],[{\"columnName\":\"dealsavings\"}],[{\"columnName\":\"expiry\"}],[{\"columnName\":\"id\"}],[{\"columnName\":\"dealsinstore\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"provider\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"showimagestandardsmall\"}],[{\"columnName\":\"dealinfo\"}],[{\"columnName\":\"dealoriginalprice\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"dealtitle\"}],[{\"columnName\":\"rest_id\"}],[{\"columnName\":\"dealprice\"}],[{\"columnName\":\"dealdiscount\"}],[{\"columnName\":\"dealsavings\"}],[{\"columnName\":\"expiry\"}],[{\"columnName\":\"id\"}],[{\"columnName\":\"dealsinstore\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"provider\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"showimagestandardsmall\"}],[{\"columnName\":\"dealinfo\"}],[{\"columnName\":\"dealoriginalprice\"}],[{\"columnName\":\"deal_uri\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"dealoriginalprice\"}],[{\"columnName\":\"dealprice\"}],[{\"columnName\":\"dealdiscount\"}],[{\"columnName\":\"dealsavings\"}],[{\"columnName\":\"expiry\"}],[{\"columnName\":\"id\"}],[{\"columnName\":\"dealsinstore\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"provider\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"dealtitle\"}],[{\"columnName\":\"showimagestandardsmall\"}],[{\"columnName\":\"dealinfo\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"dealoriginalprice\"}],[{\"columnName\":\"dealprice\"}],[{\"columnName\":\"deal_uri\"}],[{\"columnName\":\"dealdiscount\"}],[{\"columnName\":\"dealsavings\"}],[{\"columnName\":\"expiry\"}],[{\"columnName\":\"id\"}],[{\"columnName\":\"dealsinstore\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"provider\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"rest_id\"}],[{\"columnName\":\"dealtitle\"}],[{\"columnName\":\"showimagestandardsmall\"}],[{\"columnName\":\"dealinfo\"}]]" ;
 	km-dev:hasModelLabel "Deals" ;
 	km-dev:hasBaseURI "http://www.semanticweb.org/asu/8coupons-deals-data/" ;
 	km-dev:hasWorksheetHistory """[
@@ -120,7 +120,7 @@ _:node1a5mgkuq8x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"transformationCode\",
                 \"type\": \"other\",
-                \"value\": \"return \\\"deals/rest/\\\"+getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('^','').replace(':','').replace(';','')\"
+                \"value\": \"return \\\"deals/rest/\\\"+getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('%','').replace('^','').replace(':','').replace(';','').replace('\\\\\\\"','')\"
             },
             {
                 \"name\": \"errorDefaultValue\",
@@ -1747,755 +1747,755 @@ _:node1a5mgkuq8x1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 a rr:TriplesMap .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x2 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx2 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x2 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx2 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:logicalTable _:node1a5mgkuq8x2 ;
-	rr:subjectMap _:node1a5mgkuq8x3 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:logicalTable _:node1a5n9rq5mx2 ;
+	rr:subjectMap _:node1a5n9rq5mx3 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x3 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx3 .
 
-_:node1a5mgkuq8x3 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx3 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#Deal1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#Deal> ;
 	rr:template "deals/{id}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_beb3a948-713d-45c3-b8e1-24df6b30c763 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDHomePage> .
+km-dev:PredicateObjectMap_ffa5bef7-f91a-4640-a95c-d354a6969fe5 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDHomePage> .
 
-km-dev:RefObjectMap_f7ebff19-cec6-4db7-af94-b81a73250557 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_74598829-6ecc-40d3-8258-373ee6cb91d6 ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_6cbc5677-ff14-4bea-b413-db15b69269d3 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_04ceeb7f-f0b3-448e-b1d5-491ad45916d5 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_f7ebff19-cec6-4db7-af94-b81a73250557 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_6cbc5677-ff14-4bea-b413-db15b69269d3 .
 
-km-dev:PredicateObjectMap_beb3a948-713d-45c3-b8e1-24df6b30c763 rr:objectMap km-dev:RefObjectMap_f7ebff19-cec6-4db7-af94-b81a73250557 .
+km-dev:PredicateObjectMap_ffa5bef7-f91a-4640-a95c-d354a6969fe5 rr:objectMap km-dev:RefObjectMap_6cbc5677-ff14-4bea-b413-db15b69269d3 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_beb3a948-713d-45c3-b8e1-24df6b30c763 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_ffa5bef7-f91a-4640-a95c-d354a6969fe5 .
 
-km-dev:PredicateObjectMap_beb3a948-713d-45c3-b8e1-24df6b30c763 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_ffa5bef7-f91a-4640-a95c-d354a6969fe5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_beb3a948-713d-45c3-b8e1-24df6b30c763 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ffa5bef7-f91a-4640-a95c-d354a6969fe5 .
 
-km-dev:PredicateObjectMap_ea3c30a9-4bc9-4f08-8b7a-56d1b7991dac rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDInStore> .
+km-dev:PredicateObjectMap_cc19bf8f-9e5a-4b52-b0a6-a962b5c18d9e rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDInStore> .
 
-km-dev:RefObjectMap_52a679ec-ba7a-448a-80eb-01078b2bc889 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_071099ac-01f5-482e-8dff-b15be561082e ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_7729721b-0098-4450-914c-2dc390f5892c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e5410174-51a2-4181-959c-1fc64c0896c2 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_52a679ec-ba7a-448a-80eb-01078b2bc889 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_7729721b-0098-4450-914c-2dc390f5892c .
 
-km-dev:PredicateObjectMap_ea3c30a9-4bc9-4f08-8b7a-56d1b7991dac rr:objectMap km-dev:RefObjectMap_52a679ec-ba7a-448a-80eb-01078b2bc889 .
+km-dev:PredicateObjectMap_cc19bf8f-9e5a-4b52-b0a6-a962b5c18d9e rr:objectMap km-dev:RefObjectMap_7729721b-0098-4450-914c-2dc390f5892c .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_ea3c30a9-4bc9-4f08-8b7a-56d1b7991dac .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_cc19bf8f-9e5a-4b52-b0a6-a962b5c18d9e .
 
-km-dev:PredicateObjectMap_ea3c30a9-4bc9-4f08-8b7a-56d1b7991dac a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_cc19bf8f-9e5a-4b52-b0a6-a962b5c18d9e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ea3c30a9-4bc9-4f08-8b7a-56d1b7991dac .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cc19bf8f-9e5a-4b52-b0a6-a962b5c18d9e .
 
-km-dev:PredicateObjectMap_749ee389-4c19-42a8-9ff8-a53c8d1dae9d rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDOriginalPrice> .
+km-dev:PredicateObjectMap_774d0bce-5489-41a0-8012-b19a67a85111 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDOriginalPrice> .
 
-km-dev:RefObjectMap_fec677ed-d983-4616-9c93-aeac90504f72 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_77758d92-70e2-4d09-a96a-f12214f133d1 ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_7d6bfb52-25c0-4c3a-b5aa-c7921d4b0d73 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4b1c2678-372a-424a-8ee3-41adff191f78 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_fec677ed-d983-4616-9c93-aeac90504f72 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_7d6bfb52-25c0-4c3a-b5aa-c7921d4b0d73 .
 
-km-dev:PredicateObjectMap_749ee389-4c19-42a8-9ff8-a53c8d1dae9d rr:objectMap km-dev:RefObjectMap_fec677ed-d983-4616-9c93-aeac90504f72 .
+km-dev:PredicateObjectMap_774d0bce-5489-41a0-8012-b19a67a85111 rr:objectMap km-dev:RefObjectMap_7d6bfb52-25c0-4c3a-b5aa-c7921d4b0d73 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_749ee389-4c19-42a8-9ff8-a53c8d1dae9d .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_774d0bce-5489-41a0-8012-b19a67a85111 .
 
-km-dev:PredicateObjectMap_749ee389-4c19-42a8-9ff8-a53c8d1dae9d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_774d0bce-5489-41a0-8012-b19a67a85111 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_749ee389-4c19-42a8-9ff8-a53c8d1dae9d .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_774d0bce-5489-41a0-8012-b19a67a85111 .
 
-km-dev:PredicateObjectMap_7664bcd4-0ef3-4581-aca1-12a7f6142909 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDProvider> .
+km-dev:PredicateObjectMap_6d70e273-ce4f-4b6a-870e-fe3bf51c0239 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDProvider> .
 
-km-dev:RefObjectMap_05827257-5773-462f-b1fe-b0e2b192eec5 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_62c147ce-201c-4329-a032-7ca87fc63471 ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_e632b03f-d3f2-4678-a0fd-1df4ba38892e a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d338dae0-13f5-4e27-8ecb-7595e5f67d4f ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_05827257-5773-462f-b1fe-b0e2b192eec5 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_e632b03f-d3f2-4678-a0fd-1df4ba38892e .
 
-km-dev:PredicateObjectMap_7664bcd4-0ef3-4581-aca1-12a7f6142909 rr:objectMap km-dev:RefObjectMap_05827257-5773-462f-b1fe-b0e2b192eec5 .
+km-dev:PredicateObjectMap_6d70e273-ce4f-4b6a-870e-fe3bf51c0239 rr:objectMap km-dev:RefObjectMap_e632b03f-d3f2-4678-a0fd-1df4ba38892e .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_7664bcd4-0ef3-4581-aca1-12a7f6142909 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_6d70e273-ce4f-4b6a-870e-fe3bf51c0239 .
 
-km-dev:PredicateObjectMap_7664bcd4-0ef3-4581-aca1-12a7f6142909 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_6d70e273-ce4f-4b6a-870e-fe3bf51c0239 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7664bcd4-0ef3-4581-aca1-12a7f6142909 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6d70e273-ce4f-4b6a-870e-fe3bf51c0239 .
 
-km-dev:PredicateObjectMap_eba22adf-d6dd-4420-ad17-10ff91aa4a9b rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDTitle> .
+km-dev:PredicateObjectMap_eea7e580-ad73-4b7f-8c17-919d5703007b rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDTitle> .
 
-km-dev:RefObjectMap_94a7be5a-2e89-4443-b355-bd210977037b a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_fb05fd05-af74-4ef5-8b4a-4bf9c1ec861c ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_7a550244-fdb7-4266-80b9-e1f66ccc7d63 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4ba1ff36-4138-4ed1-b232-9b40aa944565 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_94a7be5a-2e89-4443-b355-bd210977037b .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_7a550244-fdb7-4266-80b9-e1f66ccc7d63 .
 
-km-dev:PredicateObjectMap_eba22adf-d6dd-4420-ad17-10ff91aa4a9b rr:objectMap km-dev:RefObjectMap_94a7be5a-2e89-4443-b355-bd210977037b .
+km-dev:PredicateObjectMap_eea7e580-ad73-4b7f-8c17-919d5703007b rr:objectMap km-dev:RefObjectMap_7a550244-fdb7-4266-80b9-e1f66ccc7d63 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_eba22adf-d6dd-4420-ad17-10ff91aa4a9b .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_eea7e580-ad73-4b7f-8c17-919d5703007b .
 
-km-dev:PredicateObjectMap_eba22adf-d6dd-4420-ad17-10ff91aa4a9b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_eea7e580-ad73-4b7f-8c17-919d5703007b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eba22adf-d6dd-4420-ad17-10ff91aa4a9b .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eea7e580-ad73-4b7f-8c17-919d5703007b .
 
-km-dev:PredicateObjectMap_acb1def3-de52-4c45-863f-fa00a5c52f30 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDiscount> .
+km-dev:PredicateObjectMap_3a908e9f-462e-41fa-b637-d486683d5e1c rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDiscount> .
 
-km-dev:RefObjectMap_f58152d7-01cf-47d1-aa01-e02bc2b08f2f a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_e712ab96-a17b-4169-b41c-5422d04133e8 ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_3e958081-5431-4414-922c-2a2aaf53fb0c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c79b47e7-1add-4d90-8bef-23804972fe74 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_f58152d7-01cf-47d1-aa01-e02bc2b08f2f .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_3e958081-5431-4414-922c-2a2aaf53fb0c .
 
-km-dev:PredicateObjectMap_acb1def3-de52-4c45-863f-fa00a5c52f30 rr:objectMap km-dev:RefObjectMap_f58152d7-01cf-47d1-aa01-e02bc2b08f2f .
+km-dev:PredicateObjectMap_3a908e9f-462e-41fa-b637-d486683d5e1c rr:objectMap km-dev:RefObjectMap_3e958081-5431-4414-922c-2a2aaf53fb0c .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_acb1def3-de52-4c45-863f-fa00a5c52f30 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_3a908e9f-462e-41fa-b637-d486683d5e1c .
 
-km-dev:PredicateObjectMap_acb1def3-de52-4c45-863f-fa00a5c52f30 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_3a908e9f-462e-41fa-b637-d486683d5e1c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_acb1def3-de52-4c45-863f-fa00a5c52f30 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3a908e9f-462e-41fa-b637-d486683d5e1c .
 
-km-dev:PredicateObjectMap_0ecf1980-c77a-4374-a14e-9e3ea5e96514 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasExpiry> .
+km-dev:PredicateObjectMap_35904164-ac58-46ce-8e7f-683426c1b70d rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasExpiry> .
 
-km-dev:RefObjectMap_6b1bbd01-7bdf-40e0-adb4-52d0427e8c36 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_6ffa9d70-c1ef-493e-8924-22dfc781446a ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_c4861713-5960-4048-ada7-c7388d96d659 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_09d73b9c-d268-41d8-a228-bac8c622ddb1 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_6b1bbd01-7bdf-40e0-adb4-52d0427e8c36 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_c4861713-5960-4048-ada7-c7388d96d659 .
 
-km-dev:PredicateObjectMap_0ecf1980-c77a-4374-a14e-9e3ea5e96514 rr:objectMap km-dev:RefObjectMap_6b1bbd01-7bdf-40e0-adb4-52d0427e8c36 .
+km-dev:PredicateObjectMap_35904164-ac58-46ce-8e7f-683426c1b70d rr:objectMap km-dev:RefObjectMap_c4861713-5960-4048-ada7-c7388d96d659 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_0ecf1980-c77a-4374-a14e-9e3ea5e96514 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_35904164-ac58-46ce-8e7f-683426c1b70d .
 
-km-dev:PredicateObjectMap_0ecf1980-c77a-4374-a14e-9e3ea5e96514 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_35904164-ac58-46ce-8e7f-683426c1b70d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0ecf1980-c77a-4374-a14e-9e3ea5e96514 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_35904164-ac58-46ce-8e7f-683426c1b70d .
 
-km-dev:PredicateObjectMap_8fd0850c-564d-4720-9798-eeb2589fa9f2 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasImageStandardSmall> .
+km-dev:PredicateObjectMap_a63a30e4-480e-4459-b286-9f18ac1668ab rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasImageStandardSmall> .
 
-km-dev:RefObjectMap_029eb103-dbd8-430d-b42a-3d0b4b073709 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_8923b13f-693a-4ee7-add2-2dd53954b6f7 ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_a14173d4-cc84-4ab8-8e9a-9e9e72509d49 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_afd102fd-5798-4a3e-b2ef-4663b7d52480 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_029eb103-dbd8-430d-b42a-3d0b4b073709 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_a14173d4-cc84-4ab8-8e9a-9e9e72509d49 .
 
-km-dev:PredicateObjectMap_8fd0850c-564d-4720-9798-eeb2589fa9f2 rr:objectMap km-dev:RefObjectMap_029eb103-dbd8-430d-b42a-3d0b4b073709 .
+km-dev:PredicateObjectMap_a63a30e4-480e-4459-b286-9f18ac1668ab rr:objectMap km-dev:RefObjectMap_a14173d4-cc84-4ab8-8e9a-9e9e72509d49 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_8fd0850c-564d-4720-9798-eeb2589fa9f2 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_a63a30e4-480e-4459-b286-9f18ac1668ab .
 
-km-dev:PredicateObjectMap_8fd0850c-564d-4720-9798-eeb2589fa9f2 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_a63a30e4-480e-4459-b286-9f18ac1668ab a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8fd0850c-564d-4720-9798-eeb2589fa9f2 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a63a30e4-480e-4459-b286-9f18ac1668ab .
 
-km-dev:PredicateObjectMap_be0f6c44-7c00-40e9-ba01-9a1ba13630e9 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasInfo> .
+km-dev:PredicateObjectMap_01eb1f88-3183-4f67-9380-c0127e7ec70d rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasInfo> .
 
-km-dev:RefObjectMap_7d988578-321f-427c-97f5-9ff8b57abdea a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_4d0b17c3-6e29-4b53-9b66-a9aa38bc428a ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_9dc150b3-0cf1-46d9-baf1-8ab5b351e72b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d77bbb6f-2137-49b8-9273-61c49c47128d ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_7d988578-321f-427c-97f5-9ff8b57abdea .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_9dc150b3-0cf1-46d9-baf1-8ab5b351e72b .
 
-km-dev:PredicateObjectMap_be0f6c44-7c00-40e9-ba01-9a1ba13630e9 rr:objectMap km-dev:RefObjectMap_7d988578-321f-427c-97f5-9ff8b57abdea .
+km-dev:PredicateObjectMap_01eb1f88-3183-4f67-9380-c0127e7ec70d rr:objectMap km-dev:RefObjectMap_9dc150b3-0cf1-46d9-baf1-8ab5b351e72b .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_be0f6c44-7c00-40e9-ba01-9a1ba13630e9 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_01eb1f88-3183-4f67-9380-c0127e7ec70d .
 
-km-dev:PredicateObjectMap_be0f6c44-7c00-40e9-ba01-9a1ba13630e9 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_01eb1f88-3183-4f67-9380-c0127e7ec70d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_be0f6c44-7c00-40e9-ba01-9a1ba13630e9 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_01eb1f88-3183-4f67-9380-c0127e7ec70d .
 
-km-dev:PredicateObjectMap_feb44d50-eee6-48aa-a227-7b63753c1007 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasPrice> .
+km-dev:PredicateObjectMap_93728cb5-0049-4f75-9e74-61fcdaf3f077 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasPrice> .
 
-km-dev:RefObjectMap_89920db6-2134-4fac-b296-783a111d6ef9 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_a20389ba-7fe1-4a0e-857b-fd160278cb2c ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_83ec7470-a391-4df6-a69e-a69df82c0ec1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_3226a940-7322-48e7-b901-9a50bf0f0db6 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_89920db6-2134-4fac-b296-783a111d6ef9 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_83ec7470-a391-4df6-a69e-a69df82c0ec1 .
 
-km-dev:PredicateObjectMap_feb44d50-eee6-48aa-a227-7b63753c1007 rr:objectMap km-dev:RefObjectMap_89920db6-2134-4fac-b296-783a111d6ef9 .
+km-dev:PredicateObjectMap_93728cb5-0049-4f75-9e74-61fcdaf3f077 rr:objectMap km-dev:RefObjectMap_83ec7470-a391-4df6-a69e-a69df82c0ec1 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_feb44d50-eee6-48aa-a227-7b63753c1007 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_93728cb5-0049-4f75-9e74-61fcdaf3f077 .
 
-km-dev:PredicateObjectMap_feb44d50-eee6-48aa-a227-7b63753c1007 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_93728cb5-0049-4f75-9e74-61fcdaf3f077 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_feb44d50-eee6-48aa-a227-7b63753c1007 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_93728cb5-0049-4f75-9e74-61fcdaf3f077 .
 
-km-dev:PredicateObjectMap_4dd67289-0062-41cc-908b-be49b960d2da rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasSavings> .
+km-dev:PredicateObjectMap_2c10b82e-ed9c-4e61-a743-46344e0d8c8c rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasSavings> .
 
-km-dev:RefObjectMap_16a05896-eea1-4684-833f-1094d1dbab1f a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_5027d397-4fb1-4ef3-81b9-858b03840b2f ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_c0af2b5a-8175-40c9-80bf-76bac366851a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6de3c4bd-4799-4e66-be6e-93257bb9b573 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_16a05896-eea1-4684-833f-1094d1dbab1f .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_c0af2b5a-8175-40c9-80bf-76bac366851a .
 
-km-dev:PredicateObjectMap_4dd67289-0062-41cc-908b-be49b960d2da rr:objectMap km-dev:RefObjectMap_16a05896-eea1-4684-833f-1094d1dbab1f .
+km-dev:PredicateObjectMap_2c10b82e-ed9c-4e61-a743-46344e0d8c8c rr:objectMap km-dev:RefObjectMap_c0af2b5a-8175-40c9-80bf-76bac366851a .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_4dd67289-0062-41cc-908b-be49b960d2da .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_2c10b82e-ed9c-4e61-a743-46344e0d8c8c .
 
-km-dev:PredicateObjectMap_4dd67289-0062-41cc-908b-be49b960d2da a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_2c10b82e-ed9c-4e61-a743-46344e0d8c8c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4dd67289-0062-41cc-908b-be49b960d2da .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2c10b82e-ed9c-4e61-a743-46344e0d8c8c .
 
-km-dev:PredicateObjectMap_3638382e-0daa-49ec-85c7-342db1233191 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_9ea09332-aee1-42f7-8943-44195aef1670 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x4 rr:column "id" ;
+_:node1a5n9rq5mx4 rr:column "id" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x4 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx4 .
 
-km-dev:PredicateObjectMap_3638382e-0daa-49ec-85c7-342db1233191 rr:objectMap _:node1a5mgkuq8x4 .
+km-dev:PredicateObjectMap_9ea09332-aee1-42f7-8943-44195aef1670 rr:objectMap _:node1a5n9rq5mx4 .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_3638382e-0daa-49ec-85c7-342db1233191 .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_9ea09332-aee1-42f7-8943-44195aef1670 .
 
-km-dev:PredicateObjectMap_3638382e-0daa-49ec-85c7-342db1233191 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_9ea09332-aee1-42f7-8943-44195aef1670 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3638382e-0daa-49ec-85c7-342db1233191 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9ea09332-aee1-42f7-8943-44195aef1670 .
 
-km-dev:PredicateObjectMap_00574d43-a054-4b74-9001-bb91e869be8f rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#belongsTo> .
+km-dev:PredicateObjectMap_3e8cd572-6575-4892-bb80-04574a0eef0b rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#belongsTo> .
 
-km-dev:RefObjectMap_d4fcaf7f-64d7-4fcd-92a2-6e8fb3e3e463 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_116d7bc6-5624-4345-ab77-d468cc9e1336 ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_9b1ade3a-6bd8-4158-8396-2465f416985f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fe61313a-fa19-4760-9e63-25cd1eebcb3d ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_d4fcaf7f-64d7-4fcd-92a2-6e8fb3e3e463 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_9b1ade3a-6bd8-4158-8396-2465f416985f .
 
-km-dev:PredicateObjectMap_00574d43-a054-4b74-9001-bb91e869be8f rr:objectMap km-dev:RefObjectMap_d4fcaf7f-64d7-4fcd-92a2-6e8fb3e3e463 .
+km-dev:PredicateObjectMap_3e8cd572-6575-4892-bb80-04574a0eef0b rr:objectMap km-dev:RefObjectMap_9b1ade3a-6bd8-4158-8396-2465f416985f .
 
-km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 rr:predicateObjectMap km-dev:PredicateObjectMap_00574d43-a054-4b74-9001-bb91e869be8f .
+km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 rr:predicateObjectMap km-dev:PredicateObjectMap_3e8cd572-6575-4892-bb80-04574a0eef0b .
 
-km-dev:PredicateObjectMap_00574d43-a054-4b74-9001-bb91e869be8f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_3e8cd572-6575-4892-bb80-04574a0eef0b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_00574d43-a054-4b74-9001-bb91e869be8f .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3e8cd572-6575-4892-bb80-04574a0eef0b .
 
-km-dev:TriplesMap_74598829-6ecc-40d3-8258-373ee6cb91d6 a rr:TriplesMap .
+km-dev:TriplesMap_04ceeb7f-f0b3-448e-b1d5-491ad45916d5 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_74598829-6ecc-40d3-8258-373ee6cb91d6 .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_04ceeb7f-f0b3-448e-b1d5-491ad45916d5 .
 
-km-dev:TriplesMap_74598829-6ecc-40d3-8258-373ee6cb91d6 km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_04ceeb7f-f0b3-448e-b1d5-491ad45916d5 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x5 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx5 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x5 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx5 .
 
-km-dev:TriplesMap_74598829-6ecc-40d3-8258-373ee6cb91d6 rr:logicalTable _:node1a5mgkuq8x5 ;
-	rr:subjectMap _:node1a5mgkuq8x6 .
+km-dev:TriplesMap_04ceeb7f-f0b3-448e-b1d5-491ad45916d5 rr:logicalTable _:node1a5n9rq5mx5 ;
+	rr:subjectMap _:node1a5n9rq5mx6 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x6 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx6 .
 
-_:node1a5mgkuq8x6 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx6 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealHomepage1" .
 
-km-dev:PredicateObjectMap_b1628e34-6eb9-4b5d-b93c-2d598289e9d5 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_46197bc3-5dcf-47ab-a55f-a269baf289a2 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x7 rr:column "url" ;
+_:node1a5n9rq5mx7 rr:column "url" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x7 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx7 .
 
-km-dev:PredicateObjectMap_b1628e34-6eb9-4b5d-b93c-2d598289e9d5 rr:objectMap _:node1a5mgkuq8x7 .
+km-dev:PredicateObjectMap_46197bc3-5dcf-47ab-a55f-a269baf289a2 rr:objectMap _:node1a5n9rq5mx7 .
 
-km-dev:TriplesMap_74598829-6ecc-40d3-8258-373ee6cb91d6 rr:predicateObjectMap km-dev:PredicateObjectMap_b1628e34-6eb9-4b5d-b93c-2d598289e9d5 .
+km-dev:TriplesMap_04ceeb7f-f0b3-448e-b1d5-491ad45916d5 rr:predicateObjectMap km-dev:PredicateObjectMap_46197bc3-5dcf-47ab-a55f-a269baf289a2 .
 
-km-dev:PredicateObjectMap_b1628e34-6eb9-4b5d-b93c-2d598289e9d5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_46197bc3-5dcf-47ab-a55f-a269baf289a2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b1628e34-6eb9-4b5d-b93c-2d598289e9d5 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_46197bc3-5dcf-47ab-a55f-a269baf289a2 .
 
-km-dev:TriplesMap_071099ac-01f5-482e-8dff-b15be561082e a rr:TriplesMap .
+km-dev:TriplesMap_e5410174-51a2-4181-959c-1fc64c0896c2 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_071099ac-01f5-482e-8dff-b15be561082e .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_e5410174-51a2-4181-959c-1fc64c0896c2 .
 
-km-dev:TriplesMap_071099ac-01f5-482e-8dff-b15be561082e km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_e5410174-51a2-4181-959c-1fc64c0896c2 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x8 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx8 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x8 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx8 .
 
-km-dev:TriplesMap_071099ac-01f5-482e-8dff-b15be561082e rr:logicalTable _:node1a5mgkuq8x8 ;
-	rr:subjectMap _:node1a5mgkuq8x9 .
+km-dev:TriplesMap_e5410174-51a2-4181-959c-1fc64c0896c2 rr:logicalTable _:node1a5n9rq5mx8 ;
+	rr:subjectMap _:node1a5n9rq5mx9 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x9 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx9 .
 
-_:node1a5mgkuq8x9 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx9 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealInStore1" .
 
-km-dev:PredicateObjectMap_9b02524a-dfc0-490d-a6df-04104769de40 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_22bd1815-47e6-46ac-a92d-2894b6daf0e1 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x10 rr:column "dealsinstore" ;
+_:node1a5n9rq5mx10 rr:column "dealsinstore" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x10 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx10 .
 
-km-dev:PredicateObjectMap_9b02524a-dfc0-490d-a6df-04104769de40 rr:objectMap _:node1a5mgkuq8x10 .
+km-dev:PredicateObjectMap_22bd1815-47e6-46ac-a92d-2894b6daf0e1 rr:objectMap _:node1a5n9rq5mx10 .
 
-km-dev:TriplesMap_071099ac-01f5-482e-8dff-b15be561082e rr:predicateObjectMap km-dev:PredicateObjectMap_9b02524a-dfc0-490d-a6df-04104769de40 .
+km-dev:TriplesMap_e5410174-51a2-4181-959c-1fc64c0896c2 rr:predicateObjectMap km-dev:PredicateObjectMap_22bd1815-47e6-46ac-a92d-2894b6daf0e1 .
 
-km-dev:PredicateObjectMap_9b02524a-dfc0-490d-a6df-04104769de40 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_22bd1815-47e6-46ac-a92d-2894b6daf0e1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9b02524a-dfc0-490d-a6df-04104769de40 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_22bd1815-47e6-46ac-a92d-2894b6daf0e1 .
 
-km-dev:TriplesMap_77758d92-70e2-4d09-a96a-f12214f133d1 a rr:TriplesMap .
+km-dev:TriplesMap_4b1c2678-372a-424a-8ee3-41adff191f78 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_77758d92-70e2-4d09-a96a-f12214f133d1 .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_4b1c2678-372a-424a-8ee3-41adff191f78 .
 
-km-dev:TriplesMap_77758d92-70e2-4d09-a96a-f12214f133d1 km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_4b1c2678-372a-424a-8ee3-41adff191f78 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x11 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx11 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x11 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx11 .
 
-km-dev:TriplesMap_77758d92-70e2-4d09-a96a-f12214f133d1 rr:logicalTable _:node1a5mgkuq8x11 ;
-	rr:subjectMap _:node1a5mgkuq8x12 .
+km-dev:TriplesMap_4b1c2678-372a-424a-8ee3-41adff191f78 rr:logicalTable _:node1a5n9rq5mx11 ;
+	rr:subjectMap _:node1a5n9rq5mx12 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x12 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx12 .
 
-_:node1a5mgkuq8x12 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx12 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealOriginalPrice1" .
 
-km-dev:PredicateObjectMap_0b2db568-c367-420c-9fe6-16ed2799aa84 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_b7ce021b-cfa0-4a9e-b065-0af71a1b5ec6 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x13 rr:column "dealoriginalprice" ;
+_:node1a5n9rq5mx13 rr:column "dealoriginalprice" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x13 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx13 .
 
-km-dev:PredicateObjectMap_0b2db568-c367-420c-9fe6-16ed2799aa84 rr:objectMap _:node1a5mgkuq8x13 .
+km-dev:PredicateObjectMap_b7ce021b-cfa0-4a9e-b065-0af71a1b5ec6 rr:objectMap _:node1a5n9rq5mx13 .
 
-km-dev:TriplesMap_77758d92-70e2-4d09-a96a-f12214f133d1 rr:predicateObjectMap km-dev:PredicateObjectMap_0b2db568-c367-420c-9fe6-16ed2799aa84 .
+km-dev:TriplesMap_4b1c2678-372a-424a-8ee3-41adff191f78 rr:predicateObjectMap km-dev:PredicateObjectMap_b7ce021b-cfa0-4a9e-b065-0af71a1b5ec6 .
 
-km-dev:PredicateObjectMap_0b2db568-c367-420c-9fe6-16ed2799aa84 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_b7ce021b-cfa0-4a9e-b065-0af71a1b5ec6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0b2db568-c367-420c-9fe6-16ed2799aa84 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b7ce021b-cfa0-4a9e-b065-0af71a1b5ec6 .
 
-km-dev:TriplesMap_62c147ce-201c-4329-a032-7ca87fc63471 a rr:TriplesMap .
+km-dev:TriplesMap_d338dae0-13f5-4e27-8ecb-7595e5f67d4f a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_62c147ce-201c-4329-a032-7ca87fc63471 .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_d338dae0-13f5-4e27-8ecb-7595e5f67d4f .
 
-km-dev:TriplesMap_62c147ce-201c-4329-a032-7ca87fc63471 km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_d338dae0-13f5-4e27-8ecb-7595e5f67d4f km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x14 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx14 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x14 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx14 .
 
-km-dev:TriplesMap_62c147ce-201c-4329-a032-7ca87fc63471 rr:logicalTable _:node1a5mgkuq8x14 ;
-	rr:subjectMap _:node1a5mgkuq8x15 .
+km-dev:TriplesMap_d338dae0-13f5-4e27-8ecb-7595e5f67d4f rr:logicalTable _:node1a5n9rq5mx14 ;
+	rr:subjectMap _:node1a5n9rq5mx15 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x15 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx15 .
 
-_:node1a5mgkuq8x15 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx15 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealProvider1" .
 
-km-dev:PredicateObjectMap_b82d5fe4-0b3d-468b-8071-51b3cd2800fd rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_0475cd82-6d6f-401e-b7f3-b8d972a7c22e rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x16 rr:column "provider" ;
+_:node1a5n9rq5mx16 rr:column "provider" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x16 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx16 .
 
-km-dev:PredicateObjectMap_b82d5fe4-0b3d-468b-8071-51b3cd2800fd rr:objectMap _:node1a5mgkuq8x16 .
+km-dev:PredicateObjectMap_0475cd82-6d6f-401e-b7f3-b8d972a7c22e rr:objectMap _:node1a5n9rq5mx16 .
 
-km-dev:TriplesMap_62c147ce-201c-4329-a032-7ca87fc63471 rr:predicateObjectMap km-dev:PredicateObjectMap_b82d5fe4-0b3d-468b-8071-51b3cd2800fd .
+km-dev:TriplesMap_d338dae0-13f5-4e27-8ecb-7595e5f67d4f rr:predicateObjectMap km-dev:PredicateObjectMap_0475cd82-6d6f-401e-b7f3-b8d972a7c22e .
 
-km-dev:PredicateObjectMap_b82d5fe4-0b3d-468b-8071-51b3cd2800fd a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_0475cd82-6d6f-401e-b7f3-b8d972a7c22e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b82d5fe4-0b3d-468b-8071-51b3cd2800fd .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0475cd82-6d6f-401e-b7f3-b8d972a7c22e .
 
-km-dev:TriplesMap_fb05fd05-af74-4ef5-8b4a-4bf9c1ec861c a rr:TriplesMap .
+km-dev:TriplesMap_4ba1ff36-4138-4ed1-b232-9b40aa944565 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_fb05fd05-af74-4ef5-8b4a-4bf9c1ec861c .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_4ba1ff36-4138-4ed1-b232-9b40aa944565 .
 
-km-dev:TriplesMap_fb05fd05-af74-4ef5-8b4a-4bf9c1ec861c km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_4ba1ff36-4138-4ed1-b232-9b40aa944565 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x17 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx17 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x17 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx17 .
 
-km-dev:TriplesMap_fb05fd05-af74-4ef5-8b4a-4bf9c1ec861c rr:logicalTable _:node1a5mgkuq8x17 ;
-	rr:subjectMap _:node1a5mgkuq8x18 .
+km-dev:TriplesMap_4ba1ff36-4138-4ed1-b232-9b40aa944565 rr:logicalTable _:node1a5n9rq5mx17 ;
+	rr:subjectMap _:node1a5n9rq5mx18 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x18 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx18 .
 
-_:node1a5mgkuq8x18 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx18 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealTitle1" .
 
-km-dev:PredicateObjectMap_f663c78a-6ff9-4a20-9a42-8a4ee334725a rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_6cc32619-abe5-4f19-b9c5-d93bfd7db7fe rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x19 rr:column "dealtitle" ;
+_:node1a5n9rq5mx19 rr:column "dealtitle" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x19 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx19 .
 
-km-dev:PredicateObjectMap_f663c78a-6ff9-4a20-9a42-8a4ee334725a rr:objectMap _:node1a5mgkuq8x19 .
+km-dev:PredicateObjectMap_6cc32619-abe5-4f19-b9c5-d93bfd7db7fe rr:objectMap _:node1a5n9rq5mx19 .
 
-km-dev:TriplesMap_fb05fd05-af74-4ef5-8b4a-4bf9c1ec861c rr:predicateObjectMap km-dev:PredicateObjectMap_f663c78a-6ff9-4a20-9a42-8a4ee334725a .
+km-dev:TriplesMap_4ba1ff36-4138-4ed1-b232-9b40aa944565 rr:predicateObjectMap km-dev:PredicateObjectMap_6cc32619-abe5-4f19-b9c5-d93bfd7db7fe .
 
-km-dev:PredicateObjectMap_f663c78a-6ff9-4a20-9a42-8a4ee334725a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_6cc32619-abe5-4f19-b9c5-d93bfd7db7fe a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f663c78a-6ff9-4a20-9a42-8a4ee334725a .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6cc32619-abe5-4f19-b9c5-d93bfd7db7fe .
 
-km-dev:TriplesMap_e712ab96-a17b-4169-b41c-5422d04133e8 a rr:TriplesMap .
+km-dev:TriplesMap_c79b47e7-1add-4d90-8bef-23804972fe74 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_e712ab96-a17b-4169-b41c-5422d04133e8 .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_c79b47e7-1add-4d90-8bef-23804972fe74 .
 
-km-dev:TriplesMap_e712ab96-a17b-4169-b41c-5422d04133e8 km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_c79b47e7-1add-4d90-8bef-23804972fe74 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x20 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx20 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x20 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx20 .
 
-km-dev:TriplesMap_e712ab96-a17b-4169-b41c-5422d04133e8 rr:logicalTable _:node1a5mgkuq8x20 ;
-	rr:subjectMap _:node1a5mgkuq8x21 .
+km-dev:TriplesMap_c79b47e7-1add-4d90-8bef-23804972fe74 rr:logicalTable _:node1a5n9rq5mx20 ;
+	rr:subjectMap _:node1a5n9rq5mx21 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x21 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx21 .
 
-_:node1a5mgkuq8x21 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx21 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealDiscount1" .
 
-km-dev:PredicateObjectMap_0f54d871-95dc-426a-bd8c-181da259e41d rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_17dff929-a96c-405d-aa75-aae5f81f6aa7 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x22 rr:column "dealdiscount" ;
+_:node1a5n9rq5mx22 rr:column "dealdiscount" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x22 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx22 .
 
-km-dev:PredicateObjectMap_0f54d871-95dc-426a-bd8c-181da259e41d rr:objectMap _:node1a5mgkuq8x22 .
+km-dev:PredicateObjectMap_17dff929-a96c-405d-aa75-aae5f81f6aa7 rr:objectMap _:node1a5n9rq5mx22 .
 
-km-dev:TriplesMap_e712ab96-a17b-4169-b41c-5422d04133e8 rr:predicateObjectMap km-dev:PredicateObjectMap_0f54d871-95dc-426a-bd8c-181da259e41d .
+km-dev:TriplesMap_c79b47e7-1add-4d90-8bef-23804972fe74 rr:predicateObjectMap km-dev:PredicateObjectMap_17dff929-a96c-405d-aa75-aae5f81f6aa7 .
 
-km-dev:PredicateObjectMap_0f54d871-95dc-426a-bd8c-181da259e41d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_17dff929-a96c-405d-aa75-aae5f81f6aa7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0f54d871-95dc-426a-bd8c-181da259e41d .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_17dff929-a96c-405d-aa75-aae5f81f6aa7 .
 
-km-dev:TriplesMap_6ffa9d70-c1ef-493e-8924-22dfc781446a a rr:TriplesMap .
+km-dev:TriplesMap_09d73b9c-d268-41d8-a228-bac8c622ddb1 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_6ffa9d70-c1ef-493e-8924-22dfc781446a .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_09d73b9c-d268-41d8-a228-bac8c622ddb1 .
 
-km-dev:TriplesMap_6ffa9d70-c1ef-493e-8924-22dfc781446a km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_09d73b9c-d268-41d8-a228-bac8c622ddb1 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x23 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx23 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x23 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx23 .
 
-km-dev:TriplesMap_6ffa9d70-c1ef-493e-8924-22dfc781446a rr:logicalTable _:node1a5mgkuq8x23 ;
-	rr:subjectMap _:node1a5mgkuq8x24 .
+km-dev:TriplesMap_09d73b9c-d268-41d8-a228-bac8c622ddb1 rr:logicalTable _:node1a5n9rq5mx23 ;
+	rr:subjectMap _:node1a5n9rq5mx24 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x24 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx24 .
 
-_:node1a5mgkuq8x24 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx24 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealExpiry1" .
 
-km-dev:PredicateObjectMap_092cc781-a166-4e1c-824a-005e54b6f8a9 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_1a02a457-ac77-4030-ae2d-62cccfc8ed74 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x25 rr:column "expiry" ;
+_:node1a5n9rq5mx25 rr:column "expiry" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x25 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx25 .
 
-km-dev:PredicateObjectMap_092cc781-a166-4e1c-824a-005e54b6f8a9 rr:objectMap _:node1a5mgkuq8x25 .
+km-dev:PredicateObjectMap_1a02a457-ac77-4030-ae2d-62cccfc8ed74 rr:objectMap _:node1a5n9rq5mx25 .
 
-km-dev:TriplesMap_6ffa9d70-c1ef-493e-8924-22dfc781446a rr:predicateObjectMap km-dev:PredicateObjectMap_092cc781-a166-4e1c-824a-005e54b6f8a9 .
+km-dev:TriplesMap_09d73b9c-d268-41d8-a228-bac8c622ddb1 rr:predicateObjectMap km-dev:PredicateObjectMap_1a02a457-ac77-4030-ae2d-62cccfc8ed74 .
 
-km-dev:PredicateObjectMap_092cc781-a166-4e1c-824a-005e54b6f8a9 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_1a02a457-ac77-4030-ae2d-62cccfc8ed74 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_092cc781-a166-4e1c-824a-005e54b6f8a9 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1a02a457-ac77-4030-ae2d-62cccfc8ed74 .
 
-km-dev:TriplesMap_8923b13f-693a-4ee7-add2-2dd53954b6f7 a rr:TriplesMap .
+km-dev:TriplesMap_afd102fd-5798-4a3e-b2ef-4663b7d52480 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_8923b13f-693a-4ee7-add2-2dd53954b6f7 .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_afd102fd-5798-4a3e-b2ef-4663b7d52480 .
 
-km-dev:TriplesMap_8923b13f-693a-4ee7-add2-2dd53954b6f7 km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_afd102fd-5798-4a3e-b2ef-4663b7d52480 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x26 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx26 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x26 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx26 .
 
-km-dev:TriplesMap_8923b13f-693a-4ee7-add2-2dd53954b6f7 rr:logicalTable _:node1a5mgkuq8x26 ;
-	rr:subjectMap _:node1a5mgkuq8x27 .
+km-dev:TriplesMap_afd102fd-5798-4a3e-b2ef-4663b7d52480 rr:logicalTable _:node1a5n9rq5mx26 ;
+	rr:subjectMap _:node1a5n9rq5mx27 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x27 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx27 .
 
-_:node1a5mgkuq8x27 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx27 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealImageStandardSmall1" .
 
-km-dev:PredicateObjectMap_eaacc4a7-cfa0-44f6-91cf-b1a78c459c76 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_beccdac1-3a94-4321-be04-dcc3d6208e62 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x28 rr:column "showimagestandardsmall" ;
+_:node1a5n9rq5mx28 rr:column "showimagestandardsmall" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x28 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx28 .
 
-km-dev:PredicateObjectMap_eaacc4a7-cfa0-44f6-91cf-b1a78c459c76 rr:objectMap _:node1a5mgkuq8x28 .
+km-dev:PredicateObjectMap_beccdac1-3a94-4321-be04-dcc3d6208e62 rr:objectMap _:node1a5n9rq5mx28 .
 
-km-dev:TriplesMap_8923b13f-693a-4ee7-add2-2dd53954b6f7 rr:predicateObjectMap km-dev:PredicateObjectMap_eaacc4a7-cfa0-44f6-91cf-b1a78c459c76 .
+km-dev:TriplesMap_afd102fd-5798-4a3e-b2ef-4663b7d52480 rr:predicateObjectMap km-dev:PredicateObjectMap_beccdac1-3a94-4321-be04-dcc3d6208e62 .
 
-km-dev:PredicateObjectMap_eaacc4a7-cfa0-44f6-91cf-b1a78c459c76 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_beccdac1-3a94-4321-be04-dcc3d6208e62 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eaacc4a7-cfa0-44f6-91cf-b1a78c459c76 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_beccdac1-3a94-4321-be04-dcc3d6208e62 .
 
-km-dev:TriplesMap_4d0b17c3-6e29-4b53-9b66-a9aa38bc428a a rr:TriplesMap .
+km-dev:TriplesMap_d77bbb6f-2137-49b8-9273-61c49c47128d a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_4d0b17c3-6e29-4b53-9b66-a9aa38bc428a .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_d77bbb6f-2137-49b8-9273-61c49c47128d .
 
-km-dev:TriplesMap_4d0b17c3-6e29-4b53-9b66-a9aa38bc428a km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_d77bbb6f-2137-49b8-9273-61c49c47128d km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x29 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx29 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x29 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx29 .
 
-km-dev:TriplesMap_4d0b17c3-6e29-4b53-9b66-a9aa38bc428a rr:logicalTable _:node1a5mgkuq8x29 ;
-	rr:subjectMap _:node1a5mgkuq8x30 .
+km-dev:TriplesMap_d77bbb6f-2137-49b8-9273-61c49c47128d rr:logicalTable _:node1a5n9rq5mx29 ;
+	rr:subjectMap _:node1a5n9rq5mx30 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x30 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx30 .
 
-_:node1a5mgkuq8x30 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx30 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealInfo1" .
 
-km-dev:PredicateObjectMap_c4827b00-1cd4-4942-b7a6-70dcd35dd65c rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_d650a1b4-6641-42d7-932d-9e0eb16008cf rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x31 rr:column "dealinfo" ;
+_:node1a5n9rq5mx31 rr:column "dealinfo" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x31 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx31 .
 
-km-dev:PredicateObjectMap_c4827b00-1cd4-4942-b7a6-70dcd35dd65c rr:objectMap _:node1a5mgkuq8x31 .
+km-dev:PredicateObjectMap_d650a1b4-6641-42d7-932d-9e0eb16008cf rr:objectMap _:node1a5n9rq5mx31 .
 
-km-dev:TriplesMap_4d0b17c3-6e29-4b53-9b66-a9aa38bc428a rr:predicateObjectMap km-dev:PredicateObjectMap_c4827b00-1cd4-4942-b7a6-70dcd35dd65c .
+km-dev:TriplesMap_d77bbb6f-2137-49b8-9273-61c49c47128d rr:predicateObjectMap km-dev:PredicateObjectMap_d650a1b4-6641-42d7-932d-9e0eb16008cf .
 
-km-dev:PredicateObjectMap_c4827b00-1cd4-4942-b7a6-70dcd35dd65c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_d650a1b4-6641-42d7-932d-9e0eb16008cf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c4827b00-1cd4-4942-b7a6-70dcd35dd65c .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d650a1b4-6641-42d7-932d-9e0eb16008cf .
 
-km-dev:TriplesMap_a20389ba-7fe1-4a0e-857b-fd160278cb2c a rr:TriplesMap .
+km-dev:TriplesMap_3226a940-7322-48e7-b901-9a50bf0f0db6 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_a20389ba-7fe1-4a0e-857b-fd160278cb2c .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_3226a940-7322-48e7-b901-9a50bf0f0db6 .
 
-km-dev:TriplesMap_a20389ba-7fe1-4a0e-857b-fd160278cb2c km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_3226a940-7322-48e7-b901-9a50bf0f0db6 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x32 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx32 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x32 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx32 .
 
-km-dev:TriplesMap_a20389ba-7fe1-4a0e-857b-fd160278cb2c rr:logicalTable _:node1a5mgkuq8x32 ;
-	rr:subjectMap _:node1a5mgkuq8x33 .
+km-dev:TriplesMap_3226a940-7322-48e7-b901-9a50bf0f0db6 rr:logicalTable _:node1a5n9rq5mx32 ;
+	rr:subjectMap _:node1a5n9rq5mx33 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x33 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx33 .
 
-_:node1a5mgkuq8x33 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx33 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealPrice1" .
 
-km-dev:PredicateObjectMap_45def098-bfb0-4315-bdb4-8d4c0448f2e5 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_32ad13e2-3f64-4812-b6cf-57fa67d5a6ea rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x34 rr:column "dealprice" ;
+_:node1a5n9rq5mx34 rr:column "dealprice" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x34 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx34 .
 
-km-dev:PredicateObjectMap_45def098-bfb0-4315-bdb4-8d4c0448f2e5 rr:objectMap _:node1a5mgkuq8x34 .
+km-dev:PredicateObjectMap_32ad13e2-3f64-4812-b6cf-57fa67d5a6ea rr:objectMap _:node1a5n9rq5mx34 .
 
-km-dev:TriplesMap_a20389ba-7fe1-4a0e-857b-fd160278cb2c rr:predicateObjectMap km-dev:PredicateObjectMap_45def098-bfb0-4315-bdb4-8d4c0448f2e5 .
+km-dev:TriplesMap_3226a940-7322-48e7-b901-9a50bf0f0db6 rr:predicateObjectMap km-dev:PredicateObjectMap_32ad13e2-3f64-4812-b6cf-57fa67d5a6ea .
 
-km-dev:PredicateObjectMap_45def098-bfb0-4315-bdb4-8d4c0448f2e5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_32ad13e2-3f64-4812-b6cf-57fa67d5a6ea a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_45def098-bfb0-4315-bdb4-8d4c0448f2e5 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_32ad13e2-3f64-4812-b6cf-57fa67d5a6ea .
 
-km-dev:TriplesMap_5027d397-4fb1-4ef3-81b9-858b03840b2f a rr:TriplesMap .
+km-dev:TriplesMap_6de3c4bd-4799-4e66-be6e-93257bb9b573 a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_5027d397-4fb1-4ef3-81b9-858b03840b2f .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_6de3c4bd-4799-4e66-be6e-93257bb9b573 .
 
-km-dev:TriplesMap_5027d397-4fb1-4ef3-81b9-858b03840b2f km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_6de3c4bd-4799-4e66-be6e-93257bb9b573 km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x35 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx35 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x35 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx35 .
 
-km-dev:TriplesMap_5027d397-4fb1-4ef3-81b9-858b03840b2f rr:logicalTable _:node1a5mgkuq8x35 ;
-	rr:subjectMap _:node1a5mgkuq8x36 .
+km-dev:TriplesMap_6de3c4bd-4799-4e66-be6e-93257bb9b573 rr:logicalTable _:node1a5n9rq5mx35 ;
+	rr:subjectMap _:node1a5n9rq5mx36 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x36 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx36 .
 
-_:node1a5mgkuq8x36 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx36 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "DealSavings1" .
 
-km-dev:PredicateObjectMap_1aa5f35b-4e44-4abe-83f3-a1ae8509480a rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_a2837bd3-f281-4ca4-8a6f-9e0e96d588f4 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x37 rr:column "dealsavings" ;
+_:node1a5n9rq5mx37 rr:column "dealsavings" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x37 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx37 .
 
-km-dev:PredicateObjectMap_1aa5f35b-4e44-4abe-83f3-a1ae8509480a rr:objectMap _:node1a5mgkuq8x37 .
+km-dev:PredicateObjectMap_a2837bd3-f281-4ca4-8a6f-9e0e96d588f4 rr:objectMap _:node1a5n9rq5mx37 .
 
-km-dev:TriplesMap_5027d397-4fb1-4ef3-81b9-858b03840b2f rr:predicateObjectMap km-dev:PredicateObjectMap_1aa5f35b-4e44-4abe-83f3-a1ae8509480a .
+km-dev:TriplesMap_6de3c4bd-4799-4e66-be6e-93257bb9b573 rr:predicateObjectMap km-dev:PredicateObjectMap_a2837bd3-f281-4ca4-8a6f-9e0e96d588f4 .
 
-km-dev:PredicateObjectMap_1aa5f35b-4e44-4abe-83f3-a1ae8509480a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_a2837bd3-f281-4ca4-8a6f-9e0e96d588f4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1aa5f35b-4e44-4abe-83f3-a1ae8509480a .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a2837bd3-f281-4ca4-8a6f-9e0e96d588f4 .
 
-km-dev:TriplesMap_116d7bc6-5624-4345-ab77-d468cc9e1336 a rr:TriplesMap .
+km-dev:TriplesMap_fe61313a-fa19-4760-9e63-25cd1eebcb3d a rr:TriplesMap .
 
-_:node1a5mgkuq8x1 km-dev:hasTriplesMap km-dev:TriplesMap_116d7bc6-5624-4345-ab77-d468cc9e1336 .
+_:node1a5n9rq5mx1 km-dev:hasTriplesMap km-dev:TriplesMap_fe61313a-fa19-4760-9e63-25cd1eebcb3d .
 
-km-dev:TriplesMap_116d7bc6-5624-4345-ab77-d468cc9e1336 km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:TriplesMap_fe61313a-fa19-4760-9e63-25cd1eebcb3d km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x38 rr:tableName "Deals.csv" ;
+_:node1a5n9rq5mx38 rr:tableName "Deals.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasLogicalTable _:node1a5mgkuq8x38 .
+_:node1a5n9rq5mx1 km-dev:hasLogicalTable _:node1a5n9rq5mx38 .
 
-km-dev:TriplesMap_116d7bc6-5624-4345-ab77-d468cc9e1336 rr:logicalTable _:node1a5mgkuq8x38 ;
-	rr:subjectMap _:node1a5mgkuq8x39 .
+km-dev:TriplesMap_fe61313a-fa19-4760-9e63-25cd1eebcb3d rr:logicalTable _:node1a5n9rq5mx38 ;
+	rr:subjectMap _:node1a5n9rq5mx39 .
 
-_:node1a5mgkuq8x1 km-dev:hasSubjectMap _:node1a5mgkuq8x39 .
+_:node1a5n9rq5mx1 km-dev:hasSubjectMap _:node1a5n9rq5mx39 .
 
-_:node1a5mgkuq8x39 km-dev:isPartOfMapping _:node1a5mgkuq8x1 ;
+_:node1a5n9rq5mx39 km-dev:isPartOfMapping _:node1a5n9rq5mx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant1" ;
 	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant> ;
 	rr:template "{rest_id}" .
 
-km-dev:PredicateObjectMap_40e2af7a-4a93-44bd-ad4d-c2d226d1bc59 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDeal> .
+km-dev:PredicateObjectMap_ddf080d2-a49e-4b7b-b5e5-dc4f39e7cd60 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDeal> .
 
-km-dev:RefObjectMap_92e82ac3-128b-414f-a67f-89ed30acc168 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_9e6d94ac-dfca-436e-ac13-f8c437ca7070 ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:RefObjectMap_22516ae4-aee9-43b6-af5b-301fdf3cfe9c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2ff0d2b6-354f-4340-bcc6-e073c472e935 ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap km-dev:RefObjectMap_92e82ac3-128b-414f-a67f-89ed30acc168 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap km-dev:RefObjectMap_22516ae4-aee9-43b6-af5b-301fdf3cfe9c .
 
-km-dev:PredicateObjectMap_40e2af7a-4a93-44bd-ad4d-c2d226d1bc59 rr:objectMap km-dev:RefObjectMap_92e82ac3-128b-414f-a67f-89ed30acc168 .
+km-dev:PredicateObjectMap_ddf080d2-a49e-4b7b-b5e5-dc4f39e7cd60 rr:objectMap km-dev:RefObjectMap_22516ae4-aee9-43b6-af5b-301fdf3cfe9c .
 
-km-dev:TriplesMap_116d7bc6-5624-4345-ab77-d468cc9e1336 rr:predicateObjectMap km-dev:PredicateObjectMap_40e2af7a-4a93-44bd-ad4d-c2d226d1bc59 .
+km-dev:TriplesMap_fe61313a-fa19-4760-9e63-25cd1eebcb3d rr:predicateObjectMap km-dev:PredicateObjectMap_ddf080d2-a49e-4b7b-b5e5-dc4f39e7cd60 .
 
-km-dev:PredicateObjectMap_40e2af7a-4a93-44bd-ad4d-c2d226d1bc59 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_ddf080d2-a49e-4b7b-b5e5-dc4f39e7cd60 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_40e2af7a-4a93-44bd-ad4d-c2d226d1bc59 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ddf080d2-a49e-4b7b-b5e5-dc4f39e7cd60 .
 
-km-dev:PredicateObjectMap_36454a3b-b4e7-4ec9-9016-d01274209800 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_a4f1c34e-02a3-40be-b468-1be694f48b77 rr:predicate rdfs:label .
 
-_:node1a5mgkuq8x40 rr:column "name" ;
+_:node1a5n9rq5mx40 rr:column "name" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasObjectMap _:node1a5mgkuq8x40 .
+_:node1a5n9rq5mx1 km-dev:hasObjectMap _:node1a5n9rq5mx40 .
 
-km-dev:PredicateObjectMap_36454a3b-b4e7-4ec9-9016-d01274209800 rr:objectMap _:node1a5mgkuq8x40 .
+km-dev:PredicateObjectMap_a4f1c34e-02a3-40be-b468-1be694f48b77 rr:objectMap _:node1a5n9rq5mx40 .
 
-km-dev:TriplesMap_116d7bc6-5624-4345-ab77-d468cc9e1336 rr:predicateObjectMap km-dev:PredicateObjectMap_36454a3b-b4e7-4ec9-9016-d01274209800 .
+km-dev:TriplesMap_fe61313a-fa19-4760-9e63-25cd1eebcb3d rr:predicateObjectMap km-dev:PredicateObjectMap_a4f1c34e-02a3-40be-b468-1be694f48b77 .
 
-km-dev:PredicateObjectMap_36454a3b-b4e7-4ec9-9016-d01274209800 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mgkuq8x1 .
+km-dev:PredicateObjectMap_a4f1c34e-02a3-40be-b468-1be694f48b77 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5n9rq5mx1 .
 
-_:node1a5mgkuq8x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_36454a3b-b4e7-4ec9-9016-d01274209800 .
+_:node1a5n9rq5mx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a4f1c34e-02a3-40be-b468-1be694f48b77 .

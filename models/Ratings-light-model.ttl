@@ -32,12 +32,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1a5mhn1jfx1 a km-dev:R2RMLMapping ;
+_:node1a5nadt0rx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "Ratings.csv" ;
-	km-dev:modelPublicationTime "1449234499183"^^xsd:long ;
+	km-dev:modelPublicationTime "1449260413979"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"image_url\"}],[{\"columnName\":\"rating\"}],[{\"columnName\":\"categories\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"review_count\"}],[{\"columnName\":\"display_address\"}],[{\"columnName\":\"display_phone\"}],[{\"columnName\":\"snippet_image_url\"}],[{\"columnName\":\"rating_image_url_small\"}],[{\"columnName\":\"url\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"image_url\"}],[{\"columnName\":\"rating\"}],[{\"columnName\":\"categories\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"review_count\"}],[{\"columnName\":\"rest_name_uri\"}],[{\"columnName\":\"display_address\"}],[{\"columnName\":\"display_phone\"}],[{\"columnName\":\"snippet_image_url\"}],[{\"columnName\":\"rating_image_url_small\"}],[{\"columnName\":\"url\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"name\"}],[{\"columnName\":\"review_count\"}],[{\"columnName\":\"display_address\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"rating_image_url_small\"}],[{\"columnName\":\"categories\"}],[{\"columnName\":\"image_url\"}],[{\"columnName\":\"rating\"}],[{\"columnName\":\"display_phone\"}],[{\"columnName\":\"snippet_image_url\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"name\"}],[{\"columnName\":\"review_count\"}],[{\"columnName\":\"display_address\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"rating_image_url_small\"}],[{\"columnName\":\"categories\"}],[{\"columnName\":\"image_url\"}],[{\"columnName\":\"rating\"}],[{\"columnName\":\"rest_name_uri\"}],[{\"columnName\":\"display_phone\"}],[{\"columnName\":\"snippet_image_url\"}]]" ;
 	km-dev:hasModelLabel "Ratings" ;
 	km-dev:hasBaseURI "http://www.semanticweb.org/asu/yelp-review-data/" ;
 	km-dev:hasWorksheetHistory """[
@@ -68,7 +68,7 @@ _:node1a5mhn1jfx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"transformationCode\",
                 \"type\": \"other\",
-                \"value\": \"return \\\"rest/\\\"+getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('^','').replace(':','').replace(';','')\"
+                \"value\": \"return \\\"rest/\\\"+getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('%','').replace('^','').replace(':','').replace(';','').replace('\\\\\\\"','')\"
             },
             {
                 \"name\": \"errorDefaultValue\",
@@ -1314,565 +1314,565 @@ _:node1a5mhn1jfx1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 a rr:TriplesMap .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx2 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx2 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx2 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx2 .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:logicalTable _:node1a5mhn1jfx2 ;
-	rr:subjectMap _:node1a5mhn1jfx3 .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:logicalTable _:node1a5nadt0rx2 ;
+	rr:subjectMap _:node1a5nadt0rx3 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx3 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx3 .
 
-_:node1a5mhn1jfx3 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx3 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#Restaurant1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#Restaurant> ;
 	rr:template "{rest_name_uri}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_bdf417a8-7688-4433-b76c-5387e0a3006e rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasAddress> .
+km-dev:PredicateObjectMap_1cfdf51b-440a-435e-9867-67a8438a5487 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasAddress> .
 
-km-dev:RefObjectMap_d13f81dd-5d6c-47ed-a1dd-9b8cb4a66c35 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_c89a4c60-36e6-4cfa-ae53-52141043fb20 ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_1c09782f-002b-4de0-8612-e3db39ba37fb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_652d1a43-6a6a-4613-ad91-55974931f84c ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_d13f81dd-5d6c-47ed-a1dd-9b8cb4a66c35 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_1c09782f-002b-4de0-8612-e3db39ba37fb .
 
-km-dev:PredicateObjectMap_bdf417a8-7688-4433-b76c-5387e0a3006e rr:objectMap km-dev:RefObjectMap_d13f81dd-5d6c-47ed-a1dd-9b8cb4a66c35 .
+km-dev:PredicateObjectMap_1cfdf51b-440a-435e-9867-67a8438a5487 rr:objectMap km-dev:RefObjectMap_1c09782f-002b-4de0-8612-e3db39ba37fb .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_bdf417a8-7688-4433-b76c-5387e0a3006e .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_1cfdf51b-440a-435e-9867-67a8438a5487 .
 
-km-dev:PredicateObjectMap_bdf417a8-7688-4433-b76c-5387e0a3006e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_1cfdf51b-440a-435e-9867-67a8438a5487 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bdf417a8-7688-4433-b76c-5387e0a3006e .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1cfdf51b-440a-435e-9867-67a8438a5487 .
 
-km-dev:PredicateObjectMap_981db72c-9e63-4419-b056-a818f2fc6542 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasCount> .
+km-dev:PredicateObjectMap_9a3fa233-0452-41e5-94e2-fd823eed0441 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasCount> .
 
-km-dev:RefObjectMap_aeff0a6b-0842-48df-8acb-d9be75890991 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_5e2a31b9-6c22-4092-a454-f88021e51176 ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_d551947b-4bcd-4492-83be-77ef05b912d7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_cee856ed-0070-4097-b9cd-632b8acc904a ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_aeff0a6b-0842-48df-8acb-d9be75890991 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_d551947b-4bcd-4492-83be-77ef05b912d7 .
 
-km-dev:PredicateObjectMap_981db72c-9e63-4419-b056-a818f2fc6542 rr:objectMap km-dev:RefObjectMap_aeff0a6b-0842-48df-8acb-d9be75890991 .
+km-dev:PredicateObjectMap_9a3fa233-0452-41e5-94e2-fd823eed0441 rr:objectMap km-dev:RefObjectMap_d551947b-4bcd-4492-83be-77ef05b912d7 .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_981db72c-9e63-4419-b056-a818f2fc6542 .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_9a3fa233-0452-41e5-94e2-fd823eed0441 .
 
-km-dev:PredicateObjectMap_981db72c-9e63-4419-b056-a818f2fc6542 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_9a3fa233-0452-41e5-94e2-fd823eed0441 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_981db72c-9e63-4419-b056-a818f2fc6542 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9a3fa233-0452-41e5-94e2-fd823eed0441 .
 
-km-dev:PredicateObjectMap_e6156c89-dd14-4062-be96-e5627289e34a rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasCuisine> .
+km-dev:PredicateObjectMap_e64583bf-76cb-450f-b87e-8dd57fd079e2 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasCuisine> .
 
-km-dev:RefObjectMap_263185cf-1318-42e5-98b9-729e21dd243d a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_66a8783d-3107-46c6-ad77-8d2d6cb94263 ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_4400ffac-2a16-4179-b756-d415bfd7c7ab a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_12ae72b1-9125-4c45-9953-fb2d9367bce0 ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_263185cf-1318-42e5-98b9-729e21dd243d .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_4400ffac-2a16-4179-b756-d415bfd7c7ab .
 
-km-dev:PredicateObjectMap_e6156c89-dd14-4062-be96-e5627289e34a rr:objectMap km-dev:RefObjectMap_263185cf-1318-42e5-98b9-729e21dd243d .
+km-dev:PredicateObjectMap_e64583bf-76cb-450f-b87e-8dd57fd079e2 rr:objectMap km-dev:RefObjectMap_4400ffac-2a16-4179-b756-d415bfd7c7ab .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_e6156c89-dd14-4062-be96-e5627289e34a .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_e64583bf-76cb-450f-b87e-8dd57fd079e2 .
 
-km-dev:PredicateObjectMap_e6156c89-dd14-4062-be96-e5627289e34a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_e64583bf-76cb-450f-b87e-8dd57fd079e2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e6156c89-dd14-4062-be96-e5627289e34a .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e64583bf-76cb-450f-b87e-8dd57fd079e2 .
 
-km-dev:PredicateObjectMap_f989fd7f-bb9b-4a61-83bb-c520c19c1e21 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasImageUrl> .
+km-dev:PredicateObjectMap_66f1077d-87ab-4419-8244-f646e92d98dc rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasImageUrl> .
 
-km-dev:RefObjectMap_af8a6505-714d-4635-b9dc-152288986a8d a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_c6d28186-b2a0-4b38-a6bb-d8a2b467e767 ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_eb287a31-ebc4-4ffc-93dc-0fa0fbaf5b13 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c0764e8d-22c1-433d-a67e-759ccf28516e ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_af8a6505-714d-4635-b9dc-152288986a8d .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_eb287a31-ebc4-4ffc-93dc-0fa0fbaf5b13 .
 
-km-dev:PredicateObjectMap_f989fd7f-bb9b-4a61-83bb-c520c19c1e21 rr:objectMap km-dev:RefObjectMap_af8a6505-714d-4635-b9dc-152288986a8d .
+km-dev:PredicateObjectMap_66f1077d-87ab-4419-8244-f646e92d98dc rr:objectMap km-dev:RefObjectMap_eb287a31-ebc4-4ffc-93dc-0fa0fbaf5b13 .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_f989fd7f-bb9b-4a61-83bb-c520c19c1e21 .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_66f1077d-87ab-4419-8244-f646e92d98dc .
 
-km-dev:PredicateObjectMap_f989fd7f-bb9b-4a61-83bb-c520c19c1e21 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_66f1077d-87ab-4419-8244-f646e92d98dc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f989fd7f-bb9b-4a61-83bb-c520c19c1e21 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_66f1077d-87ab-4419-8244-f646e92d98dc .
 
-km-dev:PredicateObjectMap_357209d3-8869-46a7-b9e2-ff2b90613bc8 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasPhone> .
+km-dev:PredicateObjectMap_30f90d34-e966-4259-aabe-2456e8a3056f rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasPhone> .
 
-km-dev:RefObjectMap_3a347566-3893-4b69-b7a1-5ea9ea3b82d8 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_ee94e9fc-bbb9-4a9e-be44-93ede7df51d1 ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_897106be-a052-4ba0-a8b7-7aead4eb4760 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7117dd97-932c-4885-a539-7cf93ff761b8 ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_3a347566-3893-4b69-b7a1-5ea9ea3b82d8 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_897106be-a052-4ba0-a8b7-7aead4eb4760 .
 
-km-dev:PredicateObjectMap_357209d3-8869-46a7-b9e2-ff2b90613bc8 rr:objectMap km-dev:RefObjectMap_3a347566-3893-4b69-b7a1-5ea9ea3b82d8 .
+km-dev:PredicateObjectMap_30f90d34-e966-4259-aabe-2456e8a3056f rr:objectMap km-dev:RefObjectMap_897106be-a052-4ba0-a8b7-7aead4eb4760 .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_357209d3-8869-46a7-b9e2-ff2b90613bc8 .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_30f90d34-e966-4259-aabe-2456e8a3056f .
 
-km-dev:PredicateObjectMap_357209d3-8869-46a7-b9e2-ff2b90613bc8 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_30f90d34-e966-4259-aabe-2456e8a3056f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_357209d3-8869-46a7-b9e2-ff2b90613bc8 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_30f90d34-e966-4259-aabe-2456e8a3056f .
 
-km-dev:PredicateObjectMap_d0235e0d-0270-4dc9-8e6d-32840aa7a9e1 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRating> .
+km-dev:PredicateObjectMap_a0cb7696-df5a-425d-80c1-981d8df9a4b6 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRating> .
 
-km-dev:RefObjectMap_8bec0d0c-facc-4622-ac62-5e4643ef083f a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_af91fcf8-3ab5-4ce0-b9ae-0e086f2bcdc6 ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_2402f59b-aa22-45ec-9831-3e337a0f57ec a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_006e5d6c-0696-4ae9-8d69-fdae5b751186 ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_8bec0d0c-facc-4622-ac62-5e4643ef083f .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_2402f59b-aa22-45ec-9831-3e337a0f57ec .
 
-km-dev:PredicateObjectMap_d0235e0d-0270-4dc9-8e6d-32840aa7a9e1 rr:objectMap km-dev:RefObjectMap_8bec0d0c-facc-4622-ac62-5e4643ef083f .
+km-dev:PredicateObjectMap_a0cb7696-df5a-425d-80c1-981d8df9a4b6 rr:objectMap km-dev:RefObjectMap_2402f59b-aa22-45ec-9831-3e337a0f57ec .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_d0235e0d-0270-4dc9-8e6d-32840aa7a9e1 .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_a0cb7696-df5a-425d-80c1-981d8df9a4b6 .
 
-km-dev:PredicateObjectMap_d0235e0d-0270-4dc9-8e6d-32840aa7a9e1 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_a0cb7696-df5a-425d-80c1-981d8df9a4b6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d0235e0d-0270-4dc9-8e6d-32840aa7a9e1 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a0cb7696-df5a-425d-80c1-981d8df9a4b6 .
 
-km-dev:PredicateObjectMap_d3106488-6498-4c5d-a4fe-bda4be3370d7 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRatingImageUrl> .
+km-dev:PredicateObjectMap_57c7a6e5-d022-47dc-983b-39bbb4ed73a2 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRatingImageUrl> .
 
-km-dev:RefObjectMap_253af498-3c45-4988-b27a-59356728cfcb a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_fcdca25c-0adf-4804-9f96-de6d526f878b ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_a689e1ec-a58d-4c87-8e64-f2fd87e883ef a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e2c3f3f0-9939-41ba-8d40-8335beaa7911 ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_253af498-3c45-4988-b27a-59356728cfcb .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_a689e1ec-a58d-4c87-8e64-f2fd87e883ef .
 
-km-dev:PredicateObjectMap_d3106488-6498-4c5d-a4fe-bda4be3370d7 rr:objectMap km-dev:RefObjectMap_253af498-3c45-4988-b27a-59356728cfcb .
+km-dev:PredicateObjectMap_57c7a6e5-d022-47dc-983b-39bbb4ed73a2 rr:objectMap km-dev:RefObjectMap_a689e1ec-a58d-4c87-8e64-f2fd87e883ef .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_d3106488-6498-4c5d-a4fe-bda4be3370d7 .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_57c7a6e5-d022-47dc-983b-39bbb4ed73a2 .
 
-km-dev:PredicateObjectMap_d3106488-6498-4c5d-a4fe-bda4be3370d7 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_57c7a6e5-d022-47dc-983b-39bbb4ed73a2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d3106488-6498-4c5d-a4fe-bda4be3370d7 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_57c7a6e5-d022-47dc-983b-39bbb4ed73a2 .
 
-km-dev:PredicateObjectMap_ce85ff54-58b3-474d-afa7-c30e9c7a157e rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasSnippetImageUrl> .
+km-dev:PredicateObjectMap_464b0a1a-045f-4e29-8b0a-2f8d3e14943e rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasSnippetImageUrl> .
 
-km-dev:RefObjectMap_8532c606-ad6d-4b48-bb16-68215ae95507 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_ae8b54a0-c367-4bd1-8260-9edd3ca1dba0 ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_3650968a-c380-4fb8-b265-23ffa2ebd78c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_78cf0215-c5be-470a-b7b6-6e0f960b407a ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_8532c606-ad6d-4b48-bb16-68215ae95507 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_3650968a-c380-4fb8-b265-23ffa2ebd78c .
 
-km-dev:PredicateObjectMap_ce85ff54-58b3-474d-afa7-c30e9c7a157e rr:objectMap km-dev:RefObjectMap_8532c606-ad6d-4b48-bb16-68215ae95507 .
+km-dev:PredicateObjectMap_464b0a1a-045f-4e29-8b0a-2f8d3e14943e rr:objectMap km-dev:RefObjectMap_3650968a-c380-4fb8-b265-23ffa2ebd78c .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_ce85ff54-58b3-474d-afa7-c30e9c7a157e .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_464b0a1a-045f-4e29-8b0a-2f8d3e14943e .
 
-km-dev:PredicateObjectMap_ce85ff54-58b3-474d-afa7-c30e9c7a157e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_464b0a1a-045f-4e29-8b0a-2f8d3e14943e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ce85ff54-58b3-474d-afa7-c30e9c7a157e .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_464b0a1a-045f-4e29-8b0a-2f8d3e14943e .
 
-km-dev:PredicateObjectMap_7069ba58-8944-43e4-9382-ed4bf7e352fb rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasUrl> .
+km-dev:PredicateObjectMap_3f13ff2f-1baf-4155-9942-d9ce641bc3b4 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasUrl> .
 
-km-dev:RefObjectMap_53f49461-38ec-4b97-844d-4fdc1c9b502a a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_dd90d5d7-9682-4810-8962-2e6bc712c3ab ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:RefObjectMap_c272e6ea-272d-469d-aaa3-b00e2b79ca1c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_65ec8068-6e52-47c7-857c-b714cfb47c60 ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap km-dev:RefObjectMap_53f49461-38ec-4b97-844d-4fdc1c9b502a .
+_:node1a5nadt0rx1 km-dev:hasObjectMap km-dev:RefObjectMap_c272e6ea-272d-469d-aaa3-b00e2b79ca1c .
 
-km-dev:PredicateObjectMap_7069ba58-8944-43e4-9382-ed4bf7e352fb rr:objectMap km-dev:RefObjectMap_53f49461-38ec-4b97-844d-4fdc1c9b502a .
+km-dev:PredicateObjectMap_3f13ff2f-1baf-4155-9942-d9ce641bc3b4 rr:objectMap km-dev:RefObjectMap_c272e6ea-272d-469d-aaa3-b00e2b79ca1c .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_7069ba58-8944-43e4-9382-ed4bf7e352fb .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_3f13ff2f-1baf-4155-9942-d9ce641bc3b4 .
 
-km-dev:PredicateObjectMap_7069ba58-8944-43e4-9382-ed4bf7e352fb a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_3f13ff2f-1baf-4155-9942-d9ce641bc3b4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7069ba58-8944-43e4-9382-ed4bf7e352fb .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3f13ff2f-1baf-4155-9942-d9ce641bc3b4 .
 
-km-dev:PredicateObjectMap_4be2c61b-fff1-442b-bbc0-0d073e376e2f rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_1da2aac5-4830-4eac-be97-499a11dfec00 rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx4 rr:column "name" ;
+_:node1a5nadt0rx4 rr:column "name" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx4 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx4 .
 
-km-dev:PredicateObjectMap_4be2c61b-fff1-442b-bbc0-0d073e376e2f rr:objectMap _:node1a5mhn1jfx4 .
+km-dev:PredicateObjectMap_1da2aac5-4830-4eac-be97-499a11dfec00 rr:objectMap _:node1a5nadt0rx4 .
 
-km-dev:TriplesMap_8cce185d-bab7-49d9-a5f3-41f0bb6f4882 rr:predicateObjectMap km-dev:PredicateObjectMap_4be2c61b-fff1-442b-bbc0-0d073e376e2f .
+km-dev:TriplesMap_0ded1604-b4f7-44de-a980-b3bef91f14a8 rr:predicateObjectMap km-dev:PredicateObjectMap_1da2aac5-4830-4eac-be97-499a11dfec00 .
 
-km-dev:PredicateObjectMap_4be2c61b-fff1-442b-bbc0-0d073e376e2f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_1da2aac5-4830-4eac-be97-499a11dfec00 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4be2c61b-fff1-442b-bbc0-0d073e376e2f .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1da2aac5-4830-4eac-be97-499a11dfec00 .
 
-km-dev:TriplesMap_c89a4c60-36e6-4cfa-ae53-52141043fb20 a rr:TriplesMap .
+km-dev:TriplesMap_652d1a43-6a6a-4613-ad91-55974931f84c a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_c89a4c60-36e6-4cfa-ae53-52141043fb20 .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_652d1a43-6a6a-4613-ad91-55974931f84c .
 
-km-dev:TriplesMap_c89a4c60-36e6-4cfa-ae53-52141043fb20 km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_652d1a43-6a6a-4613-ad91-55974931f84c km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx5 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx5 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx5 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx5 .
 
-km-dev:TriplesMap_c89a4c60-36e6-4cfa-ae53-52141043fb20 rr:logicalTable _:node1a5mhn1jfx5 ;
-	rr:subjectMap _:node1a5mhn1jfx6 .
+km-dev:TriplesMap_652d1a43-6a6a-4613-ad91-55974931f84c rr:logicalTable _:node1a5nadt0rx5 ;
+	rr:subjectMap _:node1a5nadt0rx6 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx6 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx6 .
 
-_:node1a5mhn1jfx6 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx6 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#RestaurantAddress1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#RestaurantAddress> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantAddress1" .
 
-km-dev:PredicateObjectMap_7617f280-c5e0-43ff-a602-66238a7e1c44 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_56159f41-0c53-4393-ad41-265340d54dbe rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx7 rr:column "display_address" ;
+_:node1a5nadt0rx7 rr:column "display_address" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx7 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx7 .
 
-km-dev:PredicateObjectMap_7617f280-c5e0-43ff-a602-66238a7e1c44 rr:objectMap _:node1a5mhn1jfx7 .
+km-dev:PredicateObjectMap_56159f41-0c53-4393-ad41-265340d54dbe rr:objectMap _:node1a5nadt0rx7 .
 
-km-dev:TriplesMap_c89a4c60-36e6-4cfa-ae53-52141043fb20 rr:predicateObjectMap km-dev:PredicateObjectMap_7617f280-c5e0-43ff-a602-66238a7e1c44 .
+km-dev:TriplesMap_652d1a43-6a6a-4613-ad91-55974931f84c rr:predicateObjectMap km-dev:PredicateObjectMap_56159f41-0c53-4393-ad41-265340d54dbe .
 
-km-dev:PredicateObjectMap_7617f280-c5e0-43ff-a602-66238a7e1c44 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_56159f41-0c53-4393-ad41-265340d54dbe a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7617f280-c5e0-43ff-a602-66238a7e1c44 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_56159f41-0c53-4393-ad41-265340d54dbe .
 
-km-dev:TriplesMap_5e2a31b9-6c22-4092-a454-f88021e51176 a rr:TriplesMap .
+km-dev:TriplesMap_cee856ed-0070-4097-b9cd-632b8acc904a a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_5e2a31b9-6c22-4092-a454-f88021e51176 .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_cee856ed-0070-4097-b9cd-632b8acc904a .
 
-km-dev:TriplesMap_5e2a31b9-6c22-4092-a454-f88021e51176 km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_cee856ed-0070-4097-b9cd-632b8acc904a km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx8 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx8 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx8 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx8 .
 
-km-dev:TriplesMap_5e2a31b9-6c22-4092-a454-f88021e51176 rr:logicalTable _:node1a5mhn1jfx8 ;
-	rr:subjectMap _:node1a5mhn1jfx9 .
+km-dev:TriplesMap_cee856ed-0070-4097-b9cd-632b8acc904a rr:logicalTable _:node1a5nadt0rx8 ;
+	rr:subjectMap _:node1a5nadt0rx9 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx9 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx9 .
 
-_:node1a5mhn1jfx9 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx9 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#ReviewCount1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#ReviewCount> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "ReviewCount1" .
 
-km-dev:PredicateObjectMap_3637e49d-a218-496e-81bc-300c0805ee14 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_6425776a-e64b-4abe-8a6a-ca53f484ae20 rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx10 rr:column "review_count" ;
+_:node1a5nadt0rx10 rr:column "review_count" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx10 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx10 .
 
-km-dev:PredicateObjectMap_3637e49d-a218-496e-81bc-300c0805ee14 rr:objectMap _:node1a5mhn1jfx10 .
+km-dev:PredicateObjectMap_6425776a-e64b-4abe-8a6a-ca53f484ae20 rr:objectMap _:node1a5nadt0rx10 .
 
-km-dev:TriplesMap_5e2a31b9-6c22-4092-a454-f88021e51176 rr:predicateObjectMap km-dev:PredicateObjectMap_3637e49d-a218-496e-81bc-300c0805ee14 .
+km-dev:TriplesMap_cee856ed-0070-4097-b9cd-632b8acc904a rr:predicateObjectMap km-dev:PredicateObjectMap_6425776a-e64b-4abe-8a6a-ca53f484ae20 .
 
-km-dev:PredicateObjectMap_3637e49d-a218-496e-81bc-300c0805ee14 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_6425776a-e64b-4abe-8a6a-ca53f484ae20 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3637e49d-a218-496e-81bc-300c0805ee14 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6425776a-e64b-4abe-8a6a-ca53f484ae20 .
 
-km-dev:TriplesMap_66a8783d-3107-46c6-ad77-8d2d6cb94263 a rr:TriplesMap .
+km-dev:TriplesMap_12ae72b1-9125-4c45-9953-fb2d9367bce0 a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_66a8783d-3107-46c6-ad77-8d2d6cb94263 .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_12ae72b1-9125-4c45-9953-fb2d9367bce0 .
 
-km-dev:TriplesMap_66a8783d-3107-46c6-ad77-8d2d6cb94263 km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_12ae72b1-9125-4c45-9953-fb2d9367bce0 km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx11 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx11 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx11 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx11 .
 
-km-dev:TriplesMap_66a8783d-3107-46c6-ad77-8d2d6cb94263 rr:logicalTable _:node1a5mhn1jfx11 ;
-	rr:subjectMap _:node1a5mhn1jfx12 .
+km-dev:TriplesMap_12ae72b1-9125-4c45-9953-fb2d9367bce0 rr:logicalTable _:node1a5nadt0rx11 ;
+	rr:subjectMap _:node1a5nadt0rx12 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx12 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx12 .
 
-_:node1a5mhn1jfx12 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx12 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#RestaurantCuisine1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#RestaurantCuisine> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantCuisine1" .
 
-km-dev:PredicateObjectMap_d4221d56-c4d5-4da3-8281-ab027ca7a9d2 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_1c2505b8-9142-4dc6-a4cb-5d4498ac1e97 rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx13 rr:column "categories" ;
+_:node1a5nadt0rx13 rr:column "categories" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx13 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx13 .
 
-km-dev:PredicateObjectMap_d4221d56-c4d5-4da3-8281-ab027ca7a9d2 rr:objectMap _:node1a5mhn1jfx13 .
+km-dev:PredicateObjectMap_1c2505b8-9142-4dc6-a4cb-5d4498ac1e97 rr:objectMap _:node1a5nadt0rx13 .
 
-km-dev:TriplesMap_66a8783d-3107-46c6-ad77-8d2d6cb94263 rr:predicateObjectMap km-dev:PredicateObjectMap_d4221d56-c4d5-4da3-8281-ab027ca7a9d2 .
+km-dev:TriplesMap_12ae72b1-9125-4c45-9953-fb2d9367bce0 rr:predicateObjectMap km-dev:PredicateObjectMap_1c2505b8-9142-4dc6-a4cb-5d4498ac1e97 .
 
-km-dev:PredicateObjectMap_d4221d56-c4d5-4da3-8281-ab027ca7a9d2 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_1c2505b8-9142-4dc6-a4cb-5d4498ac1e97 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d4221d56-c4d5-4da3-8281-ab027ca7a9d2 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1c2505b8-9142-4dc6-a4cb-5d4498ac1e97 .
 
-km-dev:TriplesMap_c6d28186-b2a0-4b38-a6bb-d8a2b467e767 a rr:TriplesMap .
+km-dev:TriplesMap_c0764e8d-22c1-433d-a67e-759ccf28516e a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_c6d28186-b2a0-4b38-a6bb-d8a2b467e767 .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_c0764e8d-22c1-433d-a67e-759ccf28516e .
 
-km-dev:TriplesMap_c6d28186-b2a0-4b38-a6bb-d8a2b467e767 km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_c0764e8d-22c1-433d-a67e-759ccf28516e km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx14 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx14 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx14 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx14 .
 
-km-dev:TriplesMap_c6d28186-b2a0-4b38-a6bb-d8a2b467e767 rr:logicalTable _:node1a5mhn1jfx14 ;
-	rr:subjectMap _:node1a5mhn1jfx15 .
+km-dev:TriplesMap_c0764e8d-22c1-433d-a67e-759ccf28516e rr:logicalTable _:node1a5nadt0rx14 ;
+	rr:subjectMap _:node1a5nadt0rx15 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx15 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx15 .
 
-_:node1a5mhn1jfx15 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx15 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#RestaurantImageUrl1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#RestaurantImageUrl> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantImageUrl1" .
 
-km-dev:PredicateObjectMap_ea42c333-8b90-45f9-a841-c0bf0a60dd8d rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_8cbccbc8-d6b8-4f7c-945c-5fe0b553cc5b rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx16 rr:column "image_url" ;
+_:node1a5nadt0rx16 rr:column "image_url" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx16 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx16 .
 
-km-dev:PredicateObjectMap_ea42c333-8b90-45f9-a841-c0bf0a60dd8d rr:objectMap _:node1a5mhn1jfx16 .
+km-dev:PredicateObjectMap_8cbccbc8-d6b8-4f7c-945c-5fe0b553cc5b rr:objectMap _:node1a5nadt0rx16 .
 
-km-dev:TriplesMap_c6d28186-b2a0-4b38-a6bb-d8a2b467e767 rr:predicateObjectMap km-dev:PredicateObjectMap_ea42c333-8b90-45f9-a841-c0bf0a60dd8d .
+km-dev:TriplesMap_c0764e8d-22c1-433d-a67e-759ccf28516e rr:predicateObjectMap km-dev:PredicateObjectMap_8cbccbc8-d6b8-4f7c-945c-5fe0b553cc5b .
 
-km-dev:PredicateObjectMap_ea42c333-8b90-45f9-a841-c0bf0a60dd8d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_8cbccbc8-d6b8-4f7c-945c-5fe0b553cc5b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ea42c333-8b90-45f9-a841-c0bf0a60dd8d .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8cbccbc8-d6b8-4f7c-945c-5fe0b553cc5b .
 
-km-dev:TriplesMap_ee94e9fc-bbb9-4a9e-be44-93ede7df51d1 a rr:TriplesMap .
+km-dev:TriplesMap_7117dd97-932c-4885-a539-7cf93ff761b8 a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_ee94e9fc-bbb9-4a9e-be44-93ede7df51d1 .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_7117dd97-932c-4885-a539-7cf93ff761b8 .
 
-km-dev:TriplesMap_ee94e9fc-bbb9-4a9e-be44-93ede7df51d1 km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_7117dd97-932c-4885-a539-7cf93ff761b8 km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx17 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx17 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx17 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx17 .
 
-km-dev:TriplesMap_ee94e9fc-bbb9-4a9e-be44-93ede7df51d1 rr:logicalTable _:node1a5mhn1jfx17 ;
-	rr:subjectMap _:node1a5mhn1jfx18 .
+km-dev:TriplesMap_7117dd97-932c-4885-a539-7cf93ff761b8 rr:logicalTable _:node1a5nadt0rx17 ;
+	rr:subjectMap _:node1a5nadt0rx18 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx18 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx18 .
 
-_:node1a5mhn1jfx18 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx18 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#RestaurantPhone1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#RestaurantPhone> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantPhone1" .
 
-km-dev:PredicateObjectMap_1c09ff15-b281-416e-ab90-7ae4f03609f5 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_3d6bfae5-86c5-4676-a4d5-c38fbadf172b rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx19 rr:column "display_phone" ;
+_:node1a5nadt0rx19 rr:column "display_phone" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx19 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx19 .
 
-km-dev:PredicateObjectMap_1c09ff15-b281-416e-ab90-7ae4f03609f5 rr:objectMap _:node1a5mhn1jfx19 .
+km-dev:PredicateObjectMap_3d6bfae5-86c5-4676-a4d5-c38fbadf172b rr:objectMap _:node1a5nadt0rx19 .
 
-km-dev:TriplesMap_ee94e9fc-bbb9-4a9e-be44-93ede7df51d1 rr:predicateObjectMap km-dev:PredicateObjectMap_1c09ff15-b281-416e-ab90-7ae4f03609f5 .
+km-dev:TriplesMap_7117dd97-932c-4885-a539-7cf93ff761b8 rr:predicateObjectMap km-dev:PredicateObjectMap_3d6bfae5-86c5-4676-a4d5-c38fbadf172b .
 
-km-dev:PredicateObjectMap_1c09ff15-b281-416e-ab90-7ae4f03609f5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_3d6bfae5-86c5-4676-a4d5-c38fbadf172b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1c09ff15-b281-416e-ab90-7ae4f03609f5 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3d6bfae5-86c5-4676-a4d5-c38fbadf172b .
 
-km-dev:TriplesMap_af91fcf8-3ab5-4ce0-b9ae-0e086f2bcdc6 a rr:TriplesMap .
+km-dev:TriplesMap_006e5d6c-0696-4ae9-8d69-fdae5b751186 a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_af91fcf8-3ab5-4ce0-b9ae-0e086f2bcdc6 .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_006e5d6c-0696-4ae9-8d69-fdae5b751186 .
 
-km-dev:TriplesMap_af91fcf8-3ab5-4ce0-b9ae-0e086f2bcdc6 km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_006e5d6c-0696-4ae9-8d69-fdae5b751186 km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx20 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx20 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx20 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx20 .
 
-km-dev:TriplesMap_af91fcf8-3ab5-4ce0-b9ae-0e086f2bcdc6 rr:logicalTable _:node1a5mhn1jfx20 ;
-	rr:subjectMap _:node1a5mhn1jfx21 .
+km-dev:TriplesMap_006e5d6c-0696-4ae9-8d69-fdae5b751186 rr:logicalTable _:node1a5nadt0rx20 ;
+	rr:subjectMap _:node1a5nadt0rx21 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx21 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx21 .
 
-_:node1a5mhn1jfx21 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx21 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#ReviewRating1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#ReviewRating> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "ReviewRating1" .
 
-km-dev:PredicateObjectMap_f0b12171-f21a-433d-ba71-98d2b0f821d7 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_b4e8b332-d1b4-4486-8b27-807662ab35c3 rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx22 rr:column "rating" ;
+_:node1a5nadt0rx22 rr:column "rating" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx22 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx22 .
 
-km-dev:PredicateObjectMap_f0b12171-f21a-433d-ba71-98d2b0f821d7 rr:objectMap _:node1a5mhn1jfx22 .
+km-dev:PredicateObjectMap_b4e8b332-d1b4-4486-8b27-807662ab35c3 rr:objectMap _:node1a5nadt0rx22 .
 
-km-dev:TriplesMap_af91fcf8-3ab5-4ce0-b9ae-0e086f2bcdc6 rr:predicateObjectMap km-dev:PredicateObjectMap_f0b12171-f21a-433d-ba71-98d2b0f821d7 .
+km-dev:TriplesMap_006e5d6c-0696-4ae9-8d69-fdae5b751186 rr:predicateObjectMap km-dev:PredicateObjectMap_b4e8b332-d1b4-4486-8b27-807662ab35c3 .
 
-km-dev:PredicateObjectMap_f0b12171-f21a-433d-ba71-98d2b0f821d7 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_b4e8b332-d1b4-4486-8b27-807662ab35c3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f0b12171-f21a-433d-ba71-98d2b0f821d7 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b4e8b332-d1b4-4486-8b27-807662ab35c3 .
 
-km-dev:TriplesMap_fcdca25c-0adf-4804-9f96-de6d526f878b a rr:TriplesMap .
+km-dev:TriplesMap_e2c3f3f0-9939-41ba-8d40-8335beaa7911 a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_fcdca25c-0adf-4804-9f96-de6d526f878b .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_e2c3f3f0-9939-41ba-8d40-8335beaa7911 .
 
-km-dev:TriplesMap_fcdca25c-0adf-4804-9f96-de6d526f878b km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_e2c3f3f0-9939-41ba-8d40-8335beaa7911 km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx23 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx23 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx23 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx23 .
 
-km-dev:TriplesMap_fcdca25c-0adf-4804-9f96-de6d526f878b rr:logicalTable _:node1a5mhn1jfx23 ;
-	rr:subjectMap _:node1a5mhn1jfx24 .
+km-dev:TriplesMap_e2c3f3f0-9939-41ba-8d40-8335beaa7911 rr:logicalTable _:node1a5nadt0rx23 ;
+	rr:subjectMap _:node1a5nadt0rx24 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx24 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx24 .
 
-_:node1a5mhn1jfx24 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx24 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#ReviewRatingImageUrl1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#ReviewRatingImageUrl> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "ReviewRatingImageUrl1" .
 
-km-dev:PredicateObjectMap_4cb223eb-004d-43eb-80ec-e882ec0530d0 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_ee7a6837-7181-4487-bb38-4051c20407b0 rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx25 rr:column "rating_image_url_small" ;
+_:node1a5nadt0rx25 rr:column "rating_image_url_small" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx25 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx25 .
 
-km-dev:PredicateObjectMap_4cb223eb-004d-43eb-80ec-e882ec0530d0 rr:objectMap _:node1a5mhn1jfx25 .
+km-dev:PredicateObjectMap_ee7a6837-7181-4487-bb38-4051c20407b0 rr:objectMap _:node1a5nadt0rx25 .
 
-km-dev:TriplesMap_fcdca25c-0adf-4804-9f96-de6d526f878b rr:predicateObjectMap km-dev:PredicateObjectMap_4cb223eb-004d-43eb-80ec-e882ec0530d0 .
+km-dev:TriplesMap_e2c3f3f0-9939-41ba-8d40-8335beaa7911 rr:predicateObjectMap km-dev:PredicateObjectMap_ee7a6837-7181-4487-bb38-4051c20407b0 .
 
-km-dev:PredicateObjectMap_4cb223eb-004d-43eb-80ec-e882ec0530d0 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_ee7a6837-7181-4487-bb38-4051c20407b0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4cb223eb-004d-43eb-80ec-e882ec0530d0 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ee7a6837-7181-4487-bb38-4051c20407b0 .
 
-km-dev:TriplesMap_ae8b54a0-c367-4bd1-8260-9edd3ca1dba0 a rr:TriplesMap .
+km-dev:TriplesMap_78cf0215-c5be-470a-b7b6-6e0f960b407a a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_ae8b54a0-c367-4bd1-8260-9edd3ca1dba0 .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_78cf0215-c5be-470a-b7b6-6e0f960b407a .
 
-km-dev:TriplesMap_ae8b54a0-c367-4bd1-8260-9edd3ca1dba0 km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_78cf0215-c5be-470a-b7b6-6e0f960b407a km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx26 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx26 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx26 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx26 .
 
-km-dev:TriplesMap_ae8b54a0-c367-4bd1-8260-9edd3ca1dba0 rr:logicalTable _:node1a5mhn1jfx26 ;
-	rr:subjectMap _:node1a5mhn1jfx27 .
+km-dev:TriplesMap_78cf0215-c5be-470a-b7b6-6e0f960b407a rr:logicalTable _:node1a5nadt0rx26 ;
+	rr:subjectMap _:node1a5nadt0rx27 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx27 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx27 .
 
-_:node1a5mhn1jfx27 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx27 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#ReviewSnippetImageUrl1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#ReviewSnippetImageUrl> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "ReviewSnippetImageUrl1" .
 
-km-dev:PredicateObjectMap_b1557cc9-4163-4c3c-90c9-1b9a4ca749e3 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_29a7624c-3afb-4758-a75d-4b851f0888f0 rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx28 rr:column "snippet_image_url" ;
+_:node1a5nadt0rx28 rr:column "snippet_image_url" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx28 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx28 .
 
-km-dev:PredicateObjectMap_b1557cc9-4163-4c3c-90c9-1b9a4ca749e3 rr:objectMap _:node1a5mhn1jfx28 .
+km-dev:PredicateObjectMap_29a7624c-3afb-4758-a75d-4b851f0888f0 rr:objectMap _:node1a5nadt0rx28 .
 
-km-dev:TriplesMap_ae8b54a0-c367-4bd1-8260-9edd3ca1dba0 rr:predicateObjectMap km-dev:PredicateObjectMap_b1557cc9-4163-4c3c-90c9-1b9a4ca749e3 .
+km-dev:TriplesMap_78cf0215-c5be-470a-b7b6-6e0f960b407a rr:predicateObjectMap km-dev:PredicateObjectMap_29a7624c-3afb-4758-a75d-4b851f0888f0 .
 
-km-dev:PredicateObjectMap_b1557cc9-4163-4c3c-90c9-1b9a4ca749e3 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_29a7624c-3afb-4758-a75d-4b851f0888f0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b1557cc9-4163-4c3c-90c9-1b9a4ca749e3 .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_29a7624c-3afb-4758-a75d-4b851f0888f0 .
 
-km-dev:TriplesMap_dd90d5d7-9682-4810-8962-2e6bc712c3ab a rr:TriplesMap .
+km-dev:TriplesMap_65ec8068-6e52-47c7-857c-b714cfb47c60 a rr:TriplesMap .
 
-_:node1a5mhn1jfx1 km-dev:hasTriplesMap km-dev:TriplesMap_dd90d5d7-9682-4810-8962-2e6bc712c3ab .
+_:node1a5nadt0rx1 km-dev:hasTriplesMap km-dev:TriplesMap_65ec8068-6e52-47c7-857c-b714cfb47c60 .
 
-km-dev:TriplesMap_dd90d5d7-9682-4810-8962-2e6bc712c3ab km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:TriplesMap_65ec8068-6e52-47c7-857c-b714cfb47c60 km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx29 rr:tableName "Ratings.csv" ;
+_:node1a5nadt0rx29 rr:tableName "Ratings.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasLogicalTable _:node1a5mhn1jfx29 .
+_:node1a5nadt0rx1 km-dev:hasLogicalTable _:node1a5nadt0rx29 .
 
-km-dev:TriplesMap_dd90d5d7-9682-4810-8962-2e6bc712c3ab rr:logicalTable _:node1a5mhn1jfx29 ;
-	rr:subjectMap _:node1a5mhn1jfx30 .
+km-dev:TriplesMap_65ec8068-6e52-47c7-857c-b714cfb47c60 rr:logicalTable _:node1a5nadt0rx29 ;
+	rr:subjectMap _:node1a5nadt0rx30 .
 
-_:node1a5mhn1jfx1 km-dev:hasSubjectMap _:node1a5mhn1jfx30 .
+_:node1a5nadt0rx1 km-dev:hasSubjectMap _:node1a5nadt0rx30 .
 
-_:node1a5mhn1jfx30 km-dev:isPartOfMapping _:node1a5mhn1jfx1 ;
+_:node1a5nadt0rx30 km-dev:isPartOfMapping _:node1a5nadt0rx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#RestaurantUrl1" ;
 	rr:class <http://www.semanticweb.org/asu/yelp-review-data#RestaurantUrl> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantUrl1" .
 
-km-dev:PredicateObjectMap_4bdad3cd-7de2-494c-bdd3-4c3841495d7e rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_a93ebd01-245e-44c7-bb3b-00cb43d5a149 rr:predicate rdfs:label .
 
-_:node1a5mhn1jfx31 rr:column "url" ;
+_:node1a5nadt0rx31 rr:column "url" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasObjectMap _:node1a5mhn1jfx31 .
+_:node1a5nadt0rx1 km-dev:hasObjectMap _:node1a5nadt0rx31 .
 
-km-dev:PredicateObjectMap_4bdad3cd-7de2-494c-bdd3-4c3841495d7e rr:objectMap _:node1a5mhn1jfx31 .
+km-dev:PredicateObjectMap_a93ebd01-245e-44c7-bb3b-00cb43d5a149 rr:objectMap _:node1a5nadt0rx31 .
 
-km-dev:TriplesMap_dd90d5d7-9682-4810-8962-2e6bc712c3ab rr:predicateObjectMap km-dev:PredicateObjectMap_4bdad3cd-7de2-494c-bdd3-4c3841495d7e .
+km-dev:TriplesMap_65ec8068-6e52-47c7-857c-b714cfb47c60 rr:predicateObjectMap km-dev:PredicateObjectMap_a93ebd01-245e-44c7-bb3b-00cb43d5a149 .
 
-km-dev:PredicateObjectMap_4bdad3cd-7de2-494c-bdd3-4c3841495d7e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5mhn1jfx1 .
+km-dev:PredicateObjectMap_a93ebd01-245e-44c7-bb3b-00cb43d5a149 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5nadt0rx1 .
 
-_:node1a5mhn1jfx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4bdad3cd-7de2-494c-bdd3-4c3841495d7e .
+_:node1a5nadt0rx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a93ebd01-245e-44c7-bb3b-00cb43d5a149 .
