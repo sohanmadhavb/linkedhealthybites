@@ -39,6 +39,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDHomePage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDHomePage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDInStore -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDInStore">
@@ -325,6 +334,15 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealExpiry">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/8coupons-deals-data#hasDealHomepage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/8coupons-deals-data#hasDealHomepage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     

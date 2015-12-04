@@ -1,0 +1,2285 @@
+@prefix swvs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix scires: <http://vivoweb.org/ontology/scientific-research#> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix dcelem: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ero: <http://purl.obolibrary.org/obo/> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix skco: <http://www.w3.org/2004/02/skos/core#> .
+@prefix syll: <http://lod.isi.edu/ontology/syllabus/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix pvs: <http://vivoweb.org/ontology/provenance-support#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix scirr: <http://vivoweb.org/ontology/scientific-research-resource#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a5m39h79x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "businesses_plus.csv" ;
+	km-dev:modelPublicationTime "1449219376361"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"latitude\"}],[{\"columnName\":\"longitude\"}],[{\"columnName\":\"phone_number\"}],[{\"columnName\":\"TaxCode\"}],[{\"columnName\":\"business_id\"}],[{\"columnName\":\"owner_name\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"address\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"latitude\"}],[{\"columnName\":\"longitude\"}],[{\"columnName\":\"phone_number\"}],[{\"columnName\":\"TaxCode\"}],[{\"columnName\":\"business_id_uri\"}],[{\"columnName\":\"schemaorg_restaurant_id\"}],[{\"columnName\":\"rest_id\"}],[{\"columnName\":\"business_id\"}],[{\"columnName\":\"owner_name\"}],[{\"columnName\":\"rest_name\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"address\"}],[{\"columnName\":\"rest_name_id\"}]]" ;
+	km-dev:hasModelLabel "restaurants" ;
+	km-dev:hasBaseURI "http://www.semanticweb.org/asu/health-inspection-data" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"business_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"rest_id\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"business_id\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"business_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"rest_id\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"business_id\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"business_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"business_id_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"rest/\\\"+getValue(\\\"business_id\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"rest_name\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('^','').replace(':','').replace(';','')\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"schemaorg_restaurant_id\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"rest/restname/\\\"+getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('^','').replace(':','').replace(';','')\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schemaorg_restaurant_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"rest_name_id\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"rest/restname/\\\"+getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('^','').replace(':','').replace(';','')\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_name_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"rest\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"restaurants\",
+                    \"hasBaseURI\": false,
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://www.semanticweb.org/asu/health-inspection-data\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"business_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant/Restaurant1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestuarantName\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestuarantName1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#RestuarantName/RestuarantName1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"address\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress/RestaurantAddress1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"address\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"address\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"latitude\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude/RestaurantLatitude1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"latitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"latitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"longitude\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude/RestaurantLongitude1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"longitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"longitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"phone_number\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber/RestaurantPhoneNumber1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"phone_number\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"phone_number\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"TaxCode\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode/RestaurantTaxCode1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"TaxCode\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"TaxCode\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"owner_name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName/RestaurantOwnerName1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"owner_name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"owner_name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Restaurant\",
+                    \"DomainId\": \"http://schema.org/Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Restaurant1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"business_id_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"business_id_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"schemaorg_restaurant_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://schema.org/Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Restaurant\",
+                    \"DomainId\": \"http://schema.org/Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"schema:Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schemaorg_restaurant_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"schemaorg_restaurant_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://schema.org/Restaurant\",
+                    \"DomainId\": \"http://schema.org/Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"schema:Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_name_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_name_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_name_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS161322AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasAddress\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS161322AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestuarantName1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasName\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestuarantName\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS161322AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasLatitude\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS161322AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasLongitude\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS161322AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasPhoneNumber\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS161322AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasTaxCode\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS161322AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/health-inspection-data#hasOwnerName\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/health-inspection-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_19b4e1b9-ea91-45ef-b4e4-4fe5b33f1e82 a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_19b4e1b9-ea91-45ef-b4e4-4fe5b33f1e82 .
+
+km-dev:TriplesMap_19b4e1b9-ea91-45ef-b4e4-4fe5b33f1e82 km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x2 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x2 .
+
+km-dev:TriplesMap_19b4e1b9-ea91-45ef-b4e4-4fe5b33f1e82 rr:logicalTable _:node1a5m39h79x2 ;
+	rr:subjectMap _:node1a5m39h79x3 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x3 .
+
+_:node1a5m39h79x3 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Restaurant1" ;
+	rr:class schema:Restaurant ;
+	rr:template "{schemaorg_restaurant_id}" .
+
+km-dev:PredicateObjectMap_83b100a5-cd6f-4e52-b3a0-80032c8581a3 rr:predicate rdfs:label .
+
+_:node1a5m39h79x4 rr:column "business_id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x4 .
+
+km-dev:PredicateObjectMap_83b100a5-cd6f-4e52-b3a0-80032c8581a3 rr:objectMap _:node1a5m39h79x4 .
+
+km-dev:TriplesMap_19b4e1b9-ea91-45ef-b4e4-4fe5b33f1e82 rr:predicateObjectMap km-dev:PredicateObjectMap_83b100a5-cd6f-4e52-b3a0-80032c8581a3 .
+
+km-dev:PredicateObjectMap_83b100a5-cd6f-4e52-b3a0-80032c8581a3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_83b100a5-cd6f-4e52-b3a0-80032c8581a3 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x5 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x5 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:logicalTable _:node1a5m39h79x5 ;
+	rr:subjectMap _:node1a5m39h79x6 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x6 .
+
+_:node1a5m39h79x6 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#Restaurant1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#Restaurant> ;
+	rr:template "{rest_name_id}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_1a561f87-a55f-41dd-8a5f-bb01faad07e8 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasAddress> .
+
+km-dev:RefObjectMap_e1e5caf4-7a8f-4001-87a3-de9e66b0caf8 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4338f1de-bbfa-4bf7-98e2-ea73ae00e7d2 ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap km-dev:RefObjectMap_e1e5caf4-7a8f-4001-87a3-de9e66b0caf8 .
+
+km-dev:PredicateObjectMap_1a561f87-a55f-41dd-8a5f-bb01faad07e8 rr:objectMap km-dev:RefObjectMap_e1e5caf4-7a8f-4001-87a3-de9e66b0caf8 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_1a561f87-a55f-41dd-8a5f-bb01faad07e8 .
+
+km-dev:PredicateObjectMap_1a561f87-a55f-41dd-8a5f-bb01faad07e8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1a561f87-a55f-41dd-8a5f-bb01faad07e8 .
+
+km-dev:PredicateObjectMap_8cbeb299-0170-4c86-afbc-b82b42e71495 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasLatitude> .
+
+km-dev:RefObjectMap_59131ecd-93ff-4014-ab41-1268b5cc6122 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6757e12a-e72e-4bd5-b58c-ce61fb64f0b4 ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap km-dev:RefObjectMap_59131ecd-93ff-4014-ab41-1268b5cc6122 .
+
+km-dev:PredicateObjectMap_8cbeb299-0170-4c86-afbc-b82b42e71495 rr:objectMap km-dev:RefObjectMap_59131ecd-93ff-4014-ab41-1268b5cc6122 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_8cbeb299-0170-4c86-afbc-b82b42e71495 .
+
+km-dev:PredicateObjectMap_8cbeb299-0170-4c86-afbc-b82b42e71495 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8cbeb299-0170-4c86-afbc-b82b42e71495 .
+
+km-dev:PredicateObjectMap_d09068b1-dabb-485a-8695-40d36806f008 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasLongitude> .
+
+km-dev:RefObjectMap_c40ca887-8635-4d32-a2f1-e4302760c881 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ad9985e8-9387-41a5-a488-837a6a551a38 ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap km-dev:RefObjectMap_c40ca887-8635-4d32-a2f1-e4302760c881 .
+
+km-dev:PredicateObjectMap_d09068b1-dabb-485a-8695-40d36806f008 rr:objectMap km-dev:RefObjectMap_c40ca887-8635-4d32-a2f1-e4302760c881 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_d09068b1-dabb-485a-8695-40d36806f008 .
+
+km-dev:PredicateObjectMap_d09068b1-dabb-485a-8695-40d36806f008 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d09068b1-dabb-485a-8695-40d36806f008 .
+
+km-dev:PredicateObjectMap_0c276256-076d-4f9c-85d9-9b5996879341 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasName> .
+
+km-dev:RefObjectMap_339eaf3d-ff28-4f9f-97a0-1783b7c6c6bb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_62c10337-595d-4e42-80a4-9bfacf0e0837 ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap km-dev:RefObjectMap_339eaf3d-ff28-4f9f-97a0-1783b7c6c6bb .
+
+km-dev:PredicateObjectMap_0c276256-076d-4f9c-85d9-9b5996879341 rr:objectMap km-dev:RefObjectMap_339eaf3d-ff28-4f9f-97a0-1783b7c6c6bb .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_0c276256-076d-4f9c-85d9-9b5996879341 .
+
+km-dev:PredicateObjectMap_0c276256-076d-4f9c-85d9-9b5996879341 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0c276256-076d-4f9c-85d9-9b5996879341 .
+
+km-dev:PredicateObjectMap_0676d30e-7a5e-499f-ae6b-e475c16f4f9a rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerName> .
+
+km-dev:RefObjectMap_8530acc1-9eb1-4811-8f2d-b78d1c49e795 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_53b8cbe9-ad61-4686-9afa-15ca6cd232af ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap km-dev:RefObjectMap_8530acc1-9eb1-4811-8f2d-b78d1c49e795 .
+
+km-dev:PredicateObjectMap_0676d30e-7a5e-499f-ae6b-e475c16f4f9a rr:objectMap km-dev:RefObjectMap_8530acc1-9eb1-4811-8f2d-b78d1c49e795 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_0676d30e-7a5e-499f-ae6b-e475c16f4f9a .
+
+km-dev:PredicateObjectMap_0676d30e-7a5e-499f-ae6b-e475c16f4f9a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0676d30e-7a5e-499f-ae6b-e475c16f4f9a .
+
+km-dev:PredicateObjectMap_39eb6508-3b88-40f0-a8d2-447b8756f9bd rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasPhoneNumber> .
+
+km-dev:RefObjectMap_dfef2560-3927-406e-8681-8e58a9693147 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_250764ab-819a-488d-b1bd-254476c87f87 ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap km-dev:RefObjectMap_dfef2560-3927-406e-8681-8e58a9693147 .
+
+km-dev:PredicateObjectMap_39eb6508-3b88-40f0-a8d2-447b8756f9bd rr:objectMap km-dev:RefObjectMap_dfef2560-3927-406e-8681-8e58a9693147 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_39eb6508-3b88-40f0-a8d2-447b8756f9bd .
+
+km-dev:PredicateObjectMap_39eb6508-3b88-40f0-a8d2-447b8756f9bd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_39eb6508-3b88-40f0-a8d2-447b8756f9bd .
+
+km-dev:PredicateObjectMap_3289d468-6636-4851-858d-d9dc13f853dc rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasTaxCode> .
+
+km-dev:RefObjectMap_6c16c624-6d33-4c93-8afa-3ae1b4d96be6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_744034bd-8562-4150-b8b5-7574ee6afdf6 ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap km-dev:RefObjectMap_6c16c624-6d33-4c93-8afa-3ae1b4d96be6 .
+
+km-dev:PredicateObjectMap_3289d468-6636-4851-858d-d9dc13f853dc rr:objectMap km-dev:RefObjectMap_6c16c624-6d33-4c93-8afa-3ae1b4d96be6 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_3289d468-6636-4851-858d-d9dc13f853dc .
+
+km-dev:PredicateObjectMap_3289d468-6636-4851-858d-d9dc13f853dc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3289d468-6636-4851-858d-d9dc13f853dc .
+
+km-dev:PredicateObjectMap_6c98b7ed-868b-426b-8ff5-f80a25245058 rr:predicate rdfs:label .
+
+_:node1a5m39h79x7 rr:column "business_id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x7 .
+
+km-dev:PredicateObjectMap_6c98b7ed-868b-426b-8ff5-f80a25245058 rr:objectMap _:node1a5m39h79x7 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_6c98b7ed-868b-426b-8ff5-f80a25245058 .
+
+km-dev:PredicateObjectMap_6c98b7ed-868b-426b-8ff5-f80a25245058 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6c98b7ed-868b-426b-8ff5-f80a25245058 .
+
+km-dev:PredicateObjectMap_d3b2c1ff-3225-4a71-9b11-120b7b311c15 rr:predicate rdfs:label .
+
+_:node1a5m39h79x8 rr:column "rest_name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x8 .
+
+km-dev:PredicateObjectMap_d3b2c1ff-3225-4a71-9b11-120b7b311c15 rr:objectMap _:node1a5m39h79x8 .
+
+km-dev:TriplesMap_a50e31cd-23f7-40a2-b5f1-252f28d0ac30 rr:predicateObjectMap km-dev:PredicateObjectMap_d3b2c1ff-3225-4a71-9b11-120b7b311c15 .
+
+km-dev:PredicateObjectMap_d3b2c1ff-3225-4a71-9b11-120b7b311c15 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d3b2c1ff-3225-4a71-9b11-120b7b311c15 .
+
+km-dev:TriplesMap_4338f1de-bbfa-4bf7-98e2-ea73ae00e7d2 a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_4338f1de-bbfa-4bf7-98e2-ea73ae00e7d2 .
+
+km-dev:TriplesMap_4338f1de-bbfa-4bf7-98e2-ea73ae00e7d2 km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x9 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x9 .
+
+km-dev:TriplesMap_4338f1de-bbfa-4bf7-98e2-ea73ae00e7d2 rr:logicalTable _:node1a5m39h79x9 ;
+	rr:subjectMap _:node1a5m39h79x10 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x10 .
+
+_:node1a5m39h79x10 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "RestaurantAddress1" .
+
+km-dev:PredicateObjectMap_65d3b93b-9300-4888-92ba-3a04bf4b0d07 rr:predicate rdfs:label .
+
+_:node1a5m39h79x11 rr:column "address" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x11 .
+
+km-dev:PredicateObjectMap_65d3b93b-9300-4888-92ba-3a04bf4b0d07 rr:objectMap _:node1a5m39h79x11 .
+
+km-dev:TriplesMap_4338f1de-bbfa-4bf7-98e2-ea73ae00e7d2 rr:predicateObjectMap km-dev:PredicateObjectMap_65d3b93b-9300-4888-92ba-3a04bf4b0d07 .
+
+km-dev:PredicateObjectMap_65d3b93b-9300-4888-92ba-3a04bf4b0d07 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_65d3b93b-9300-4888-92ba-3a04bf4b0d07 .
+
+km-dev:TriplesMap_6757e12a-e72e-4bd5-b58c-ce61fb64f0b4 a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_6757e12a-e72e-4bd5-b58c-ce61fb64f0b4 .
+
+km-dev:TriplesMap_6757e12a-e72e-4bd5-b58c-ce61fb64f0b4 km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x12 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x12 .
+
+km-dev:TriplesMap_6757e12a-e72e-4bd5-b58c-ce61fb64f0b4 rr:logicalTable _:node1a5m39h79x12 ;
+	rr:subjectMap _:node1a5m39h79x13 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x13 .
+
+_:node1a5m39h79x13 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "RestaurantLatitude1" .
+
+km-dev:PredicateObjectMap_9d172541-e9ef-4d43-a110-700cdf2bf412 rr:predicate rdfs:label .
+
+_:node1a5m39h79x14 rr:column "latitude" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x14 .
+
+km-dev:PredicateObjectMap_9d172541-e9ef-4d43-a110-700cdf2bf412 rr:objectMap _:node1a5m39h79x14 .
+
+km-dev:TriplesMap_6757e12a-e72e-4bd5-b58c-ce61fb64f0b4 rr:predicateObjectMap km-dev:PredicateObjectMap_9d172541-e9ef-4d43-a110-700cdf2bf412 .
+
+km-dev:PredicateObjectMap_9d172541-e9ef-4d43-a110-700cdf2bf412 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9d172541-e9ef-4d43-a110-700cdf2bf412 .
+
+km-dev:TriplesMap_ad9985e8-9387-41a5-a488-837a6a551a38 a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_ad9985e8-9387-41a5-a488-837a6a551a38 .
+
+km-dev:TriplesMap_ad9985e8-9387-41a5-a488-837a6a551a38 km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x15 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x15 .
+
+km-dev:TriplesMap_ad9985e8-9387-41a5-a488-837a6a551a38 rr:logicalTable _:node1a5m39h79x15 ;
+	rr:subjectMap _:node1a5m39h79x16 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x16 .
+
+_:node1a5m39h79x16 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "RestaurantLongitude1" .
+
+km-dev:PredicateObjectMap_526299a8-aca6-4353-8594-97856d6c92a4 rr:predicate rdfs:label .
+
+_:node1a5m39h79x17 rr:column "longitude" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x17 .
+
+km-dev:PredicateObjectMap_526299a8-aca6-4353-8594-97856d6c92a4 rr:objectMap _:node1a5m39h79x17 .
+
+km-dev:TriplesMap_ad9985e8-9387-41a5-a488-837a6a551a38 rr:predicateObjectMap km-dev:PredicateObjectMap_526299a8-aca6-4353-8594-97856d6c92a4 .
+
+km-dev:PredicateObjectMap_526299a8-aca6-4353-8594-97856d6c92a4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_526299a8-aca6-4353-8594-97856d6c92a4 .
+
+km-dev:TriplesMap_62c10337-595d-4e42-80a4-9bfacf0e0837 a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_62c10337-595d-4e42-80a4-9bfacf0e0837 .
+
+km-dev:TriplesMap_62c10337-595d-4e42-80a4-9bfacf0e0837 km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x18 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x18 .
+
+km-dev:TriplesMap_62c10337-595d-4e42-80a4-9bfacf0e0837 rr:logicalTable _:node1a5m39h79x18 ;
+	rr:subjectMap _:node1a5m39h79x19 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x19 .
+
+_:node1a5m39h79x19 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestuarantName1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestuarantName> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "RestuarantName1" .
+
+km-dev:PredicateObjectMap_d37c112b-4616-4069-b1b8-8b011258d233 rr:predicate rdfs:label .
+
+_:node1a5m39h79x20 rr:column "name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x20 .
+
+km-dev:PredicateObjectMap_d37c112b-4616-4069-b1b8-8b011258d233 rr:objectMap _:node1a5m39h79x20 .
+
+km-dev:TriplesMap_62c10337-595d-4e42-80a4-9bfacf0e0837 rr:predicateObjectMap km-dev:PredicateObjectMap_d37c112b-4616-4069-b1b8-8b011258d233 .
+
+km-dev:PredicateObjectMap_d37c112b-4616-4069-b1b8-8b011258d233 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d37c112b-4616-4069-b1b8-8b011258d233 .
+
+km-dev:TriplesMap_53b8cbe9-ad61-4686-9afa-15ca6cd232af a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_53b8cbe9-ad61-4686-9afa-15ca6cd232af .
+
+km-dev:TriplesMap_53b8cbe9-ad61-4686-9afa-15ca6cd232af km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x21 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x21 .
+
+km-dev:TriplesMap_53b8cbe9-ad61-4686-9afa-15ca6cd232af rr:logicalTable _:node1a5m39h79x21 ;
+	rr:subjectMap _:node1a5m39h79x22 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x22 .
+
+_:node1a5m39h79x22 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "RestaurantOwnerName1" .
+
+km-dev:PredicateObjectMap_7625099a-7115-42d1-a0ce-9fb852a313b6 rr:predicate rdfs:label .
+
+_:node1a5m39h79x23 rr:column "owner_name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x23 .
+
+km-dev:PredicateObjectMap_7625099a-7115-42d1-a0ce-9fb852a313b6 rr:objectMap _:node1a5m39h79x23 .
+
+km-dev:TriplesMap_53b8cbe9-ad61-4686-9afa-15ca6cd232af rr:predicateObjectMap km-dev:PredicateObjectMap_7625099a-7115-42d1-a0ce-9fb852a313b6 .
+
+km-dev:PredicateObjectMap_7625099a-7115-42d1-a0ce-9fb852a313b6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7625099a-7115-42d1-a0ce-9fb852a313b6 .
+
+km-dev:TriplesMap_250764ab-819a-488d-b1bd-254476c87f87 a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_250764ab-819a-488d-b1bd-254476c87f87 .
+
+km-dev:TriplesMap_250764ab-819a-488d-b1bd-254476c87f87 km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x24 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x24 .
+
+km-dev:TriplesMap_250764ab-819a-488d-b1bd-254476c87f87 rr:logicalTable _:node1a5m39h79x24 ;
+	rr:subjectMap _:node1a5m39h79x25 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x25 .
+
+_:node1a5m39h79x25 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "RestaurantPhoneNumber1" .
+
+km-dev:PredicateObjectMap_f6ee68ef-95fc-4d1d-9806-393f34e08ed3 rr:predicate rdfs:label .
+
+_:node1a5m39h79x26 rr:column "phone_number" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x26 .
+
+km-dev:PredicateObjectMap_f6ee68ef-95fc-4d1d-9806-393f34e08ed3 rr:objectMap _:node1a5m39h79x26 .
+
+km-dev:TriplesMap_250764ab-819a-488d-b1bd-254476c87f87 rr:predicateObjectMap km-dev:PredicateObjectMap_f6ee68ef-95fc-4d1d-9806-393f34e08ed3 .
+
+km-dev:PredicateObjectMap_f6ee68ef-95fc-4d1d-9806-393f34e08ed3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f6ee68ef-95fc-4d1d-9806-393f34e08ed3 .
+
+km-dev:TriplesMap_744034bd-8562-4150-b8b5-7574ee6afdf6 a rr:TriplesMap .
+
+_:node1a5m39h79x1 km-dev:hasTriplesMap km-dev:TriplesMap_744034bd-8562-4150-b8b5-7574ee6afdf6 .
+
+km-dev:TriplesMap_744034bd-8562-4150-b8b5-7574ee6afdf6 km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x27 rr:tableName "businesses_plus.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasLogicalTable _:node1a5m39h79x27 .
+
+km-dev:TriplesMap_744034bd-8562-4150-b8b5-7574ee6afdf6 rr:logicalTable _:node1a5m39h79x27 ;
+	rr:subjectMap _:node1a5m39h79x28 .
+
+_:node1a5m39h79x1 km-dev:hasSubjectMap _:node1a5m39h79x28 .
+
+_:node1a5m39h79x28 km-dev:isPartOfMapping _:node1a5m39h79x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode1" ;
+	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "RestaurantTaxCode1" .
+
+km-dev:PredicateObjectMap_3f3ccb28-80fd-4a80-b1d0-b338073eacf0 rr:predicate rdfs:label .
+
+_:node1a5m39h79x29 rr:column "TaxCode" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasObjectMap _:node1a5m39h79x29 .
+
+km-dev:PredicateObjectMap_3f3ccb28-80fd-4a80-b1d0-b338073eacf0 rr:objectMap _:node1a5m39h79x29 .
+
+km-dev:TriplesMap_744034bd-8562-4150-b8b5-7574ee6afdf6 rr:predicateObjectMap km-dev:PredicateObjectMap_3f3ccb28-80fd-4a80-b1d0-b338073eacf0 .
+
+km-dev:PredicateObjectMap_3f3ccb28-80fd-4a80-b1d0-b338073eacf0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m39h79x1 .
+
+_:node1a5m39h79x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3f3ccb28-80fd-4a80-b1d0-b338073eacf0 .

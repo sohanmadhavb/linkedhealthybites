@@ -1,0 +1,2463 @@
+@prefix swvs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix scires: <http://vivoweb.org/ontology/scientific-research#> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix dcelem: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ero: <http://purl.obolibrary.org/obo/> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix skco: <http://www.w3.org/2004/02/skos/core#> .
+@prefix syll: <http://lod.isi.edu/ontology/syllabus/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix pvs: <http://vivoweb.org/ontology/provenance-support#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix scirr: <http://vivoweb.org/ontology/scientific-research-resource#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a5m6usmpx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Deals.csv" ;
+	km-dev:modelPublicationTime "1449223221977"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"name\"}],[{\"columnName\":\"expiry\"}],[{\"columnName\":\"dealsavings\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"provider\"}],[{\"columnName\":\"id\"}],[{\"columnName\":\"dealsinstore\"}],[{\"columnName\":\"dealoriginalprice\"}],[{\"columnName\":\"dealinfo\"}],[{\"columnName\":\"dealdiscount\"}],[{\"columnName\":\"dealprice\"}],[{\"columnName\":\"dealtitle\"}],[{\"columnName\":\"showimagestandardsmall\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"name\"}],[{\"columnName\":\"expiry\"}],[{\"columnName\":\"dealsavings\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"provider\"}],[{\"columnName\":\"id\"}],[{\"columnName\":\"dealsinstore\"}],[{\"columnName\":\"dealoriginalprice\"}],[{\"columnName\":\"dealinfo\"}],[{\"columnName\":\"dealdiscount\"}],[{\"columnName\":\"dealprice\"}],[{\"columnName\":\"deal_uri\"}],[{\"columnName\":\"dealtitle\"}],[{\"columnName\":\"showimagestandardsmall\"}],[{\"columnName\":\"rest_id\"}]]" ;
+	km-dev:hasModelLabel "Deals" ;
+	km-dev:hasBaseURI "http://www.semanticweb.org/asu/8coupons-deals-data" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"deal_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"deals/\\\"+getValue(\\\"id\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"deal_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"rest_id\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"deals/rest/\\\"+getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('^','').replace(':','').replace(';','')\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"deals\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"Deals\",
+                    \"hasBaseURI\": false,
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://www.semanticweb.org/asu/8coupons-deals-data\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal/Deal1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"deal_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal/Deal1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"deal_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"deal_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"url\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage/DealHomepage1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"url\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"url\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant/Restaurant1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rest_id\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rest_id\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"expiry\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry/DealExpiry1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"expiry\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"expiry\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"provider\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider/DealProvider1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"provider\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"provider\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dealtitle\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle/DealTitle1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealtitle\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealtitle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dealinfo\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo/DealInfo1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealinfo\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealinfo\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dealoriginalprice\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice/DealOriginalPrice1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealoriginalprice\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealoriginalprice\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dealprice\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice/DealPrice1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealprice\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealprice\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dealdiscount\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount/DealDiscount1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealdiscount\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealdiscount\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dealsavings\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings/DealSavings1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealsavings\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealsavings\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"dealsinstore\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore/DealInStore1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealsinstore\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"dealsinstore\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"showimagestandardsmall\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall/DealImageStandardSmall1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"showimagestandardsmall\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"showimagestandardsmall\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasDHomePage\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasExpiry\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasDProvider\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasDTitle\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasInfo\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasDOriginalPrice\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasPrice\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasDiscount\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasSavings\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#belongsTo\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasDeal\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasDInStore\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS316302AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall1\",
+                    \"edgeId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#hasImageStandardSmall\",
+                    \"edgeTargetUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall\",
+                    \"edgeSourceId\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal1\",
+                    \"edgeSourceUri\": \"http://www.semanticweb.org/asu/8coupons-deals-data#Deal\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx2 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx2 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:logicalTable _:node1a5m6usmpx2 ;
+	rr:subjectMap _:node1a5m6usmpx3 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx3 .
+
+_:node1a5m6usmpx3 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#Deal1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#Deal> ;
+	rr:template "deals/{id}" .
+
+km-dev:PredicateObjectMap_d7901c68-b92e-4956-b322-7491682c906a rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDHomePage> .
+
+km-dev:RefObjectMap_0f7bb306-ac05-451d-b583-ee2203ca9260 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_1084101a-3c2a-48c4-a81c-f1ea4d7288a7 ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_0f7bb306-ac05-451d-b583-ee2203ca9260 .
+
+km-dev:PredicateObjectMap_d7901c68-b92e-4956-b322-7491682c906a rr:objectMap km-dev:RefObjectMap_0f7bb306-ac05-451d-b583-ee2203ca9260 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_d7901c68-b92e-4956-b322-7491682c906a .
+
+km-dev:PredicateObjectMap_d7901c68-b92e-4956-b322-7491682c906a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d7901c68-b92e-4956-b322-7491682c906a .
+
+km-dev:PredicateObjectMap_eb62f6a7-6923-4a66-b5a0-191229c78c30 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDInStore> .
+
+km-dev:RefObjectMap_3b4a97a3-b50a-45f9-9dbd-0c658663244f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_64fe0454-6866-4d5e-8af3-5e79f0fac9b1 ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_3b4a97a3-b50a-45f9-9dbd-0c658663244f .
+
+km-dev:PredicateObjectMap_eb62f6a7-6923-4a66-b5a0-191229c78c30 rr:objectMap km-dev:RefObjectMap_3b4a97a3-b50a-45f9-9dbd-0c658663244f .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_eb62f6a7-6923-4a66-b5a0-191229c78c30 .
+
+km-dev:PredicateObjectMap_eb62f6a7-6923-4a66-b5a0-191229c78c30 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eb62f6a7-6923-4a66-b5a0-191229c78c30 .
+
+km-dev:PredicateObjectMap_2b76c692-88c5-4db2-b91d-cf18b47de783 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDOriginalPrice> .
+
+km-dev:RefObjectMap_0e505cf5-7bab-4441-8f8c-a614e6ff5944 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_68e9864f-32f4-453e-b013-43c58461d858 ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_0e505cf5-7bab-4441-8f8c-a614e6ff5944 .
+
+km-dev:PredicateObjectMap_2b76c692-88c5-4db2-b91d-cf18b47de783 rr:objectMap km-dev:RefObjectMap_0e505cf5-7bab-4441-8f8c-a614e6ff5944 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_2b76c692-88c5-4db2-b91d-cf18b47de783 .
+
+km-dev:PredicateObjectMap_2b76c692-88c5-4db2-b91d-cf18b47de783 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2b76c692-88c5-4db2-b91d-cf18b47de783 .
+
+km-dev:PredicateObjectMap_2f385b21-d9d7-40d0-bfa7-4e7699bddc77 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDProvider> .
+
+km-dev:RefObjectMap_cd3a28d4-1f35-4272-af0d-62652a87095e a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_13f1fd59-466b-4f50-b5a5-2e85c09c3239 ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_cd3a28d4-1f35-4272-af0d-62652a87095e .
+
+km-dev:PredicateObjectMap_2f385b21-d9d7-40d0-bfa7-4e7699bddc77 rr:objectMap km-dev:RefObjectMap_cd3a28d4-1f35-4272-af0d-62652a87095e .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_2f385b21-d9d7-40d0-bfa7-4e7699bddc77 .
+
+km-dev:PredicateObjectMap_2f385b21-d9d7-40d0-bfa7-4e7699bddc77 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2f385b21-d9d7-40d0-bfa7-4e7699bddc77 .
+
+km-dev:PredicateObjectMap_93cd5888-6307-43d3-b498-937fa3759b6d rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDTitle> .
+
+km-dev:RefObjectMap_853b696f-5220-4564-822f-17479f6f2555 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2908fa4c-edcf-4772-8007-b8d3bc9776a2 ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_853b696f-5220-4564-822f-17479f6f2555 .
+
+km-dev:PredicateObjectMap_93cd5888-6307-43d3-b498-937fa3759b6d rr:objectMap km-dev:RefObjectMap_853b696f-5220-4564-822f-17479f6f2555 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_93cd5888-6307-43d3-b498-937fa3759b6d .
+
+km-dev:PredicateObjectMap_93cd5888-6307-43d3-b498-937fa3759b6d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_93cd5888-6307-43d3-b498-937fa3759b6d .
+
+km-dev:PredicateObjectMap_e7652a52-f93e-4dbb-98fd-d4d8619b5386 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDiscount> .
+
+km-dev:RefObjectMap_b8d5d305-843c-4231-b646-4ba2ab8b0391 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_73138d58-9f69-4b03-8385-45a7ef1cca59 ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_b8d5d305-843c-4231-b646-4ba2ab8b0391 .
+
+km-dev:PredicateObjectMap_e7652a52-f93e-4dbb-98fd-d4d8619b5386 rr:objectMap km-dev:RefObjectMap_b8d5d305-843c-4231-b646-4ba2ab8b0391 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_e7652a52-f93e-4dbb-98fd-d4d8619b5386 .
+
+km-dev:PredicateObjectMap_e7652a52-f93e-4dbb-98fd-d4d8619b5386 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e7652a52-f93e-4dbb-98fd-d4d8619b5386 .
+
+km-dev:PredicateObjectMap_2acc6e22-ef24-4ace-ac5a-0004cb5f6984 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasExpiry> .
+
+km-dev:RefObjectMap_ca0a32c4-8c03-45eb-b2a7-9e788e9a3969 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_81d068f0-faaa-4549-9963-f932ae37af9f ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_ca0a32c4-8c03-45eb-b2a7-9e788e9a3969 .
+
+km-dev:PredicateObjectMap_2acc6e22-ef24-4ace-ac5a-0004cb5f6984 rr:objectMap km-dev:RefObjectMap_ca0a32c4-8c03-45eb-b2a7-9e788e9a3969 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_2acc6e22-ef24-4ace-ac5a-0004cb5f6984 .
+
+km-dev:PredicateObjectMap_2acc6e22-ef24-4ace-ac5a-0004cb5f6984 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2acc6e22-ef24-4ace-ac5a-0004cb5f6984 .
+
+km-dev:PredicateObjectMap_8e319115-8e55-49fc-a19f-ff64fabfe818 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasImageStandardSmall> .
+
+km-dev:RefObjectMap_715934c1-7240-48c2-a742-95bbd3400513 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_df599c82-8f43-4103-9d10-c0190c1b50d5 ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_715934c1-7240-48c2-a742-95bbd3400513 .
+
+km-dev:PredicateObjectMap_8e319115-8e55-49fc-a19f-ff64fabfe818 rr:objectMap km-dev:RefObjectMap_715934c1-7240-48c2-a742-95bbd3400513 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_8e319115-8e55-49fc-a19f-ff64fabfe818 .
+
+km-dev:PredicateObjectMap_8e319115-8e55-49fc-a19f-ff64fabfe818 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8e319115-8e55-49fc-a19f-ff64fabfe818 .
+
+km-dev:PredicateObjectMap_5a1b0f0d-3cc6-43d2-b615-6d32ad04c9f6 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasInfo> .
+
+km-dev:RefObjectMap_0e7471e2-b2eb-4a1c-8cb4-138018e9399a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6f19bf6f-44f1-48c1-966b-f2018978892d ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_0e7471e2-b2eb-4a1c-8cb4-138018e9399a .
+
+km-dev:PredicateObjectMap_5a1b0f0d-3cc6-43d2-b615-6d32ad04c9f6 rr:objectMap km-dev:RefObjectMap_0e7471e2-b2eb-4a1c-8cb4-138018e9399a .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_5a1b0f0d-3cc6-43d2-b615-6d32ad04c9f6 .
+
+km-dev:PredicateObjectMap_5a1b0f0d-3cc6-43d2-b615-6d32ad04c9f6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5a1b0f0d-3cc6-43d2-b615-6d32ad04c9f6 .
+
+km-dev:PredicateObjectMap_17ad3e21-203f-4847-8c45-acbe6ff00485 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasPrice> .
+
+km-dev:RefObjectMap_dc270a21-f5cf-44cd-b22a-10ecc482f9f1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_590cd9f9-a290-456f-aa3c-b9e35c7c3aab ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_dc270a21-f5cf-44cd-b22a-10ecc482f9f1 .
+
+km-dev:PredicateObjectMap_17ad3e21-203f-4847-8c45-acbe6ff00485 rr:objectMap km-dev:RefObjectMap_dc270a21-f5cf-44cd-b22a-10ecc482f9f1 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_17ad3e21-203f-4847-8c45-acbe6ff00485 .
+
+km-dev:PredicateObjectMap_17ad3e21-203f-4847-8c45-acbe6ff00485 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_17ad3e21-203f-4847-8c45-acbe6ff00485 .
+
+km-dev:PredicateObjectMap_388bafe9-e83c-4b6c-919d-0003d7cef58a rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasSavings> .
+
+km-dev:RefObjectMap_a9b35efe-7953-4cc5-8644-e460aba6cf5b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d7b023ba-acb7-4ac9-8896-ccad694fabdf ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_a9b35efe-7953-4cc5-8644-e460aba6cf5b .
+
+km-dev:PredicateObjectMap_388bafe9-e83c-4b6c-919d-0003d7cef58a rr:objectMap km-dev:RefObjectMap_a9b35efe-7953-4cc5-8644-e460aba6cf5b .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_388bafe9-e83c-4b6c-919d-0003d7cef58a .
+
+km-dev:PredicateObjectMap_388bafe9-e83c-4b6c-919d-0003d7cef58a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_388bafe9-e83c-4b6c-919d-0003d7cef58a .
+
+km-dev:PredicateObjectMap_7fb64cc5-3c8a-461c-863f-a50cdd3d76d4 rr:predicate rdfs:label .
+
+_:node1a5m6usmpx4 rr:column "id" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx4 .
+
+km-dev:PredicateObjectMap_7fb64cc5-3c8a-461c-863f-a50cdd3d76d4 rr:objectMap _:node1a5m6usmpx4 .
+
+km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e rr:predicateObjectMap km-dev:PredicateObjectMap_7fb64cc5-3c8a-461c-863f-a50cdd3d76d4 .
+
+km-dev:PredicateObjectMap_7fb64cc5-3c8a-461c-863f-a50cdd3d76d4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7fb64cc5-3c8a-461c-863f-a50cdd3d76d4 .
+
+km-dev:TriplesMap_1084101a-3c2a-48c4-a81c-f1ea4d7288a7 a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_1084101a-3c2a-48c4-a81c-f1ea4d7288a7 .
+
+km-dev:TriplesMap_1084101a-3c2a-48c4-a81c-f1ea4d7288a7 km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx5 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx5 .
+
+km-dev:TriplesMap_1084101a-3c2a-48c4-a81c-f1ea4d7288a7 rr:logicalTable _:node1a5m6usmpx5 ;
+	rr:subjectMap _:node1a5m6usmpx6 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx6 .
+
+_:node1a5m6usmpx6 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealHomepage> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealHomepage1" .
+
+km-dev:PredicateObjectMap_b75e2f36-c907-4c6b-9770-454666af0c1e rr:predicate rdfs:label .
+
+_:node1a5m6usmpx7 rr:column "url" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx7 .
+
+km-dev:PredicateObjectMap_b75e2f36-c907-4c6b-9770-454666af0c1e rr:objectMap _:node1a5m6usmpx7 .
+
+km-dev:TriplesMap_1084101a-3c2a-48c4-a81c-f1ea4d7288a7 rr:predicateObjectMap km-dev:PredicateObjectMap_b75e2f36-c907-4c6b-9770-454666af0c1e .
+
+km-dev:PredicateObjectMap_b75e2f36-c907-4c6b-9770-454666af0c1e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b75e2f36-c907-4c6b-9770-454666af0c1e .
+
+km-dev:TriplesMap_64fe0454-6866-4d5e-8af3-5e79f0fac9b1 a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_64fe0454-6866-4d5e-8af3-5e79f0fac9b1 .
+
+km-dev:TriplesMap_64fe0454-6866-4d5e-8af3-5e79f0fac9b1 km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx8 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx8 .
+
+km-dev:TriplesMap_64fe0454-6866-4d5e-8af3-5e79f0fac9b1 rr:logicalTable _:node1a5m6usmpx8 ;
+	rr:subjectMap _:node1a5m6usmpx9 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx9 .
+
+_:node1a5m6usmpx9 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealInStore> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealInStore1" .
+
+km-dev:PredicateObjectMap_72b28331-4d59-472f-8214-934cb44dc9af rr:predicate rdfs:label .
+
+_:node1a5m6usmpx10 rr:column "dealsinstore" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx10 .
+
+km-dev:PredicateObjectMap_72b28331-4d59-472f-8214-934cb44dc9af rr:objectMap _:node1a5m6usmpx10 .
+
+km-dev:TriplesMap_64fe0454-6866-4d5e-8af3-5e79f0fac9b1 rr:predicateObjectMap km-dev:PredicateObjectMap_72b28331-4d59-472f-8214-934cb44dc9af .
+
+km-dev:PredicateObjectMap_72b28331-4d59-472f-8214-934cb44dc9af a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_72b28331-4d59-472f-8214-934cb44dc9af .
+
+km-dev:TriplesMap_68e9864f-32f4-453e-b013-43c58461d858 a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_68e9864f-32f4-453e-b013-43c58461d858 .
+
+km-dev:TriplesMap_68e9864f-32f4-453e-b013-43c58461d858 km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx11 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx11 .
+
+km-dev:TriplesMap_68e9864f-32f4-453e-b013-43c58461d858 rr:logicalTable _:node1a5m6usmpx11 ;
+	rr:subjectMap _:node1a5m6usmpx12 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx12 .
+
+_:node1a5m6usmpx12 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealOriginalPrice> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealOriginalPrice1" .
+
+km-dev:PredicateObjectMap_d1e2cbfc-a533-4847-91fe-0ec74707b55b rr:predicate rdfs:label .
+
+_:node1a5m6usmpx13 rr:column "dealoriginalprice" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx13 .
+
+km-dev:PredicateObjectMap_d1e2cbfc-a533-4847-91fe-0ec74707b55b rr:objectMap _:node1a5m6usmpx13 .
+
+km-dev:TriplesMap_68e9864f-32f4-453e-b013-43c58461d858 rr:predicateObjectMap km-dev:PredicateObjectMap_d1e2cbfc-a533-4847-91fe-0ec74707b55b .
+
+km-dev:PredicateObjectMap_d1e2cbfc-a533-4847-91fe-0ec74707b55b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d1e2cbfc-a533-4847-91fe-0ec74707b55b .
+
+km-dev:TriplesMap_13f1fd59-466b-4f50-b5a5-2e85c09c3239 a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_13f1fd59-466b-4f50-b5a5-2e85c09c3239 .
+
+km-dev:TriplesMap_13f1fd59-466b-4f50-b5a5-2e85c09c3239 km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx14 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx14 .
+
+km-dev:TriplesMap_13f1fd59-466b-4f50-b5a5-2e85c09c3239 rr:logicalTable _:node1a5m6usmpx14 ;
+	rr:subjectMap _:node1a5m6usmpx15 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx15 .
+
+_:node1a5m6usmpx15 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealProvider> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealProvider1" .
+
+km-dev:PredicateObjectMap_9d8b6cc0-1066-4500-8179-dc75d7e57a58 rr:predicate rdfs:label .
+
+_:node1a5m6usmpx16 rr:column "provider" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx16 .
+
+km-dev:PredicateObjectMap_9d8b6cc0-1066-4500-8179-dc75d7e57a58 rr:objectMap _:node1a5m6usmpx16 .
+
+km-dev:TriplesMap_13f1fd59-466b-4f50-b5a5-2e85c09c3239 rr:predicateObjectMap km-dev:PredicateObjectMap_9d8b6cc0-1066-4500-8179-dc75d7e57a58 .
+
+km-dev:PredicateObjectMap_9d8b6cc0-1066-4500-8179-dc75d7e57a58 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9d8b6cc0-1066-4500-8179-dc75d7e57a58 .
+
+km-dev:TriplesMap_2908fa4c-edcf-4772-8007-b8d3bc9776a2 a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_2908fa4c-edcf-4772-8007-b8d3bc9776a2 .
+
+km-dev:TriplesMap_2908fa4c-edcf-4772-8007-b8d3bc9776a2 km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx17 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx17 .
+
+km-dev:TriplesMap_2908fa4c-edcf-4772-8007-b8d3bc9776a2 rr:logicalTable _:node1a5m6usmpx17 ;
+	rr:subjectMap _:node1a5m6usmpx18 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx18 .
+
+_:node1a5m6usmpx18 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealTitle> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealTitle1" .
+
+km-dev:PredicateObjectMap_dd8c2bee-bffd-4e31-8dd8-ac943e7723e8 rr:predicate rdfs:label .
+
+_:node1a5m6usmpx19 rr:column "dealtitle" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx19 .
+
+km-dev:PredicateObjectMap_dd8c2bee-bffd-4e31-8dd8-ac943e7723e8 rr:objectMap _:node1a5m6usmpx19 .
+
+km-dev:TriplesMap_2908fa4c-edcf-4772-8007-b8d3bc9776a2 rr:predicateObjectMap km-dev:PredicateObjectMap_dd8c2bee-bffd-4e31-8dd8-ac943e7723e8 .
+
+km-dev:PredicateObjectMap_dd8c2bee-bffd-4e31-8dd8-ac943e7723e8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dd8c2bee-bffd-4e31-8dd8-ac943e7723e8 .
+
+km-dev:TriplesMap_73138d58-9f69-4b03-8385-45a7ef1cca59 a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_73138d58-9f69-4b03-8385-45a7ef1cca59 .
+
+km-dev:TriplesMap_73138d58-9f69-4b03-8385-45a7ef1cca59 km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx20 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx20 .
+
+km-dev:TriplesMap_73138d58-9f69-4b03-8385-45a7ef1cca59 rr:logicalTable _:node1a5m6usmpx20 ;
+	rr:subjectMap _:node1a5m6usmpx21 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx21 .
+
+_:node1a5m6usmpx21 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealDiscount> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealDiscount1" .
+
+km-dev:PredicateObjectMap_94d43a70-5b2e-4977-9e1c-3441a78cc8b0 rr:predicate rdfs:label .
+
+_:node1a5m6usmpx22 rr:column "dealdiscount" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx22 .
+
+km-dev:PredicateObjectMap_94d43a70-5b2e-4977-9e1c-3441a78cc8b0 rr:objectMap _:node1a5m6usmpx22 .
+
+km-dev:TriplesMap_73138d58-9f69-4b03-8385-45a7ef1cca59 rr:predicateObjectMap km-dev:PredicateObjectMap_94d43a70-5b2e-4977-9e1c-3441a78cc8b0 .
+
+km-dev:PredicateObjectMap_94d43a70-5b2e-4977-9e1c-3441a78cc8b0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_94d43a70-5b2e-4977-9e1c-3441a78cc8b0 .
+
+km-dev:TriplesMap_81d068f0-faaa-4549-9963-f932ae37af9f a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_81d068f0-faaa-4549-9963-f932ae37af9f .
+
+km-dev:TriplesMap_81d068f0-faaa-4549-9963-f932ae37af9f km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx23 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx23 .
+
+km-dev:TriplesMap_81d068f0-faaa-4549-9963-f932ae37af9f rr:logicalTable _:node1a5m6usmpx23 ;
+	rr:subjectMap _:node1a5m6usmpx24 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx24 .
+
+_:node1a5m6usmpx24 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealExpiry> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealExpiry1" .
+
+km-dev:PredicateObjectMap_64bc2a27-d1af-4191-87fe-341f12c2e9a5 rr:predicate rdfs:label .
+
+_:node1a5m6usmpx25 rr:column "expiry" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx25 .
+
+km-dev:PredicateObjectMap_64bc2a27-d1af-4191-87fe-341f12c2e9a5 rr:objectMap _:node1a5m6usmpx25 .
+
+km-dev:TriplesMap_81d068f0-faaa-4549-9963-f932ae37af9f rr:predicateObjectMap km-dev:PredicateObjectMap_64bc2a27-d1af-4191-87fe-341f12c2e9a5 .
+
+km-dev:PredicateObjectMap_64bc2a27-d1af-4191-87fe-341f12c2e9a5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_64bc2a27-d1af-4191-87fe-341f12c2e9a5 .
+
+km-dev:TriplesMap_df599c82-8f43-4103-9d10-c0190c1b50d5 a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_df599c82-8f43-4103-9d10-c0190c1b50d5 .
+
+km-dev:TriplesMap_df599c82-8f43-4103-9d10-c0190c1b50d5 km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx26 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx26 .
+
+km-dev:TriplesMap_df599c82-8f43-4103-9d10-c0190c1b50d5 rr:logicalTable _:node1a5m6usmpx26 ;
+	rr:subjectMap _:node1a5m6usmpx27 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx27 .
+
+_:node1a5m6usmpx27 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealImageStandardSmall> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealImageStandardSmall1" .
+
+km-dev:PredicateObjectMap_02a2003e-4682-4b72-a441-62771ddda5e2 rr:predicate rdfs:label .
+
+_:node1a5m6usmpx28 rr:column "showimagestandardsmall" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx28 .
+
+km-dev:PredicateObjectMap_02a2003e-4682-4b72-a441-62771ddda5e2 rr:objectMap _:node1a5m6usmpx28 .
+
+km-dev:TriplesMap_df599c82-8f43-4103-9d10-c0190c1b50d5 rr:predicateObjectMap km-dev:PredicateObjectMap_02a2003e-4682-4b72-a441-62771ddda5e2 .
+
+km-dev:PredicateObjectMap_02a2003e-4682-4b72-a441-62771ddda5e2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_02a2003e-4682-4b72-a441-62771ddda5e2 .
+
+km-dev:TriplesMap_6f19bf6f-44f1-48c1-966b-f2018978892d a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_6f19bf6f-44f1-48c1-966b-f2018978892d .
+
+km-dev:TriplesMap_6f19bf6f-44f1-48c1-966b-f2018978892d km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx29 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx29 .
+
+km-dev:TriplesMap_6f19bf6f-44f1-48c1-966b-f2018978892d rr:logicalTable _:node1a5m6usmpx29 ;
+	rr:subjectMap _:node1a5m6usmpx30 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx30 .
+
+_:node1a5m6usmpx30 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealInfo> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealInfo1" .
+
+km-dev:PredicateObjectMap_2dc625ce-c45b-4710-aa6f-1c5c4951abe4 rr:predicate rdfs:label .
+
+_:node1a5m6usmpx31 rr:column "dealinfo" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx31 .
+
+km-dev:PredicateObjectMap_2dc625ce-c45b-4710-aa6f-1c5c4951abe4 rr:objectMap _:node1a5m6usmpx31 .
+
+km-dev:TriplesMap_6f19bf6f-44f1-48c1-966b-f2018978892d rr:predicateObjectMap km-dev:PredicateObjectMap_2dc625ce-c45b-4710-aa6f-1c5c4951abe4 .
+
+km-dev:PredicateObjectMap_2dc625ce-c45b-4710-aa6f-1c5c4951abe4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2dc625ce-c45b-4710-aa6f-1c5c4951abe4 .
+
+km-dev:TriplesMap_590cd9f9-a290-456f-aa3c-b9e35c7c3aab a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_590cd9f9-a290-456f-aa3c-b9e35c7c3aab .
+
+km-dev:TriplesMap_590cd9f9-a290-456f-aa3c-b9e35c7c3aab km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx32 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx32 .
+
+km-dev:TriplesMap_590cd9f9-a290-456f-aa3c-b9e35c7c3aab rr:logicalTable _:node1a5m6usmpx32 ;
+	rr:subjectMap _:node1a5m6usmpx33 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx33 .
+
+_:node1a5m6usmpx33 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealPrice> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealPrice1" .
+
+km-dev:PredicateObjectMap_198012c1-6f77-41fa-b7b1-e16237152fee rr:predicate rdfs:label .
+
+_:node1a5m6usmpx34 rr:column "dealprice" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx34 .
+
+km-dev:PredicateObjectMap_198012c1-6f77-41fa-b7b1-e16237152fee rr:objectMap _:node1a5m6usmpx34 .
+
+km-dev:TriplesMap_590cd9f9-a290-456f-aa3c-b9e35c7c3aab rr:predicateObjectMap km-dev:PredicateObjectMap_198012c1-6f77-41fa-b7b1-e16237152fee .
+
+km-dev:PredicateObjectMap_198012c1-6f77-41fa-b7b1-e16237152fee a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_198012c1-6f77-41fa-b7b1-e16237152fee .
+
+km-dev:TriplesMap_d7b023ba-acb7-4ac9-8896-ccad694fabdf a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_d7b023ba-acb7-4ac9-8896-ccad694fabdf .
+
+km-dev:TriplesMap_d7b023ba-acb7-4ac9-8896-ccad694fabdf km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx35 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx35 .
+
+km-dev:TriplesMap_d7b023ba-acb7-4ac9-8896-ccad694fabdf rr:logicalTable _:node1a5m6usmpx35 ;
+	rr:subjectMap _:node1a5m6usmpx36 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx36 .
+
+_:node1a5m6usmpx36 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#DealSavings> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "DealSavings1" .
+
+km-dev:PredicateObjectMap_a6070fc8-4999-4ac1-a08e-f388d132ebfd rr:predicate rdfs:label .
+
+_:node1a5m6usmpx37 rr:column "dealsavings" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx37 .
+
+km-dev:PredicateObjectMap_a6070fc8-4999-4ac1-a08e-f388d132ebfd rr:objectMap _:node1a5m6usmpx37 .
+
+km-dev:TriplesMap_d7b023ba-acb7-4ac9-8896-ccad694fabdf rr:predicateObjectMap km-dev:PredicateObjectMap_a6070fc8-4999-4ac1-a08e-f388d132ebfd .
+
+km-dev:PredicateObjectMap_a6070fc8-4999-4ac1-a08e-f388d132ebfd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a6070fc8-4999-4ac1-a08e-f388d132ebfd .
+
+km-dev:TriplesMap_2559e5b2-9fa3-41f1-8532-3620f6546505 a rr:TriplesMap .
+
+_:node1a5m6usmpx1 km-dev:hasTriplesMap km-dev:TriplesMap_2559e5b2-9fa3-41f1-8532-3620f6546505 .
+
+km-dev:TriplesMap_2559e5b2-9fa3-41f1-8532-3620f6546505 km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx38 rr:tableName "Deals.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasLogicalTable _:node1a5m6usmpx38 .
+
+km-dev:TriplesMap_2559e5b2-9fa3-41f1-8532-3620f6546505 rr:logicalTable _:node1a5m6usmpx38 ;
+	rr:subjectMap _:node1a5m6usmpx39 .
+
+_:node1a5m6usmpx1 km-dev:hasSubjectMap _:node1a5m6usmpx39 .
+
+_:node1a5m6usmpx39 km-dev:isPartOfMapping _:node1a5m6usmpx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant1" ;
+	rr:class <http://www.semanticweb.org/asu/8coupons-deals-data#Restaurant> ;
+	rr:template "{rest_id}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_be5ddcaf-d70d-49fa-b37c-7504ebd9b247 rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#hasDeal> .
+
+km-dev:RefObjectMap_f8340f33-aaa0-4ba5-a09c-76d1a6f9aae9 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_5a96450d-6570-4ec1-8254-90d91faa8b2e ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_f8340f33-aaa0-4ba5-a09c-76d1a6f9aae9 .
+
+km-dev:PredicateObjectMap_be5ddcaf-d70d-49fa-b37c-7504ebd9b247 rr:objectMap km-dev:RefObjectMap_f8340f33-aaa0-4ba5-a09c-76d1a6f9aae9 .
+
+km-dev:TriplesMap_2559e5b2-9fa3-41f1-8532-3620f6546505 rr:predicateObjectMap km-dev:PredicateObjectMap_be5ddcaf-d70d-49fa-b37c-7504ebd9b247 .
+
+km-dev:PredicateObjectMap_be5ddcaf-d70d-49fa-b37c-7504ebd9b247 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_be5ddcaf-d70d-49fa-b37c-7504ebd9b247 .
+
+km-dev:PredicateObjectMap_3d7e6016-6bb1-498c-87df-5479ace4ce7c rr:predicate rdfs:label .
+
+_:node1a5m6usmpx40 rr:column "name" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap _:node1a5m6usmpx40 .
+
+km-dev:PredicateObjectMap_3d7e6016-6bb1-498c-87df-5479ace4ce7c rr:objectMap _:node1a5m6usmpx40 .
+
+km-dev:TriplesMap_2559e5b2-9fa3-41f1-8532-3620f6546505 rr:predicateObjectMap km-dev:PredicateObjectMap_3d7e6016-6bb1-498c-87df-5479ace4ce7c .
+
+km-dev:PredicateObjectMap_3d7e6016-6bb1-498c-87df-5479ace4ce7c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3d7e6016-6bb1-498c-87df-5479ace4ce7c .
+
+km-dev:PredicateObjectMap_ff1b6706-b9dc-4b91-ade5-58283da46a5b rr:predicate <http://www.semanticweb.org/asu/8coupons-deals-data#belongsTo> .
+
+km-dev:RefObjectMap_8247636d-daa1-49a7-a075-8befbf414d8d a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2559e5b2-9fa3-41f1-8532-3620f6546505 ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasObjectMap km-dev:RefObjectMap_8247636d-daa1-49a7-a075-8befbf414d8d .
+
+km-dev:PredicateObjectMap_ff1b6706-b9dc-4b91-ade5-58283da46a5b rr:objectMap km-dev:RefObjectMap_8247636d-daa1-49a7-a075-8befbf414d8d .
+
+km-dev:TriplesMap_2559e5b2-9fa3-41f1-8532-3620f6546505 rr:predicateObjectMap km-dev:PredicateObjectMap_ff1b6706-b9dc-4b91-ade5-58283da46a5b .
+
+km-dev:PredicateObjectMap_ff1b6706-b9dc-4b91-ade5-58283da46a5b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5m6usmpx1 .
+
+_:node1a5m6usmpx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ff1b6706-b9dc-4b91-ade5-58283da46a5b .

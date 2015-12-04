@@ -32,9 +32,9 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1a5jt6jfmx1 a km-dev:R2RMLMapping ;
+_:node1a5l25j5tx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "businesses_plus.csv" ;
-	km-dev:modelPublicationTime "1449145880055"^^xsd:long ;
+	km-dev:modelPublicationTime "1449184644285"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
 	km-dev:hasInputColumns "[[{\"columnName\":\"longitude\"}],[{\"columnName\":\"TaxCode\"}],[{\"columnName\":\"phone_number\"}],[{\"columnName\":\"application_date\"}],[{\"columnName\":\"business_certificate\"}],[{\"columnName\":\"owner_address\"}],[{\"columnName\":\"owner_name\"}],[{\"columnName\":\"owner_state\"}],[{\"columnName\":\"owner_city\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"business_id\"}],[{\"columnName\":\"owner_zip\"}],[{\"columnName\":\"city\"}],[{\"columnName\":\"address\"}],[{\"columnName\":\"latitude\"}],[{\"columnName\":\"postal_code\"}]]" ;
 	km-dev:hasOutputColumns "[[{\"columnName\":\"rest_sem_name_uri\"}],[{\"columnName\":\"rest_uri_id\"}],[{\"columnName\":\"longitude\"}],[{\"columnName\":\"rest_id\"}],[{\"columnName\":\"TaxCode\"}],[{\"columnName\":\"phone_number\"}],[{\"columnName\":\"application_date\"}],[{\"columnName\":\"rest_sem_name\"}],[{\"columnName\":\"business_certificate\"}],[{\"columnName\":\"owner_address\"}],[{\"columnName\":\"owner_name\"}],[{\"columnName\":\"business_uri_identifier\"}],[{\"columnName\":\"owner_state\"}],[{\"columnName\":\"owner_city\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"business_id\"}],[{\"columnName\":\"owner_zip\"}],[{\"columnName\":\"rest_name\"}],[{\"columnName\":\"city\"}],[{\"columnName\":\"address\"}],[{\"columnName\":\"latitude\"}],[{\"columnName\":\"postal_code\"}]]" ;
@@ -2572,969 +2572,969 @@ _:node1a5jt6jfmx1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_fa52d86b-d564-4ffc-8eda-c3c301308e71 a rr:TriplesMap .
+km-dev:TriplesMap_47d64500-66c9-40ba-bb20-055d53caa877 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_fa52d86b-d564-4ffc-8eda-c3c301308e71 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_47d64500-66c9-40ba-bb20-055d53caa877 .
 
-km-dev:TriplesMap_fa52d86b-d564-4ffc-8eda-c3c301308e71 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_47d64500-66c9-40ba-bb20-055d53caa877 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx2 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx2 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx2 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx2 .
 
-km-dev:TriplesMap_fa52d86b-d564-4ffc-8eda-c3c301308e71 rr:logicalTable _:node1a5jt6jfmx2 ;
-	rr:subjectMap _:node1a5jt6jfmx3 .
+km-dev:TriplesMap_47d64500-66c9-40ba-bb20-055d53caa877 rr:logicalTable _:node1a5l25j5tx2 ;
+	rr:subjectMap _:node1a5l25j5tx3 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx3 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx3 .
 
-_:node1a5jt6jfmx3 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx3 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/Restaurant1" ;
 	rr:class schema:Restaurant ;
 	rr:template "{rest_sem_name_uri}" .
 
-km-dev:PredicateObjectMap_e5c71ff4-9806-4aba-acfa-62ea35cde917 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_67d8a322-c9e0-4d65-b5a4-958081fbac5e rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx4 rr:column "business_id" ;
+_:node1a5l25j5tx4 rr:column "business_id" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx4 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx4 .
 
-km-dev:PredicateObjectMap_e5c71ff4-9806-4aba-acfa-62ea35cde917 rr:objectMap _:node1a5jt6jfmx4 .
+km-dev:PredicateObjectMap_67d8a322-c9e0-4d65-b5a4-958081fbac5e rr:objectMap _:node1a5l25j5tx4 .
 
-km-dev:TriplesMap_fa52d86b-d564-4ffc-8eda-c3c301308e71 rr:predicateObjectMap km-dev:PredicateObjectMap_e5c71ff4-9806-4aba-acfa-62ea35cde917 .
+km-dev:TriplesMap_47d64500-66c9-40ba-bb20-055d53caa877 rr:predicateObjectMap km-dev:PredicateObjectMap_67d8a322-c9e0-4d65-b5a4-958081fbac5e .
 
-km-dev:PredicateObjectMap_e5c71ff4-9806-4aba-acfa-62ea35cde917 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_67d8a322-c9e0-4d65-b5a4-958081fbac5e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e5c71ff4-9806-4aba-acfa-62ea35cde917 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_67d8a322-c9e0-4d65-b5a4-958081fbac5e .
 
-km-dev:PredicateObjectMap_bb20433e-a3f6-446d-82e7-766275ff4965 rr:predicate foaf:name .
+km-dev:PredicateObjectMap_9a3406bb-1f9b-4531-ac00-5323a2ea5b95 rr:predicate foaf:name .
 
-_:node1a5jt6jfmx5 rr:column "name" ;
+_:node1a5l25j5tx5 rr:column "name" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx5 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx5 .
 
-km-dev:PredicateObjectMap_bb20433e-a3f6-446d-82e7-766275ff4965 rr:objectMap _:node1a5jt6jfmx5 .
+km-dev:PredicateObjectMap_9a3406bb-1f9b-4531-ac00-5323a2ea5b95 rr:objectMap _:node1a5l25j5tx5 .
 
-km-dev:TriplesMap_fa52d86b-d564-4ffc-8eda-c3c301308e71 rr:predicateObjectMap km-dev:PredicateObjectMap_bb20433e-a3f6-446d-82e7-766275ff4965 .
+km-dev:TriplesMap_47d64500-66c9-40ba-bb20-055d53caa877 rr:predicateObjectMap km-dev:PredicateObjectMap_9a3406bb-1f9b-4531-ac00-5323a2ea5b95 .
 
-km-dev:PredicateObjectMap_bb20433e-a3f6-446d-82e7-766275ff4965 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_9a3406bb-1f9b-4531-ac00-5323a2ea5b95 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bb20433e-a3f6-446d-82e7-766275ff4965 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9a3406bb-1f9b-4531-ac00-5323a2ea5b95 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c a rr:TriplesMap .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx6 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx6 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx6 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx6 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:logicalTable _:node1a5jt6jfmx6 ;
-	rr:subjectMap _:node1a5jt6jfmx7 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:logicalTable _:node1a5l25j5tx6 ;
+	rr:subjectMap _:node1a5l25j5tx7 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx7 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx7 .
 
-_:node1a5jt6jfmx7 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx7 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#Restaurant1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#Restaurant> ;
 	rr:template "business/{business_id}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_24592230-45d1-43a9-a5e3-6b576d3a8d39 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasAddress> .
+km-dev:PredicateObjectMap_8bde571a-4d86-496e-a8b6-fef30de65dd0 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasAddress> .
 
-km-dev:RefObjectMap_e046b602-b84a-4c92-8cf4-55247c348759 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_22fff4a3-419d-4e79-a00b-1e54ae6e31c1 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_488492b6-c352-43f9-a952-6a41f506567d a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_eddc0d56-d072-474e-8059-cf584c39bccc ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_e046b602-b84a-4c92-8cf4-55247c348759 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_488492b6-c352-43f9-a952-6a41f506567d .
 
-km-dev:PredicateObjectMap_24592230-45d1-43a9-a5e3-6b576d3a8d39 rr:objectMap km-dev:RefObjectMap_e046b602-b84a-4c92-8cf4-55247c348759 .
+km-dev:PredicateObjectMap_8bde571a-4d86-496e-a8b6-fef30de65dd0 rr:objectMap km-dev:RefObjectMap_488492b6-c352-43f9-a952-6a41f506567d .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_24592230-45d1-43a9-a5e3-6b576d3a8d39 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_8bde571a-4d86-496e-a8b6-fef30de65dd0 .
 
-km-dev:PredicateObjectMap_24592230-45d1-43a9-a5e3-6b576d3a8d39 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_8bde571a-4d86-496e-a8b6-fef30de65dd0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_24592230-45d1-43a9-a5e3-6b576d3a8d39 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8bde571a-4d86-496e-a8b6-fef30de65dd0 .
 
-km-dev:PredicateObjectMap_fd4845c6-c069-49ad-90a4-843b2e244dfe rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasApplicationDate> .
+km-dev:PredicateObjectMap_03b51409-e729-4c73-a0f9-f2c3c732974f rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasApplicationDate> .
 
-km-dev:RefObjectMap_b4ed1a64-4104-4e68-bfd7-0299cbd5f566 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_ee2eda29-1a6a-40a5-89b8-bdefc8450494 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_7e902344-ff93-4f59-94d2-84cba181fdb4 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7ab1cf08-fa1e-4c82-a89c-1684a7f8b68c ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_b4ed1a64-4104-4e68-bfd7-0299cbd5f566 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_7e902344-ff93-4f59-94d2-84cba181fdb4 .
 
-km-dev:PredicateObjectMap_fd4845c6-c069-49ad-90a4-843b2e244dfe rr:objectMap km-dev:RefObjectMap_b4ed1a64-4104-4e68-bfd7-0299cbd5f566 .
+km-dev:PredicateObjectMap_03b51409-e729-4c73-a0f9-f2c3c732974f rr:objectMap km-dev:RefObjectMap_7e902344-ff93-4f59-94d2-84cba181fdb4 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_fd4845c6-c069-49ad-90a4-843b2e244dfe .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_03b51409-e729-4c73-a0f9-f2c3c732974f .
 
-km-dev:PredicateObjectMap_fd4845c6-c069-49ad-90a4-843b2e244dfe a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_03b51409-e729-4c73-a0f9-f2c3c732974f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fd4845c6-c069-49ad-90a4-843b2e244dfe .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_03b51409-e729-4c73-a0f9-f2c3c732974f .
 
-km-dev:PredicateObjectMap_309683f5-edc4-4a41-a7db-84946d86d3c4 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasBusinessCertificate> .
+km-dev:PredicateObjectMap_9c71fc2f-c0ad-49e2-9da3-d45a23ae86fe rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasBusinessCertificate> .
 
-km-dev:RefObjectMap_dd7739a9-53fb-448b-967c-f2593c6bc80b a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_7a41fd7f-96be-49a9-8acc-7bf6374624ea ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_718c8367-c7e1-44e9-ad02-2dea7c801895 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e22e030e-ec04-42ea-8176-b074e37ad72d ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_dd7739a9-53fb-448b-967c-f2593c6bc80b .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_718c8367-c7e1-44e9-ad02-2dea7c801895 .
 
-km-dev:PredicateObjectMap_309683f5-edc4-4a41-a7db-84946d86d3c4 rr:objectMap km-dev:RefObjectMap_dd7739a9-53fb-448b-967c-f2593c6bc80b .
+km-dev:PredicateObjectMap_9c71fc2f-c0ad-49e2-9da3-d45a23ae86fe rr:objectMap km-dev:RefObjectMap_718c8367-c7e1-44e9-ad02-2dea7c801895 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_309683f5-edc4-4a41-a7db-84946d86d3c4 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_9c71fc2f-c0ad-49e2-9da3-d45a23ae86fe .
 
-km-dev:PredicateObjectMap_309683f5-edc4-4a41-a7db-84946d86d3c4 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_9c71fc2f-c0ad-49e2-9da3-d45a23ae86fe a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_309683f5-edc4-4a41-a7db-84946d86d3c4 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9c71fc2f-c0ad-49e2-9da3-d45a23ae86fe .
 
-km-dev:PredicateObjectMap_98d060eb-0cc5-4510-bd53-23114587dfbc rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasCity> .
+km-dev:PredicateObjectMap_e58364af-4454-46ac-b850-bf27e0d5eef2 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasCity> .
 
-km-dev:RefObjectMap_b929deae-26a9-4feb-a768-0fff5505f1a2 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_3daea09f-5d90-4cc7-8957-9cb0f61af74d ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_9e6ba5a9-dc38-4abc-9905-ece5b76a5e72 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6bbfc531-3ff7-40fe-96dd-e0bcb514de8c ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_b929deae-26a9-4feb-a768-0fff5505f1a2 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_9e6ba5a9-dc38-4abc-9905-ece5b76a5e72 .
 
-km-dev:PredicateObjectMap_98d060eb-0cc5-4510-bd53-23114587dfbc rr:objectMap km-dev:RefObjectMap_b929deae-26a9-4feb-a768-0fff5505f1a2 .
+km-dev:PredicateObjectMap_e58364af-4454-46ac-b850-bf27e0d5eef2 rr:objectMap km-dev:RefObjectMap_9e6ba5a9-dc38-4abc-9905-ece5b76a5e72 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_98d060eb-0cc5-4510-bd53-23114587dfbc .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_e58364af-4454-46ac-b850-bf27e0d5eef2 .
 
-km-dev:PredicateObjectMap_98d060eb-0cc5-4510-bd53-23114587dfbc a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_e58364af-4454-46ac-b850-bf27e0d5eef2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_98d060eb-0cc5-4510-bd53-23114587dfbc .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e58364af-4454-46ac-b850-bf27e0d5eef2 .
 
-km-dev:PredicateObjectMap_1ddeec43-b520-4299-b701-fb18f4a8300c rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasLatitude> .
+km-dev:PredicateObjectMap_f7996445-7b07-4b01-9362-ca1781bee990 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasLatitude> .
 
-km-dev:RefObjectMap_ac885d39-6d8b-4c17-abe1-ee2f1d2d75a6 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_a36b51b3-06b5-4454-87f2-349b91c587b6 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_ff7bc3e5-512e-4341-bbdf-80e9cbe099fe a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e8117050-491c-49cf-85c1-6777ef94ec6d ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_ac885d39-6d8b-4c17-abe1-ee2f1d2d75a6 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_ff7bc3e5-512e-4341-bbdf-80e9cbe099fe .
 
-km-dev:PredicateObjectMap_1ddeec43-b520-4299-b701-fb18f4a8300c rr:objectMap km-dev:RefObjectMap_ac885d39-6d8b-4c17-abe1-ee2f1d2d75a6 .
+km-dev:PredicateObjectMap_f7996445-7b07-4b01-9362-ca1781bee990 rr:objectMap km-dev:RefObjectMap_ff7bc3e5-512e-4341-bbdf-80e9cbe099fe .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_1ddeec43-b520-4299-b701-fb18f4a8300c .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_f7996445-7b07-4b01-9362-ca1781bee990 .
 
-km-dev:PredicateObjectMap_1ddeec43-b520-4299-b701-fb18f4a8300c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_f7996445-7b07-4b01-9362-ca1781bee990 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1ddeec43-b520-4299-b701-fb18f4a8300c .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f7996445-7b07-4b01-9362-ca1781bee990 .
 
-km-dev:PredicateObjectMap_5009388f-e2bf-46b4-9aba-dab413468ec5 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasLongitude> .
+km-dev:PredicateObjectMap_36cd131b-e9b7-4239-ab01-057afffa0a22 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasLongitude> .
 
-km-dev:RefObjectMap_67291b99-b85a-4bf4-b2bd-5bda335575a2 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_e15737b2-9e8c-4aa3-bac7-8d3373e4a217 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_3d3edc59-daef-457f-b091-029ee7e1ad8c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4de058af-e0b7-4bba-8cae-e60407d974bc ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_67291b99-b85a-4bf4-b2bd-5bda335575a2 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_3d3edc59-daef-457f-b091-029ee7e1ad8c .
 
-km-dev:PredicateObjectMap_5009388f-e2bf-46b4-9aba-dab413468ec5 rr:objectMap km-dev:RefObjectMap_67291b99-b85a-4bf4-b2bd-5bda335575a2 .
+km-dev:PredicateObjectMap_36cd131b-e9b7-4239-ab01-057afffa0a22 rr:objectMap km-dev:RefObjectMap_3d3edc59-daef-457f-b091-029ee7e1ad8c .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_5009388f-e2bf-46b4-9aba-dab413468ec5 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_36cd131b-e9b7-4239-ab01-057afffa0a22 .
 
-km-dev:PredicateObjectMap_5009388f-e2bf-46b4-9aba-dab413468ec5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_36cd131b-e9b7-4239-ab01-057afffa0a22 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5009388f-e2bf-46b4-9aba-dab413468ec5 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_36cd131b-e9b7-4239-ab01-057afffa0a22 .
 
-km-dev:PredicateObjectMap_91511ef2-b56b-422c-a9ed-813e3297a58a rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasName> .
+km-dev:PredicateObjectMap_2562e164-5467-473b-9697-a6d2c5214bdc rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasName> .
 
-km-dev:RefObjectMap_1c9a114d-82e5-4489-98d3-e9bc48f999ae a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_f36e7ee8-accd-4c2e-9e4b-8810d69cd3a2 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_ffb83048-58cd-4ac1-b5ac-e7beba94f435 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_cf0bd353-7a4b-4763-8428-aeb4e4ad94cf ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_1c9a114d-82e5-4489-98d3-e9bc48f999ae .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_ffb83048-58cd-4ac1-b5ac-e7beba94f435 .
 
-km-dev:PredicateObjectMap_91511ef2-b56b-422c-a9ed-813e3297a58a rr:objectMap km-dev:RefObjectMap_1c9a114d-82e5-4489-98d3-e9bc48f999ae .
+km-dev:PredicateObjectMap_2562e164-5467-473b-9697-a6d2c5214bdc rr:objectMap km-dev:RefObjectMap_ffb83048-58cd-4ac1-b5ac-e7beba94f435 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_91511ef2-b56b-422c-a9ed-813e3297a58a .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_2562e164-5467-473b-9697-a6d2c5214bdc .
 
-km-dev:PredicateObjectMap_91511ef2-b56b-422c-a9ed-813e3297a58a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_2562e164-5467-473b-9697-a6d2c5214bdc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_91511ef2-b56b-422c-a9ed-813e3297a58a .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2562e164-5467-473b-9697-a6d2c5214bdc .
 
-km-dev:PredicateObjectMap_a4a874bc-9284-4328-b2dc-3b5a94eca02f rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerAddress> .
+km-dev:PredicateObjectMap_f5e4b49d-3074-4259-a64f-6ad7dfb0e272 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerAddress> .
 
-km-dev:RefObjectMap_bdcf96a3-c304-4213-bf4d-84173d4c3c66 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_48827518-1f08-4d2e-9a6f-aa8520bba5e5 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_dd55249f-2067-4992-8de1-338d3979b422 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_051ff49e-8a82-441e-9848-f2a70bfaa948 ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_bdcf96a3-c304-4213-bf4d-84173d4c3c66 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_dd55249f-2067-4992-8de1-338d3979b422 .
 
-km-dev:PredicateObjectMap_a4a874bc-9284-4328-b2dc-3b5a94eca02f rr:objectMap km-dev:RefObjectMap_bdcf96a3-c304-4213-bf4d-84173d4c3c66 .
+km-dev:PredicateObjectMap_f5e4b49d-3074-4259-a64f-6ad7dfb0e272 rr:objectMap km-dev:RefObjectMap_dd55249f-2067-4992-8de1-338d3979b422 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_a4a874bc-9284-4328-b2dc-3b5a94eca02f .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_f5e4b49d-3074-4259-a64f-6ad7dfb0e272 .
 
-km-dev:PredicateObjectMap_a4a874bc-9284-4328-b2dc-3b5a94eca02f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_f5e4b49d-3074-4259-a64f-6ad7dfb0e272 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a4a874bc-9284-4328-b2dc-3b5a94eca02f .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f5e4b49d-3074-4259-a64f-6ad7dfb0e272 .
 
-km-dev:PredicateObjectMap_3e349647-efa4-46d3-831f-7f277e3bf5c3 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerCity> .
+km-dev:PredicateObjectMap_78bebd4b-9419-4846-a938-87d8539a5a28 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerCity> .
 
-km-dev:RefObjectMap_96378ac7-94e5-40e1-828b-a53b9557e2d6 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_2e17cfcd-283d-4688-a690-5fcab56cb152 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_568b7520-4827-44a6-a170-25ed52ac08b1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_61b3777c-0cf6-49e0-b1d5-b08391758673 ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_96378ac7-94e5-40e1-828b-a53b9557e2d6 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_568b7520-4827-44a6-a170-25ed52ac08b1 .
 
-km-dev:PredicateObjectMap_3e349647-efa4-46d3-831f-7f277e3bf5c3 rr:objectMap km-dev:RefObjectMap_96378ac7-94e5-40e1-828b-a53b9557e2d6 .
+km-dev:PredicateObjectMap_78bebd4b-9419-4846-a938-87d8539a5a28 rr:objectMap km-dev:RefObjectMap_568b7520-4827-44a6-a170-25ed52ac08b1 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_3e349647-efa4-46d3-831f-7f277e3bf5c3 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_78bebd4b-9419-4846-a938-87d8539a5a28 .
 
-km-dev:PredicateObjectMap_3e349647-efa4-46d3-831f-7f277e3bf5c3 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_78bebd4b-9419-4846-a938-87d8539a5a28 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3e349647-efa4-46d3-831f-7f277e3bf5c3 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_78bebd4b-9419-4846-a938-87d8539a5a28 .
 
-km-dev:PredicateObjectMap_b5458a7d-60a0-4ea8-9df5-59363167a8ce rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerName> .
+km-dev:PredicateObjectMap_3648cf09-7f59-4e8d-a332-487d3eed7c28 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerName> .
 
-km-dev:RefObjectMap_2e469ccb-153b-4f3f-9a4d-1494a6dfe785 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_f23a46f9-b768-44c1-8c57-e64ccc682e4e ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_884d033c-4fcc-4490-8042-ec44bd2bcfb1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c8f68d92-469e-4be0-a438-ee3df7f3f0b2 ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_2e469ccb-153b-4f3f-9a4d-1494a6dfe785 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_884d033c-4fcc-4490-8042-ec44bd2bcfb1 .
 
-km-dev:PredicateObjectMap_b5458a7d-60a0-4ea8-9df5-59363167a8ce rr:objectMap km-dev:RefObjectMap_2e469ccb-153b-4f3f-9a4d-1494a6dfe785 .
+km-dev:PredicateObjectMap_3648cf09-7f59-4e8d-a332-487d3eed7c28 rr:objectMap km-dev:RefObjectMap_884d033c-4fcc-4490-8042-ec44bd2bcfb1 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_b5458a7d-60a0-4ea8-9df5-59363167a8ce .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_3648cf09-7f59-4e8d-a332-487d3eed7c28 .
 
-km-dev:PredicateObjectMap_b5458a7d-60a0-4ea8-9df5-59363167a8ce a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_3648cf09-7f59-4e8d-a332-487d3eed7c28 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b5458a7d-60a0-4ea8-9df5-59363167a8ce .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3648cf09-7f59-4e8d-a332-487d3eed7c28 .
 
-km-dev:PredicateObjectMap_ccfa247b-0c75-4513-af68-415e36a06288 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerState> .
+km-dev:PredicateObjectMap_64f13ed7-d0a0-47ef-ab15-a8e98261b361 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerState> .
 
-km-dev:RefObjectMap_fcd5d6ae-91b6-48a7-afa9-f89e9453ec25 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_c33ff339-753d-4061-b3c4-61e43ad7dadb ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_cd4cf94a-e25a-4615-abd0-0275e1d2148d a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e17958f8-bca9-4ce8-a8bb-cd8485149d60 ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_fcd5d6ae-91b6-48a7-afa9-f89e9453ec25 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_cd4cf94a-e25a-4615-abd0-0275e1d2148d .
 
-km-dev:PredicateObjectMap_ccfa247b-0c75-4513-af68-415e36a06288 rr:objectMap km-dev:RefObjectMap_fcd5d6ae-91b6-48a7-afa9-f89e9453ec25 .
+km-dev:PredicateObjectMap_64f13ed7-d0a0-47ef-ab15-a8e98261b361 rr:objectMap km-dev:RefObjectMap_cd4cf94a-e25a-4615-abd0-0275e1d2148d .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_ccfa247b-0c75-4513-af68-415e36a06288 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_64f13ed7-d0a0-47ef-ab15-a8e98261b361 .
 
-km-dev:PredicateObjectMap_ccfa247b-0c75-4513-af68-415e36a06288 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_64f13ed7-d0a0-47ef-ab15-a8e98261b361 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ccfa247b-0c75-4513-af68-415e36a06288 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_64f13ed7-d0a0-47ef-ab15-a8e98261b361 .
 
-km-dev:PredicateObjectMap_8c3eb3cf-0880-4601-8341-79a0de0c98a6 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerZip> .
+km-dev:PredicateObjectMap_9045b25c-cb43-40ae-a116-dbc2e9019d19 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasOwnerZip> .
 
-km-dev:RefObjectMap_a826c12e-043a-4b94-862f-f55e60d3ca2f a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_700e67e7-8822-4b9c-bb7e-45371f2890f1 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_5d2581d3-af64-4b61-bad4-f1062b6dc1a9 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_f95fe85b-0989-4ce0-9653-ca049d585bed ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_a826c12e-043a-4b94-862f-f55e60d3ca2f .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_5d2581d3-af64-4b61-bad4-f1062b6dc1a9 .
 
-km-dev:PredicateObjectMap_8c3eb3cf-0880-4601-8341-79a0de0c98a6 rr:objectMap km-dev:RefObjectMap_a826c12e-043a-4b94-862f-f55e60d3ca2f .
+km-dev:PredicateObjectMap_9045b25c-cb43-40ae-a116-dbc2e9019d19 rr:objectMap km-dev:RefObjectMap_5d2581d3-af64-4b61-bad4-f1062b6dc1a9 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_8c3eb3cf-0880-4601-8341-79a0de0c98a6 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_9045b25c-cb43-40ae-a116-dbc2e9019d19 .
 
-km-dev:PredicateObjectMap_8c3eb3cf-0880-4601-8341-79a0de0c98a6 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_9045b25c-cb43-40ae-a116-dbc2e9019d19 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8c3eb3cf-0880-4601-8341-79a0de0c98a6 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9045b25c-cb43-40ae-a116-dbc2e9019d19 .
 
-km-dev:PredicateObjectMap_212a8e31-6dab-4faa-96bc-9702aa63b896 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasPhoneNumber> .
+km-dev:PredicateObjectMap_8fb6e555-6e23-4fc7-8750-f492f3326360 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasPhoneNumber> .
 
-km-dev:RefObjectMap_04f56acc-5207-4c8e-b0af-8a6904ee7165 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_3194ecc3-ce0a-4e34-93b0-4c730d447d34 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_eff6f8e5-f5f4-4c5a-bad4-4b8bfdb6c92f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d82f72e4-ef6c-4848-9c2d-be39ab15ca67 ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_04f56acc-5207-4c8e-b0af-8a6904ee7165 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_eff6f8e5-f5f4-4c5a-bad4-4b8bfdb6c92f .
 
-km-dev:PredicateObjectMap_212a8e31-6dab-4faa-96bc-9702aa63b896 rr:objectMap km-dev:RefObjectMap_04f56acc-5207-4c8e-b0af-8a6904ee7165 .
+km-dev:PredicateObjectMap_8fb6e555-6e23-4fc7-8750-f492f3326360 rr:objectMap km-dev:RefObjectMap_eff6f8e5-f5f4-4c5a-bad4-4b8bfdb6c92f .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_212a8e31-6dab-4faa-96bc-9702aa63b896 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_8fb6e555-6e23-4fc7-8750-f492f3326360 .
 
-km-dev:PredicateObjectMap_212a8e31-6dab-4faa-96bc-9702aa63b896 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_8fb6e555-6e23-4fc7-8750-f492f3326360 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_212a8e31-6dab-4faa-96bc-9702aa63b896 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8fb6e555-6e23-4fc7-8750-f492f3326360 .
 
-km-dev:PredicateObjectMap_9c19e342-fa7f-4ad7-b268-353133ef45c5 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasPostalCode> .
+km-dev:PredicateObjectMap_aae926ed-a645-47d0-a867-f0f72095bd59 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasPostalCode> .
 
-km-dev:RefObjectMap_a621b534-4d28-4f1b-84a2-4a4e725d924c a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_72358624-c1c3-4e34-b419-351cd9a3250d ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_2fa4eeb8-52f8-498c-a736-fbab7134525c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6a51f409-ac07-4982-9dc7-91a22ea9dfc8 ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_a621b534-4d28-4f1b-84a2-4a4e725d924c .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_2fa4eeb8-52f8-498c-a736-fbab7134525c .
 
-km-dev:PredicateObjectMap_9c19e342-fa7f-4ad7-b268-353133ef45c5 rr:objectMap km-dev:RefObjectMap_a621b534-4d28-4f1b-84a2-4a4e725d924c .
+km-dev:PredicateObjectMap_aae926ed-a645-47d0-a867-f0f72095bd59 rr:objectMap km-dev:RefObjectMap_2fa4eeb8-52f8-498c-a736-fbab7134525c .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_9c19e342-fa7f-4ad7-b268-353133ef45c5 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_aae926ed-a645-47d0-a867-f0f72095bd59 .
 
-km-dev:PredicateObjectMap_9c19e342-fa7f-4ad7-b268-353133ef45c5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_aae926ed-a645-47d0-a867-f0f72095bd59 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9c19e342-fa7f-4ad7-b268-353133ef45c5 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_aae926ed-a645-47d0-a867-f0f72095bd59 .
 
-km-dev:PredicateObjectMap_7cc3db90-3214-48e6-86bd-884f6ca55e80 rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasTaxCode> .
+km-dev:PredicateObjectMap_802d056e-7025-476d-be44-7a47e773d45c rr:predicate <http://www.semanticweb.org/asu/health-inspection-data#hasTaxCode> .
 
-km-dev:RefObjectMap_f5e930de-c56d-4823-97b1-2ce737382c0f a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_ff7e257c-de78-4fc5-8bf6-17eb07e63c03 ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:RefObjectMap_9b91aef7-6cdd-40f5-8cd3-bfe58a4dd4bb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fad24ccf-b9b9-44e8-aee3-8f7cfe299fb8 ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap km-dev:RefObjectMap_f5e930de-c56d-4823-97b1-2ce737382c0f .
+_:node1a5l25j5tx1 km-dev:hasObjectMap km-dev:RefObjectMap_9b91aef7-6cdd-40f5-8cd3-bfe58a4dd4bb .
 
-km-dev:PredicateObjectMap_7cc3db90-3214-48e6-86bd-884f6ca55e80 rr:objectMap km-dev:RefObjectMap_f5e930de-c56d-4823-97b1-2ce737382c0f .
+km-dev:PredicateObjectMap_802d056e-7025-476d-be44-7a47e773d45c rr:objectMap km-dev:RefObjectMap_9b91aef7-6cdd-40f5-8cd3-bfe58a4dd4bb .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_7cc3db90-3214-48e6-86bd-884f6ca55e80 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_802d056e-7025-476d-be44-7a47e773d45c .
 
-km-dev:PredicateObjectMap_7cc3db90-3214-48e6-86bd-884f6ca55e80 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_802d056e-7025-476d-be44-7a47e773d45c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7cc3db90-3214-48e6-86bd-884f6ca55e80 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_802d056e-7025-476d-be44-7a47e773d45c .
 
-km-dev:PredicateObjectMap_93f71f95-1eba-400b-b5e9-4404857aad38 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_c87f49b6-3657-480c-aba8-837f39204e30 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx8 rr:column "business_id" ;
+_:node1a5l25j5tx8 rr:column "business_id" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx8 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx8 .
 
-km-dev:PredicateObjectMap_93f71f95-1eba-400b-b5e9-4404857aad38 rr:objectMap _:node1a5jt6jfmx8 .
+km-dev:PredicateObjectMap_c87f49b6-3657-480c-aba8-837f39204e30 rr:objectMap _:node1a5l25j5tx8 .
 
-km-dev:TriplesMap_377cab76-c975-4cd5-971c-59327202332c rr:predicateObjectMap km-dev:PredicateObjectMap_93f71f95-1eba-400b-b5e9-4404857aad38 .
+km-dev:TriplesMap_bc5dc1fb-e5da-4d5d-9c80-a2f1571ce203 rr:predicateObjectMap km-dev:PredicateObjectMap_c87f49b6-3657-480c-aba8-837f39204e30 .
 
-km-dev:PredicateObjectMap_93f71f95-1eba-400b-b5e9-4404857aad38 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_c87f49b6-3657-480c-aba8-837f39204e30 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_93f71f95-1eba-400b-b5e9-4404857aad38 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c87f49b6-3657-480c-aba8-837f39204e30 .
 
-km-dev:TriplesMap_22fff4a3-419d-4e79-a00b-1e54ae6e31c1 a rr:TriplesMap .
+km-dev:TriplesMap_eddc0d56-d072-474e-8059-cf584c39bccc a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_22fff4a3-419d-4e79-a00b-1e54ae6e31c1 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_eddc0d56-d072-474e-8059-cf584c39bccc .
 
-km-dev:TriplesMap_22fff4a3-419d-4e79-a00b-1e54ae6e31c1 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_eddc0d56-d072-474e-8059-cf584c39bccc km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx9 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx9 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx9 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx9 .
 
-km-dev:TriplesMap_22fff4a3-419d-4e79-a00b-1e54ae6e31c1 rr:logicalTable _:node1a5jt6jfmx9 ;
-	rr:subjectMap _:node1a5jt6jfmx10 .
+km-dev:TriplesMap_eddc0d56-d072-474e-8059-cf584c39bccc rr:logicalTable _:node1a5l25j5tx9 ;
+	rr:subjectMap _:node1a5l25j5tx10 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx10 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx10 .
 
-_:node1a5jt6jfmx10 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx10 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantAddress1" .
 
-km-dev:PredicateObjectMap_4e4b99a7-4648-4786-86da-6348508ff4e4 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_d5b27a3c-a7e4-4b44-93ed-00261b7e11cc rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx11 rr:column "address" ;
+_:node1a5l25j5tx11 rr:column "address" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx11 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx11 .
 
-km-dev:PredicateObjectMap_4e4b99a7-4648-4786-86da-6348508ff4e4 rr:objectMap _:node1a5jt6jfmx11 .
+km-dev:PredicateObjectMap_d5b27a3c-a7e4-4b44-93ed-00261b7e11cc rr:objectMap _:node1a5l25j5tx11 .
 
-km-dev:TriplesMap_22fff4a3-419d-4e79-a00b-1e54ae6e31c1 rr:predicateObjectMap km-dev:PredicateObjectMap_4e4b99a7-4648-4786-86da-6348508ff4e4 .
+km-dev:TriplesMap_eddc0d56-d072-474e-8059-cf584c39bccc rr:predicateObjectMap km-dev:PredicateObjectMap_d5b27a3c-a7e4-4b44-93ed-00261b7e11cc .
 
-km-dev:PredicateObjectMap_4e4b99a7-4648-4786-86da-6348508ff4e4 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_d5b27a3c-a7e4-4b44-93ed-00261b7e11cc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4e4b99a7-4648-4786-86da-6348508ff4e4 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d5b27a3c-a7e4-4b44-93ed-00261b7e11cc .
 
-km-dev:TriplesMap_ee2eda29-1a6a-40a5-89b8-bdefc8450494 a rr:TriplesMap .
+km-dev:TriplesMap_7ab1cf08-fa1e-4c82-a89c-1684a7f8b68c a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_ee2eda29-1a6a-40a5-89b8-bdefc8450494 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_7ab1cf08-fa1e-4c82-a89c-1684a7f8b68c .
 
-km-dev:TriplesMap_ee2eda29-1a6a-40a5-89b8-bdefc8450494 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_7ab1cf08-fa1e-4c82-a89c-1684a7f8b68c km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx12 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx12 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx12 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx12 .
 
-km-dev:TriplesMap_ee2eda29-1a6a-40a5-89b8-bdefc8450494 rr:logicalTable _:node1a5jt6jfmx12 ;
-	rr:subjectMap _:node1a5jt6jfmx13 .
+km-dev:TriplesMap_7ab1cf08-fa1e-4c82-a89c-1684a7f8b68c rr:logicalTable _:node1a5l25j5tx12 ;
+	rr:subjectMap _:node1a5l25j5tx13 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx13 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx13 .
 
-_:node1a5jt6jfmx13 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx13 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantApplicationDate1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantApplicationDate> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantApplicationDate1" .
 
-km-dev:PredicateObjectMap_feecf743-024b-46f7-ac35-1a648fe7f6c0 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_1efd74e1-4f33-4a5b-9b35-e89e8780a098 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx14 rr:column "application_date" ;
+_:node1a5l25j5tx14 rr:column "application_date" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx14 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx14 .
 
-km-dev:PredicateObjectMap_feecf743-024b-46f7-ac35-1a648fe7f6c0 rr:objectMap _:node1a5jt6jfmx14 .
+km-dev:PredicateObjectMap_1efd74e1-4f33-4a5b-9b35-e89e8780a098 rr:objectMap _:node1a5l25j5tx14 .
 
-km-dev:TriplesMap_ee2eda29-1a6a-40a5-89b8-bdefc8450494 rr:predicateObjectMap km-dev:PredicateObjectMap_feecf743-024b-46f7-ac35-1a648fe7f6c0 .
+km-dev:TriplesMap_7ab1cf08-fa1e-4c82-a89c-1684a7f8b68c rr:predicateObjectMap km-dev:PredicateObjectMap_1efd74e1-4f33-4a5b-9b35-e89e8780a098 .
 
-km-dev:PredicateObjectMap_feecf743-024b-46f7-ac35-1a648fe7f6c0 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_1efd74e1-4f33-4a5b-9b35-e89e8780a098 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_feecf743-024b-46f7-ac35-1a648fe7f6c0 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1efd74e1-4f33-4a5b-9b35-e89e8780a098 .
 
-km-dev:TriplesMap_7a41fd7f-96be-49a9-8acc-7bf6374624ea a rr:TriplesMap .
+km-dev:TriplesMap_e22e030e-ec04-42ea-8176-b074e37ad72d a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_7a41fd7f-96be-49a9-8acc-7bf6374624ea .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_e22e030e-ec04-42ea-8176-b074e37ad72d .
 
-km-dev:TriplesMap_7a41fd7f-96be-49a9-8acc-7bf6374624ea km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_e22e030e-ec04-42ea-8176-b074e37ad72d km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx15 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx15 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx15 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx15 .
 
-km-dev:TriplesMap_7a41fd7f-96be-49a9-8acc-7bf6374624ea rr:logicalTable _:node1a5jt6jfmx15 ;
-	rr:subjectMap _:node1a5jt6jfmx16 .
+km-dev:TriplesMap_e22e030e-ec04-42ea-8176-b074e37ad72d rr:logicalTable _:node1a5l25j5tx15 ;
+	rr:subjectMap _:node1a5l25j5tx16 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx16 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx16 .
 
-_:node1a5jt6jfmx16 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx16 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantBusinessCertificate1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantBusinessCertificate> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantBusinessCertificate1" .
 
-km-dev:PredicateObjectMap_1bb7f3c6-3beb-4c91-994b-b2d23dc419a1 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_66daf424-9d1b-400e-9b58-380dd25a745b rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx17 rr:column "business_certificate" ;
+_:node1a5l25j5tx17 rr:column "business_certificate" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx17 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx17 .
 
-km-dev:PredicateObjectMap_1bb7f3c6-3beb-4c91-994b-b2d23dc419a1 rr:objectMap _:node1a5jt6jfmx17 .
+km-dev:PredicateObjectMap_66daf424-9d1b-400e-9b58-380dd25a745b rr:objectMap _:node1a5l25j5tx17 .
 
-km-dev:TriplesMap_7a41fd7f-96be-49a9-8acc-7bf6374624ea rr:predicateObjectMap km-dev:PredicateObjectMap_1bb7f3c6-3beb-4c91-994b-b2d23dc419a1 .
+km-dev:TriplesMap_e22e030e-ec04-42ea-8176-b074e37ad72d rr:predicateObjectMap km-dev:PredicateObjectMap_66daf424-9d1b-400e-9b58-380dd25a745b .
 
-km-dev:PredicateObjectMap_1bb7f3c6-3beb-4c91-994b-b2d23dc419a1 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_66daf424-9d1b-400e-9b58-380dd25a745b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1bb7f3c6-3beb-4c91-994b-b2d23dc419a1 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_66daf424-9d1b-400e-9b58-380dd25a745b .
 
-km-dev:TriplesMap_3daea09f-5d90-4cc7-8957-9cb0f61af74d a rr:TriplesMap .
+km-dev:TriplesMap_6bbfc531-3ff7-40fe-96dd-e0bcb514de8c a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_3daea09f-5d90-4cc7-8957-9cb0f61af74d .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_6bbfc531-3ff7-40fe-96dd-e0bcb514de8c .
 
-km-dev:TriplesMap_3daea09f-5d90-4cc7-8957-9cb0f61af74d km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_6bbfc531-3ff7-40fe-96dd-e0bcb514de8c km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx18 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx18 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx18 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx18 .
 
-km-dev:TriplesMap_3daea09f-5d90-4cc7-8957-9cb0f61af74d rr:logicalTable _:node1a5jt6jfmx18 ;
-	rr:subjectMap _:node1a5jt6jfmx19 .
+km-dev:TriplesMap_6bbfc531-3ff7-40fe-96dd-e0bcb514de8c rr:logicalTable _:node1a5l25j5tx18 ;
+	rr:subjectMap _:node1a5l25j5tx19 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx19 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx19 .
 
-_:node1a5jt6jfmx19 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx19 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantCity1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantCity> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantCity1" .
 
-km-dev:PredicateObjectMap_f6b8a414-80e1-4c90-b833-b9506c129651 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_88f63c55-3ff9-4328-a628-be130c55bf75 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx20 rr:column "city" ;
+_:node1a5l25j5tx20 rr:column "city" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx20 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx20 .
 
-km-dev:PredicateObjectMap_f6b8a414-80e1-4c90-b833-b9506c129651 rr:objectMap _:node1a5jt6jfmx20 .
+km-dev:PredicateObjectMap_88f63c55-3ff9-4328-a628-be130c55bf75 rr:objectMap _:node1a5l25j5tx20 .
 
-km-dev:TriplesMap_3daea09f-5d90-4cc7-8957-9cb0f61af74d rr:predicateObjectMap km-dev:PredicateObjectMap_f6b8a414-80e1-4c90-b833-b9506c129651 .
+km-dev:TriplesMap_6bbfc531-3ff7-40fe-96dd-e0bcb514de8c rr:predicateObjectMap km-dev:PredicateObjectMap_88f63c55-3ff9-4328-a628-be130c55bf75 .
 
-km-dev:PredicateObjectMap_f6b8a414-80e1-4c90-b833-b9506c129651 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_88f63c55-3ff9-4328-a628-be130c55bf75 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f6b8a414-80e1-4c90-b833-b9506c129651 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_88f63c55-3ff9-4328-a628-be130c55bf75 .
 
-km-dev:TriplesMap_a36b51b3-06b5-4454-87f2-349b91c587b6 a rr:TriplesMap .
+km-dev:TriplesMap_e8117050-491c-49cf-85c1-6777ef94ec6d a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_a36b51b3-06b5-4454-87f2-349b91c587b6 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_e8117050-491c-49cf-85c1-6777ef94ec6d .
 
-km-dev:TriplesMap_a36b51b3-06b5-4454-87f2-349b91c587b6 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_e8117050-491c-49cf-85c1-6777ef94ec6d km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx21 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx21 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx21 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx21 .
 
-km-dev:TriplesMap_a36b51b3-06b5-4454-87f2-349b91c587b6 rr:logicalTable _:node1a5jt6jfmx21 ;
-	rr:subjectMap _:node1a5jt6jfmx22 .
+km-dev:TriplesMap_e8117050-491c-49cf-85c1-6777ef94ec6d rr:logicalTable _:node1a5l25j5tx21 ;
+	rr:subjectMap _:node1a5l25j5tx22 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx22 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx22 .
 
-_:node1a5jt6jfmx22 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx22 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantLatitude1" .
 
-km-dev:PredicateObjectMap_9c4d1157-a84c-4b40-a450-baf57b8525c5 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_eb86d959-e6ce-4f49-a93d-1ff3cc69bca5 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx23 rr:column "latitude" ;
+_:node1a5l25j5tx23 rr:column "latitude" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx23 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx23 .
 
-km-dev:PredicateObjectMap_9c4d1157-a84c-4b40-a450-baf57b8525c5 rr:objectMap _:node1a5jt6jfmx23 .
+km-dev:PredicateObjectMap_eb86d959-e6ce-4f49-a93d-1ff3cc69bca5 rr:objectMap _:node1a5l25j5tx23 .
 
-km-dev:TriplesMap_a36b51b3-06b5-4454-87f2-349b91c587b6 rr:predicateObjectMap km-dev:PredicateObjectMap_9c4d1157-a84c-4b40-a450-baf57b8525c5 .
+km-dev:TriplesMap_e8117050-491c-49cf-85c1-6777ef94ec6d rr:predicateObjectMap km-dev:PredicateObjectMap_eb86d959-e6ce-4f49-a93d-1ff3cc69bca5 .
 
-km-dev:PredicateObjectMap_9c4d1157-a84c-4b40-a450-baf57b8525c5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_eb86d959-e6ce-4f49-a93d-1ff3cc69bca5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9c4d1157-a84c-4b40-a450-baf57b8525c5 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eb86d959-e6ce-4f49-a93d-1ff3cc69bca5 .
 
-km-dev:TriplesMap_e15737b2-9e8c-4aa3-bac7-8d3373e4a217 a rr:TriplesMap .
+km-dev:TriplesMap_4de058af-e0b7-4bba-8cae-e60407d974bc a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_e15737b2-9e8c-4aa3-bac7-8d3373e4a217 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_4de058af-e0b7-4bba-8cae-e60407d974bc .
 
-km-dev:TriplesMap_e15737b2-9e8c-4aa3-bac7-8d3373e4a217 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_4de058af-e0b7-4bba-8cae-e60407d974bc km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx24 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx24 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx24 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx24 .
 
-km-dev:TriplesMap_e15737b2-9e8c-4aa3-bac7-8d3373e4a217 rr:logicalTable _:node1a5jt6jfmx24 ;
-	rr:subjectMap _:node1a5jt6jfmx25 .
+km-dev:TriplesMap_4de058af-e0b7-4bba-8cae-e60407d974bc rr:logicalTable _:node1a5l25j5tx24 ;
+	rr:subjectMap _:node1a5l25j5tx25 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx25 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx25 .
 
-_:node1a5jt6jfmx25 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx25 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantLongitude1" .
 
-km-dev:PredicateObjectMap_83f5f756-b936-48c0-9598-829a71fe2bbf rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_dcd6be90-b1ba-4327-891f-15a970b83c7f rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx26 rr:column "longitude" ;
+_:node1a5l25j5tx26 rr:column "longitude" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx26 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx26 .
 
-km-dev:PredicateObjectMap_83f5f756-b936-48c0-9598-829a71fe2bbf rr:objectMap _:node1a5jt6jfmx26 .
+km-dev:PredicateObjectMap_dcd6be90-b1ba-4327-891f-15a970b83c7f rr:objectMap _:node1a5l25j5tx26 .
 
-km-dev:TriplesMap_e15737b2-9e8c-4aa3-bac7-8d3373e4a217 rr:predicateObjectMap km-dev:PredicateObjectMap_83f5f756-b936-48c0-9598-829a71fe2bbf .
+km-dev:TriplesMap_4de058af-e0b7-4bba-8cae-e60407d974bc rr:predicateObjectMap km-dev:PredicateObjectMap_dcd6be90-b1ba-4327-891f-15a970b83c7f .
 
-km-dev:PredicateObjectMap_83f5f756-b936-48c0-9598-829a71fe2bbf a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_dcd6be90-b1ba-4327-891f-15a970b83c7f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_83f5f756-b936-48c0-9598-829a71fe2bbf .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dcd6be90-b1ba-4327-891f-15a970b83c7f .
 
-km-dev:TriplesMap_f36e7ee8-accd-4c2e-9e4b-8810d69cd3a2 a rr:TriplesMap .
+km-dev:TriplesMap_cf0bd353-7a4b-4763-8428-aeb4e4ad94cf a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_f36e7ee8-accd-4c2e-9e4b-8810d69cd3a2 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_cf0bd353-7a4b-4763-8428-aeb4e4ad94cf .
 
-km-dev:TriplesMap_f36e7ee8-accd-4c2e-9e4b-8810d69cd3a2 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_cf0bd353-7a4b-4763-8428-aeb4e4ad94cf km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx27 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx27 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx27 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx27 .
 
-km-dev:TriplesMap_f36e7ee8-accd-4c2e-9e4b-8810d69cd3a2 rr:logicalTable _:node1a5jt6jfmx27 ;
-	rr:subjectMap _:node1a5jt6jfmx28 .
+km-dev:TriplesMap_cf0bd353-7a4b-4763-8428-aeb4e4ad94cf rr:logicalTable _:node1a5l25j5tx27 ;
+	rr:subjectMap _:node1a5l25j5tx28 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx28 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx28 .
 
-_:node1a5jt6jfmx28 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx28 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestuarantName1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestuarantName> ;
 	rr:template "{rest_name}" .
 
-km-dev:PredicateObjectMap_85a778e4-33c5-40b5-992e-00736d78b6d3 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_d212cb9f-50ef-4740-82c0-c85edc658790 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx29 rr:column "name" ;
+_:node1a5l25j5tx29 rr:column "name" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx29 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx29 .
 
-km-dev:PredicateObjectMap_85a778e4-33c5-40b5-992e-00736d78b6d3 rr:objectMap _:node1a5jt6jfmx29 .
+km-dev:PredicateObjectMap_d212cb9f-50ef-4740-82c0-c85edc658790 rr:objectMap _:node1a5l25j5tx29 .
 
-km-dev:TriplesMap_f36e7ee8-accd-4c2e-9e4b-8810d69cd3a2 rr:predicateObjectMap km-dev:PredicateObjectMap_85a778e4-33c5-40b5-992e-00736d78b6d3 .
+km-dev:TriplesMap_cf0bd353-7a4b-4763-8428-aeb4e4ad94cf rr:predicateObjectMap km-dev:PredicateObjectMap_d212cb9f-50ef-4740-82c0-c85edc658790 .
 
-km-dev:PredicateObjectMap_85a778e4-33c5-40b5-992e-00736d78b6d3 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_d212cb9f-50ef-4740-82c0-c85edc658790 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_85a778e4-33c5-40b5-992e-00736d78b6d3 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d212cb9f-50ef-4740-82c0-c85edc658790 .
 
-km-dev:TriplesMap_48827518-1f08-4d2e-9a6f-aa8520bba5e5 a rr:TriplesMap .
+km-dev:TriplesMap_051ff49e-8a82-441e-9848-f2a70bfaa948 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_48827518-1f08-4d2e-9a6f-aa8520bba5e5 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_051ff49e-8a82-441e-9848-f2a70bfaa948 .
 
-km-dev:TriplesMap_48827518-1f08-4d2e-9a6f-aa8520bba5e5 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_051ff49e-8a82-441e-9848-f2a70bfaa948 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx30 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx30 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx30 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx30 .
 
-km-dev:TriplesMap_48827518-1f08-4d2e-9a6f-aa8520bba5e5 rr:logicalTable _:node1a5jt6jfmx30 ;
-	rr:subjectMap _:node1a5jt6jfmx31 .
+km-dev:TriplesMap_051ff49e-8a82-441e-9848-f2a70bfaa948 rr:logicalTable _:node1a5l25j5tx30 ;
+	rr:subjectMap _:node1a5l25j5tx31 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx31 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx31 .
 
-_:node1a5jt6jfmx31 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx31 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerAddress1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerAddress> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantOwnerAddress1" .
 
-km-dev:PredicateObjectMap_8ae6d999-6947-41c3-a8d0-fa6c554a192c rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_fdd746e3-e1e0-4015-871c-edb9675da746 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx32 rr:column "owner_address" ;
+_:node1a5l25j5tx32 rr:column "owner_address" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx32 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx32 .
 
-km-dev:PredicateObjectMap_8ae6d999-6947-41c3-a8d0-fa6c554a192c rr:objectMap _:node1a5jt6jfmx32 .
+km-dev:PredicateObjectMap_fdd746e3-e1e0-4015-871c-edb9675da746 rr:objectMap _:node1a5l25j5tx32 .
 
-km-dev:TriplesMap_48827518-1f08-4d2e-9a6f-aa8520bba5e5 rr:predicateObjectMap km-dev:PredicateObjectMap_8ae6d999-6947-41c3-a8d0-fa6c554a192c .
+km-dev:TriplesMap_051ff49e-8a82-441e-9848-f2a70bfaa948 rr:predicateObjectMap km-dev:PredicateObjectMap_fdd746e3-e1e0-4015-871c-edb9675da746 .
 
-km-dev:PredicateObjectMap_8ae6d999-6947-41c3-a8d0-fa6c554a192c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_fdd746e3-e1e0-4015-871c-edb9675da746 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8ae6d999-6947-41c3-a8d0-fa6c554a192c .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fdd746e3-e1e0-4015-871c-edb9675da746 .
 
-km-dev:TriplesMap_2e17cfcd-283d-4688-a690-5fcab56cb152 a rr:TriplesMap .
+km-dev:TriplesMap_61b3777c-0cf6-49e0-b1d5-b08391758673 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_2e17cfcd-283d-4688-a690-5fcab56cb152 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_61b3777c-0cf6-49e0-b1d5-b08391758673 .
 
-km-dev:TriplesMap_2e17cfcd-283d-4688-a690-5fcab56cb152 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_61b3777c-0cf6-49e0-b1d5-b08391758673 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx33 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx33 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx33 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx33 .
 
-km-dev:TriplesMap_2e17cfcd-283d-4688-a690-5fcab56cb152 rr:logicalTable _:node1a5jt6jfmx33 ;
-	rr:subjectMap _:node1a5jt6jfmx34 .
+km-dev:TriplesMap_61b3777c-0cf6-49e0-b1d5-b08391758673 rr:logicalTable _:node1a5l25j5tx33 ;
+	rr:subjectMap _:node1a5l25j5tx34 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx34 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx34 .
 
-_:node1a5jt6jfmx34 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx34 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerCity1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerCity> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantOwnerCity1" .
 
-km-dev:PredicateObjectMap_705f0473-fee3-4829-b31b-f77619f56e58 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_3aa9c54b-7087-4a25-9c17-618e16a1cf8d rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx35 rr:column "owner_city" ;
+_:node1a5l25j5tx35 rr:column "owner_city" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx35 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx35 .
 
-km-dev:PredicateObjectMap_705f0473-fee3-4829-b31b-f77619f56e58 rr:objectMap _:node1a5jt6jfmx35 .
+km-dev:PredicateObjectMap_3aa9c54b-7087-4a25-9c17-618e16a1cf8d rr:objectMap _:node1a5l25j5tx35 .
 
-km-dev:TriplesMap_2e17cfcd-283d-4688-a690-5fcab56cb152 rr:predicateObjectMap km-dev:PredicateObjectMap_705f0473-fee3-4829-b31b-f77619f56e58 .
+km-dev:TriplesMap_61b3777c-0cf6-49e0-b1d5-b08391758673 rr:predicateObjectMap km-dev:PredicateObjectMap_3aa9c54b-7087-4a25-9c17-618e16a1cf8d .
 
-km-dev:PredicateObjectMap_705f0473-fee3-4829-b31b-f77619f56e58 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_3aa9c54b-7087-4a25-9c17-618e16a1cf8d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_705f0473-fee3-4829-b31b-f77619f56e58 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3aa9c54b-7087-4a25-9c17-618e16a1cf8d .
 
-km-dev:TriplesMap_f23a46f9-b768-44c1-8c57-e64ccc682e4e a rr:TriplesMap .
+km-dev:TriplesMap_c8f68d92-469e-4be0-a438-ee3df7f3f0b2 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_f23a46f9-b768-44c1-8c57-e64ccc682e4e .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_c8f68d92-469e-4be0-a438-ee3df7f3f0b2 .
 
-km-dev:TriplesMap_f23a46f9-b768-44c1-8c57-e64ccc682e4e km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_c8f68d92-469e-4be0-a438-ee3df7f3f0b2 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx36 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx36 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx36 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx36 .
 
-km-dev:TriplesMap_f23a46f9-b768-44c1-8c57-e64ccc682e4e rr:logicalTable _:node1a5jt6jfmx36 ;
-	rr:subjectMap _:node1a5jt6jfmx37 .
+km-dev:TriplesMap_c8f68d92-469e-4be0-a438-ee3df7f3f0b2 rr:logicalTable _:node1a5l25j5tx36 ;
+	rr:subjectMap _:node1a5l25j5tx37 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx37 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx37 .
 
-_:node1a5jt6jfmx37 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx37 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantOwnerName1" .
 
-km-dev:PredicateObjectMap_726db4d9-5984-4c95-8c3a-714dfb11c420 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_56a26647-7f97-4146-b9ee-cf1457b8ec21 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx38 rr:column "owner_name" ;
+_:node1a5l25j5tx38 rr:column "owner_name" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx38 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx38 .
 
-km-dev:PredicateObjectMap_726db4d9-5984-4c95-8c3a-714dfb11c420 rr:objectMap _:node1a5jt6jfmx38 .
+km-dev:PredicateObjectMap_56a26647-7f97-4146-b9ee-cf1457b8ec21 rr:objectMap _:node1a5l25j5tx38 .
 
-km-dev:TriplesMap_f23a46f9-b768-44c1-8c57-e64ccc682e4e rr:predicateObjectMap km-dev:PredicateObjectMap_726db4d9-5984-4c95-8c3a-714dfb11c420 .
+km-dev:TriplesMap_c8f68d92-469e-4be0-a438-ee3df7f3f0b2 rr:predicateObjectMap km-dev:PredicateObjectMap_56a26647-7f97-4146-b9ee-cf1457b8ec21 .
 
-km-dev:PredicateObjectMap_726db4d9-5984-4c95-8c3a-714dfb11c420 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_56a26647-7f97-4146-b9ee-cf1457b8ec21 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_726db4d9-5984-4c95-8c3a-714dfb11c420 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_56a26647-7f97-4146-b9ee-cf1457b8ec21 .
 
-km-dev:TriplesMap_c33ff339-753d-4061-b3c4-61e43ad7dadb a rr:TriplesMap .
+km-dev:TriplesMap_e17958f8-bca9-4ce8-a8bb-cd8485149d60 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_c33ff339-753d-4061-b3c4-61e43ad7dadb .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_e17958f8-bca9-4ce8-a8bb-cd8485149d60 .
 
-km-dev:TriplesMap_c33ff339-753d-4061-b3c4-61e43ad7dadb km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_e17958f8-bca9-4ce8-a8bb-cd8485149d60 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx39 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx39 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx39 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx39 .
 
-km-dev:TriplesMap_c33ff339-753d-4061-b3c4-61e43ad7dadb rr:logicalTable _:node1a5jt6jfmx39 ;
-	rr:subjectMap _:node1a5jt6jfmx40 .
+km-dev:TriplesMap_e17958f8-bca9-4ce8-a8bb-cd8485149d60 rr:logicalTable _:node1a5l25j5tx39 ;
+	rr:subjectMap _:node1a5l25j5tx40 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx40 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx40 .
 
-_:node1a5jt6jfmx40 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx40 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerState1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerState> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantOwnerState1" .
 
-km-dev:PredicateObjectMap_cec8ddba-56fa-4caf-b013-177343128169 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_0eac613d-69d3-4016-b92a-d2e75a69b0cf rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx41 rr:column "owner_state" ;
+_:node1a5l25j5tx41 rr:column "owner_state" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx41 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx41 .
 
-km-dev:PredicateObjectMap_cec8ddba-56fa-4caf-b013-177343128169 rr:objectMap _:node1a5jt6jfmx41 .
+km-dev:PredicateObjectMap_0eac613d-69d3-4016-b92a-d2e75a69b0cf rr:objectMap _:node1a5l25j5tx41 .
 
-km-dev:TriplesMap_c33ff339-753d-4061-b3c4-61e43ad7dadb rr:predicateObjectMap km-dev:PredicateObjectMap_cec8ddba-56fa-4caf-b013-177343128169 .
+km-dev:TriplesMap_e17958f8-bca9-4ce8-a8bb-cd8485149d60 rr:predicateObjectMap km-dev:PredicateObjectMap_0eac613d-69d3-4016-b92a-d2e75a69b0cf .
 
-km-dev:PredicateObjectMap_cec8ddba-56fa-4caf-b013-177343128169 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_0eac613d-69d3-4016-b92a-d2e75a69b0cf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cec8ddba-56fa-4caf-b013-177343128169 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0eac613d-69d3-4016-b92a-d2e75a69b0cf .
 
-km-dev:TriplesMap_700e67e7-8822-4b9c-bb7e-45371f2890f1 a rr:TriplesMap .
+km-dev:TriplesMap_f95fe85b-0989-4ce0-9653-ca049d585bed a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_700e67e7-8822-4b9c-bb7e-45371f2890f1 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_f95fe85b-0989-4ce0-9653-ca049d585bed .
 
-km-dev:TriplesMap_700e67e7-8822-4b9c-bb7e-45371f2890f1 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_f95fe85b-0989-4ce0-9653-ca049d585bed km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx42 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx42 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx42 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx42 .
 
-km-dev:TriplesMap_700e67e7-8822-4b9c-bb7e-45371f2890f1 rr:logicalTable _:node1a5jt6jfmx42 ;
-	rr:subjectMap _:node1a5jt6jfmx43 .
+km-dev:TriplesMap_f95fe85b-0989-4ce0-9653-ca049d585bed rr:logicalTable _:node1a5l25j5tx42 ;
+	rr:subjectMap _:node1a5l25j5tx43 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx43 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx43 .
 
-_:node1a5jt6jfmx43 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx43 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerZip1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerZip> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantOwnerZip1" .
 
-km-dev:PredicateObjectMap_0605f108-044c-4683-9bd7-b310fb5e88c9 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_6d64e1e1-5e00-435d-b68b-7e4a28bdfbf9 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx44 rr:column "owner_zip" ;
+_:node1a5l25j5tx44 rr:column "owner_zip" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx44 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx44 .
 
-km-dev:PredicateObjectMap_0605f108-044c-4683-9bd7-b310fb5e88c9 rr:objectMap _:node1a5jt6jfmx44 .
+km-dev:PredicateObjectMap_6d64e1e1-5e00-435d-b68b-7e4a28bdfbf9 rr:objectMap _:node1a5l25j5tx44 .
 
-km-dev:TriplesMap_700e67e7-8822-4b9c-bb7e-45371f2890f1 rr:predicateObjectMap km-dev:PredicateObjectMap_0605f108-044c-4683-9bd7-b310fb5e88c9 .
+km-dev:TriplesMap_f95fe85b-0989-4ce0-9653-ca049d585bed rr:predicateObjectMap km-dev:PredicateObjectMap_6d64e1e1-5e00-435d-b68b-7e4a28bdfbf9 .
 
-km-dev:PredicateObjectMap_0605f108-044c-4683-9bd7-b310fb5e88c9 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_6d64e1e1-5e00-435d-b68b-7e4a28bdfbf9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0605f108-044c-4683-9bd7-b310fb5e88c9 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6d64e1e1-5e00-435d-b68b-7e4a28bdfbf9 .
 
-km-dev:TriplesMap_3194ecc3-ce0a-4e34-93b0-4c730d447d34 a rr:TriplesMap .
+km-dev:TriplesMap_d82f72e4-ef6c-4848-9c2d-be39ab15ca67 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_3194ecc3-ce0a-4e34-93b0-4c730d447d34 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_d82f72e4-ef6c-4848-9c2d-be39ab15ca67 .
 
-km-dev:TriplesMap_3194ecc3-ce0a-4e34-93b0-4c730d447d34 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_d82f72e4-ef6c-4848-9c2d-be39ab15ca67 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx45 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx45 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx45 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx45 .
 
-km-dev:TriplesMap_3194ecc3-ce0a-4e34-93b0-4c730d447d34 rr:logicalTable _:node1a5jt6jfmx45 ;
-	rr:subjectMap _:node1a5jt6jfmx46 .
+km-dev:TriplesMap_d82f72e4-ef6c-4848-9c2d-be39ab15ca67 rr:logicalTable _:node1a5l25j5tx45 ;
+	rr:subjectMap _:node1a5l25j5tx46 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx46 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx46 .
 
-_:node1a5jt6jfmx46 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx46 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantPhoneNumber1" .
 
-km-dev:PredicateObjectMap_56342caf-c726-445f-88e4-f45773a1357a rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_d4a06c8f-50b2-4a2b-89bf-e448e0562b1c rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx47 rr:column "phone_number" ;
+_:node1a5l25j5tx47 rr:column "phone_number" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx47 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx47 .
 
-km-dev:PredicateObjectMap_56342caf-c726-445f-88e4-f45773a1357a rr:objectMap _:node1a5jt6jfmx47 .
+km-dev:PredicateObjectMap_d4a06c8f-50b2-4a2b-89bf-e448e0562b1c rr:objectMap _:node1a5l25j5tx47 .
 
-km-dev:TriplesMap_3194ecc3-ce0a-4e34-93b0-4c730d447d34 rr:predicateObjectMap km-dev:PredicateObjectMap_56342caf-c726-445f-88e4-f45773a1357a .
+km-dev:TriplesMap_d82f72e4-ef6c-4848-9c2d-be39ab15ca67 rr:predicateObjectMap km-dev:PredicateObjectMap_d4a06c8f-50b2-4a2b-89bf-e448e0562b1c .
 
-km-dev:PredicateObjectMap_56342caf-c726-445f-88e4-f45773a1357a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_d4a06c8f-50b2-4a2b-89bf-e448e0562b1c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_56342caf-c726-445f-88e4-f45773a1357a .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d4a06c8f-50b2-4a2b-89bf-e448e0562b1c .
 
-km-dev:TriplesMap_72358624-c1c3-4e34-b419-351cd9a3250d a rr:TriplesMap .
+km-dev:TriplesMap_6a51f409-ac07-4982-9dc7-91a22ea9dfc8 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_72358624-c1c3-4e34-b419-351cd9a3250d .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_6a51f409-ac07-4982-9dc7-91a22ea9dfc8 .
 
-km-dev:TriplesMap_72358624-c1c3-4e34-b419-351cd9a3250d km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_6a51f409-ac07-4982-9dc7-91a22ea9dfc8 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx48 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx48 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx48 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx48 .
 
-km-dev:TriplesMap_72358624-c1c3-4e34-b419-351cd9a3250d rr:logicalTable _:node1a5jt6jfmx48 ;
-	rr:subjectMap _:node1a5jt6jfmx49 .
+km-dev:TriplesMap_6a51f409-ac07-4982-9dc7-91a22ea9dfc8 rr:logicalTable _:node1a5l25j5tx48 ;
+	rr:subjectMap _:node1a5l25j5tx49 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx49 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx49 .
 
-_:node1a5jt6jfmx49 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx49 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantPostalCode1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantPostalCode> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantPostalCode1" .
 
-km-dev:PredicateObjectMap_cdd3088f-f25b-4f6f-97ad-0fd7e4cd8c76 rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_05064a8f-08c3-44b5-9b78-c2b11020f8d0 rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx50 rr:column "postal_code" ;
+_:node1a5l25j5tx50 rr:column "postal_code" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx50 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx50 .
 
-km-dev:PredicateObjectMap_cdd3088f-f25b-4f6f-97ad-0fd7e4cd8c76 rr:objectMap _:node1a5jt6jfmx50 .
+km-dev:PredicateObjectMap_05064a8f-08c3-44b5-9b78-c2b11020f8d0 rr:objectMap _:node1a5l25j5tx50 .
 
-km-dev:TriplesMap_72358624-c1c3-4e34-b419-351cd9a3250d rr:predicateObjectMap km-dev:PredicateObjectMap_cdd3088f-f25b-4f6f-97ad-0fd7e4cd8c76 .
+km-dev:TriplesMap_6a51f409-ac07-4982-9dc7-91a22ea9dfc8 rr:predicateObjectMap km-dev:PredicateObjectMap_05064a8f-08c3-44b5-9b78-c2b11020f8d0 .
 
-km-dev:PredicateObjectMap_cdd3088f-f25b-4f6f-97ad-0fd7e4cd8c76 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_05064a8f-08c3-44b5-9b78-c2b11020f8d0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cdd3088f-f25b-4f6f-97ad-0fd7e4cd8c76 .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_05064a8f-08c3-44b5-9b78-c2b11020f8d0 .
 
-km-dev:TriplesMap_ff7e257c-de78-4fc5-8bf6-17eb07e63c03 a rr:TriplesMap .
+km-dev:TriplesMap_fad24ccf-b9b9-44e8-aee3-8f7cfe299fb8 a rr:TriplesMap .
 
-_:node1a5jt6jfmx1 km-dev:hasTriplesMap km-dev:TriplesMap_ff7e257c-de78-4fc5-8bf6-17eb07e63c03 .
+_:node1a5l25j5tx1 km-dev:hasTriplesMap km-dev:TriplesMap_fad24ccf-b9b9-44e8-aee3-8f7cfe299fb8 .
 
-km-dev:TriplesMap_ff7e257c-de78-4fc5-8bf6-17eb07e63c03 km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:TriplesMap_fad24ccf-b9b9-44e8-aee3-8f7cfe299fb8 km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx51 rr:tableName "businesses_plus.csv" ;
+_:node1a5l25j5tx51 rr:tableName "businesses_plus.csv" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasLogicalTable _:node1a5jt6jfmx51 .
+_:node1a5l25j5tx1 km-dev:hasLogicalTable _:node1a5l25j5tx51 .
 
-km-dev:TriplesMap_ff7e257c-de78-4fc5-8bf6-17eb07e63c03 rr:logicalTable _:node1a5jt6jfmx51 ;
-	rr:subjectMap _:node1a5jt6jfmx52 .
+km-dev:TriplesMap_fad24ccf-b9b9-44e8-aee3-8f7cfe299fb8 rr:logicalTable _:node1a5l25j5tx51 ;
+	rr:subjectMap _:node1a5l25j5tx52 .
 
-_:node1a5jt6jfmx1 km-dev:hasSubjectMap _:node1a5jt6jfmx52 .
+_:node1a5l25j5tx1 km-dev:hasSubjectMap _:node1a5l25j5tx52 .
 
-_:node1a5jt6jfmx52 km-dev:isPartOfMapping _:node1a5jt6jfmx1 ;
+_:node1a5l25j5tx52 km-dev:isPartOfMapping _:node1a5l25j5tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode1" ;
 	rr:class <http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode> ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "RestaurantTaxCode1" .
 
-km-dev:PredicateObjectMap_c07f89a9-b88c-461c-bd3a-6b274c8f25aa rr:predicate rdfs:label .
+km-dev:PredicateObjectMap_5169dbf2-f7ed-4a98-ab43-f394d115a89f rr:predicate rdfs:label .
 
-_:node1a5jt6jfmx53 rr:column "TaxCode" ;
+_:node1a5l25j5tx53 rr:column "TaxCode" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasObjectMap _:node1a5jt6jfmx53 .
+_:node1a5l25j5tx1 km-dev:hasObjectMap _:node1a5l25j5tx53 .
 
-km-dev:PredicateObjectMap_c07f89a9-b88c-461c-bd3a-6b274c8f25aa rr:objectMap _:node1a5jt6jfmx53 .
+km-dev:PredicateObjectMap_5169dbf2-f7ed-4a98-ab43-f394d115a89f rr:objectMap _:node1a5l25j5tx53 .
 
-km-dev:TriplesMap_ff7e257c-de78-4fc5-8bf6-17eb07e63c03 rr:predicateObjectMap km-dev:PredicateObjectMap_c07f89a9-b88c-461c-bd3a-6b274c8f25aa .
+km-dev:TriplesMap_fad24ccf-b9b9-44e8-aee3-8f7cfe299fb8 rr:predicateObjectMap km-dev:PredicateObjectMap_5169dbf2-f7ed-4a98-ab43-f394d115a89f .
 
-km-dev:PredicateObjectMap_c07f89a9-b88c-461c-bd3a-6b274c8f25aa a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a5jt6jfmx1 .
+km-dev:PredicateObjectMap_5169dbf2-f7ed-4a98-ab43-f394d115a89f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5l25j5tx1 .
 
-_:node1a5jt6jfmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c07f89a9-b88c-461c-bd3a-6b274c8f25aa .
+_:node1a5l25j5tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5169dbf2-f7ed-4a98-ab43-f394d115a89f .

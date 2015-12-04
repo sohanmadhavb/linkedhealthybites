@@ -1,0 +1,1 @@
+return getValue("name").lower().replace('.','_').replace(' ','_').replace('\'','').replace('\\','').replace('\/','').replace('&','').replace('\'','').replace('\<','').replace('\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\%','').replace('^','').replace(':','').replace(';','')
