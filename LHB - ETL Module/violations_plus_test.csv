@@ -1,0 +1,64 @@
+business_id,date,ViolationTypeID,risk_category,description
+3304,20140410,103145,Low Risk,Improper storage of equipment utensils or linens
+3304,20140410,103157,Low Risk,Food safety certificate or food handler card not available
+3304,20140410,103154,Low Risk,Unclean or degraded floors walls or ceilings
+3304,20140410,103142,Low Risk,Unclean nonfood contact surfaces
+3304,20140410,103120,Moderate Risk,Moderate risk food holding temperature 
+3304,20140410,103156,Low Risk,Permit license or inspection report not posted
+3304,20131105,103103,High Risk,High risk food holding temperature 
+3304,20131105,103156,Low Risk,Permit license or inspection report not posted
+3304,20131105,103131,Moderate Risk,Moderate risk vermin infestation
+3304,20130506,103116,Moderate Risk,Inadequate food safety knowledge or lack of certified food safety manager
+3304,20130506,103120,Moderate Risk,Moderate risk food holding temperature 
+35660,20140204,103114,High Risk,High risk vermin infestation
+35660,20140204,103156,Low Risk,Permit license or inspection report not posted
+35660,20130731,103103,High Risk,High risk food holding temperature 
+35660,20130731,103154,Low Risk,Unclean or degraded floors walls or ceilings
+35660,20130731,103149,Low Risk,Wiping cloths not clean or properly stored or inadequate sanitizer
+35660,20130731,103109,High Risk,Unclean or unsanitary food contact surfaces
+35660,20130731,103107,High Risk,Improper reheating of food
+35660,20130123,103114,High Risk,High risk vermin infestation
+35660,20130123,103132,Moderate Risk,Improper thawing methods 
+60484,20130822,103144,Low Risk,Unapproved or unmaintained equipment or utensils
+60484,20130822,103120,Moderate Risk,Moderate risk food holding temperature 
+60484,20130822,103131,Moderate Risk,Moderate risk vermin infestation
+60484,20130822,103124,Moderate Risk,Inadequately cleaned or sanitized food contact surfaces
+60484,20140609,103109,High Risk,Unclean or unsanitary food contact surfaces
+60484,20140623,103120,Moderate Risk,Moderate risk food holding temperature 
+60484,20140609,103116,Moderate Risk,Inadequate food safety knowledge or lack of certified food safety manager
+60484,20140609,103103,High Risk,High risk food holding temperature 
+60484,20140609,103131,Moderate Risk,Moderate risk vermin infestation
+60484,20130314,103154,Low Risk,Unclean or degraded floors walls or ceilings
+60484,20130314,103138,Low Risk,Improper storage use or identification of toxic substances
+60484,20130314,103105,High Risk,Improper cooling methods
+60484,20130314,103129,Moderate Risk,Insufficient hot water or running water
+60484,20130314,103114,High Risk,High risk vermin infestation
+60484,20130314,103120,Moderate Risk,Moderate risk food holding temperature 
+60484,20130315,103131,Moderate Risk,Moderate risk vermin infestation
+60484,20130405,103102,High Risk,Unclean hands or improper use of gloves
+60484,20130405,103145,Low Risk,Improper storage of equipment utensils or linens
+65240,20140807,103129,Moderate Risk,Insufficient hot water or running water
+65240,20140807,103133,Moderate Risk,Foods not protected from contamination
+65240,20140807,103147,Low Risk,Inadequate ventilation or lighting
+65240,20140807,103124,Moderate Risk,Inadequately cleaned or sanitized food contact surfaces
+65240,20130320,103154,Low Risk,Unclean or degraded floors walls or ceilings
+77086,20150331,103119,Moderate Risk,Inadequate and inaccessible handwashing facilities
+77086,20150331,103130,Moderate Risk,Inadequate sewage or wastewater disposal
+77086,20150331,103147,Low Risk,Inadequate ventilation or lighting
+77086,20150331,103157,Low Risk,Food safety certificate or food handler card not available
+77086,20150331,103102,High Risk,Unclean hands or improper use of gloves
+77086,20150331,103139,Low Risk,Improper food storage
+77086,20150331,103148,Low Risk,No thermometers or uncalibrated thermometers 
+79052,20151021,103119,Moderate Risk,Inadequate and inaccessible handwashing facilities
+79052,20151021,103162,Low Risk,Other low risk violation
+79052,20151021,103133,Moderate Risk,Foods not protected from contamination
+79052,20150312,103119,Moderate Risk,Inadequate and inaccessible handwashing facilities
+79052,20150312,103162,Low Risk,Other low risk violation
+79052,20150312,103149,Low Risk,Wiping cloths not clean or properly stored or inadequate sanitizer
+79052,20150312,103103,High Risk,High risk food holding temperature 
+79247,20140805,103154,Low Risk,Unclean or degraded floors walls or ceilings
+79247,20140805,103161,Low Risk,Low risk vermin infestation
+79247,20140805,103120,Moderate Risk,Moderate risk food holding temperature 
+79247,20140805,103144,Low Risk,Unapproved or unmaintained equipment or utensils
+79498,20141215,103144,Low Risk,Unapproved or unmaintained equipment or utensils
+79498,20141215,103116,Moderate Risk,Inadequate food safety knowledge or lack of certified food safety manager

@@ -1,0 +1,33 @@
+business_id,Score,date,type
+3304,86,20140410,Routine - Unscheduled
+3304,87,20131105,Routine - Unscheduled
+3304,92,20130506,Routine - Unscheduled
+35660,,20140205,Reinspection/Followup
+35660,91,20140204,Routine - Unscheduled
+35660,75,20130731,Routine - Unscheduled
+35660,89,20130123,Routine - Unscheduled
+60484,,20140623,Reinspection/Followup
+60484,78,20140609,Routine - Unscheduled
+60484,86,20130822,Routine - Unscheduled
+60484,,20130702,Complaint Reinspection/Followup
+60484,,20130522,Foodborne Illness Investigation
+60484,74,20130314,Routine - Unscheduled
+65240,,20140813,Reinspection/Followup
+65240,86,20140807,Routine - Unscheduled
+65240,,20140528,Non-inspection site visit
+65240,98,20130320,Routine - Unscheduled
+77086,77,20150331,Routine - Unscheduled
+77086,,20140121,New Construction
+77086,100,20140121,Routine - Unscheduled
+77086,,20140108,Reinspection/Followup
+77086,,20131218,Non-inspection site visit
+79052,90,20151021,Routine - Unscheduled
+79052,,20150320,Reinspection/Followup
+79052,,20150312,Complaint
+79052,85,20150312,Routine - Unscheduled
+79052,,20140625,New Ownership
+79052,100,20140602,Routine - Unscheduled
+79247,,20140805,New Ownership
+79247,90,20140805,Routine - Unscheduled
+79498,,20141215,Routine - Scheduled
+83566,,20151008,New Construction

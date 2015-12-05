@@ -1,0 +1,10 @@
+business_id,name,address,city,postal_code,latitude,longitude,phone_number,TaxCode,business_certificate,application_date,owner_name,owner_address,owner_city,owner_state,owner_zip
+3304,Round Table Pizza,801 Van Ness Ave,San Francisco,94109,37.783025,-122.420954,,H26,,,Pizza Food Inc,801 Van Ness Ave,San Francisco,CA,94102
+35660,Bissap Baobab,3376 19th St ,SF,94110,37.760278,-122.418722,,H24,417539,8/25/2007,Bollyhood Inc.,"356 12th St., #101",SF,CA,94103
+60484,Clay Oven Indian Restaurant,385 WEST PORTAL Ave ,SF,94127,37.73678,-122.470377,,H25,439886,7/16/2009,N. Malhi (SF) Corp.,385 West Portal,SF,CA,94127
+65240,Smitten Ice Cream,432 Octavia St ,,94102,37.776085,-122.424189,,H24,454419,2/3/2011,"Smitten Ice Cream, LLC / Robyn Goldman",1459 18th Street PMB 312,San Francisco,CA,94107
+77086,Oolong Noodles Restaurant,646 Washington St ,,94111,,,,H26,387801,12/9/2013,Jeffrey Zhi Li,1535 Franklin Street,San Francisco,CA,94109
+79052,Street Taco,1607 Haight St ,,94117,,,,H25,484458,5/28/2014,DF LA CAPITAL LLC,1607 Haight St.,SF,CA,94117
+79247,Delicateses La Plaza,2598 Folsom St ,,94110,,,,H07,488605,6/16/2014,Delicateses La Plaza Inc,2598 Folsom St.,San Francisco,CA,94110
+79498,Picnic On Third,493 03rd St ,,94107,,,,H26,478711,7/9/2014,Tag'd LLC,"79 Hill St., #B",San Francisco,CA,94110
+83566,Elixiria,77 Beale St ,SF,94105,,,,H24,1006354,6/3/2015,Byblos Enterprise LLC,32821 Mono Lake Ln,Fremont,CA,94555

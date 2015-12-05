@@ -1,0 +1,651 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/asu/health-inspection-data#"
+     xml:base="http://www.semanticweb.org/asu/health-inspection-data"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asu/health-inspection-data"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#OnRestaurantInspection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#OnRestaurantInspection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#hasInspection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#OnRestaurantViolation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#OnRestaurantViolation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#hasViolation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasApplicationDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasApplicationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantApplicationDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasBusinessCertificate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasBusinessCertificate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantBusinessCertificate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantCity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasInspection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasInspection">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasInspectionDated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasInspectionDated">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#InspectionDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasInspectionScore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasInspectionScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#InspectionHealthScore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasInspectionTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasInspectionTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#InspectionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasLatitude -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasLatitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasLongitude -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasLongitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestuarantName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasOwnerAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasOwnerAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasOwnerCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasOwnerCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerCity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasOwnerName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasOwnerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasOwnerState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasOwnerState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerState"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasOwnerZip -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasOwnerZip">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerZip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasPhoneNumber -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasPhoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasPostalCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasPostalCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantPostalCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasTaxCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasTaxCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolatedTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolatedTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#ViolationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolationDated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolationDated">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#ViolationDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolationDescribedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolationDescribedAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolationRiskCategoriedUnder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolationRiskCategoriedUnder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="&owl;topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasInspectionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasInspectionDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#InspectionDate"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasInspectionHealthScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasInspectionHealthScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#InspectionHealthScore"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasInspectionType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasInspectionType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#InspectionType"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantApplicationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantApplicationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantApplicationDate"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantBusinessCertificate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantBusinessCertificate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantBusinessCertificate"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantCity"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantLatitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantLongitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestuarantName"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerAddress"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantCity"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerState"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerZip -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantOwnerZip">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerZip"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantPhoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantPhoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantPostalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantPostalCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantPostalCode"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantTaxCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasRestaurantTaxCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#ViolationDate"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolationDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolationDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolationRiskCategory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolationRiskCategory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#hasViolationType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asu/health-inspection-data#hasViolationType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#ViolationType"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#Inspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#InspectionDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#InspectionDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#InspectionHealthScore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#InspectionHealthScore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#InspectionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#InspectionType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantAddress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantApplicationDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantApplicationDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantBusinessCertificate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantBusinessCertificate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantCity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantLatitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantLongitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerAddress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerCity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerState"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerZip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantOwnerZip"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantPhoneNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantPostalCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantPostalCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestaurantTaxCode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#RestuarantName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#RestuarantName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#Violation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#ViolationDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#ViolationDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#ViolationDescription"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#ViolationRiskCategory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asu/health-inspection-data#ViolationType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asu/health-inspection-data#ViolationType"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

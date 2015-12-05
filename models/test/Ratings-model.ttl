@@ -1,0 +1,999 @@
+@prefix swvs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix scires: <http://vivoweb.org/ontology/scientific-research#> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix dcelem: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ero: <http://purl.obolibrary.org/obo/> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix skco: <http://www.w3.org/2004/02/skos/core#> .
+@prefix syll: <http://lod.isi.edu/ontology/syllabus/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix pvs: <http://vivoweb.org/ontology/provenance-support#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix scirr: <http://vivoweb.org/ontology/scientific-research-resource#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix schemax: <http://topbraid.org/schemax/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a5outeu1x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Ratings_Test.csv" ;
+	km-dev:modelPublicationTime "1449315449793"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"display_address\"}],[{\"columnName\":\"display_phone\"}],[{\"columnName\":\"snippet_image_url\"}],[{\"columnName\":\"categories\"}],[{\"columnName\":\"image_url\"}],[{\"columnName\":\"rating\"}],[{\"columnName\":\"name\"}],[{\"columnName\":\"review_count\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"rating_image_url\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"display_address\"}],[{\"columnName\":\"name_uri\"}],[{\"columnName\":\"display_phone\"}],[{\"columnName\":\"snippet_image_url\"}],[{\"columnName\":\"categories\"}],[{\"columnName\":\"image_url\"}],[{\"columnName\":\"rating\"}],[{\"columnName\":\"review_count\"}],[{\"columnName\":\"url\"}],[{\"columnName\":\"rating_image_url\"}]]" ;
+	km-dev:hasModelLabel "Ratings" ;
+	km-dev:hasBaseURI "http://www.semanticweb.org/asu/yelp-review-data/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://www.semanticweb.org/asu/yelp-review-data/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"name\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"name_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"name\\\").lower().replace('.','_').replace(' ','_').replace('\\\\'','').replace('\\\\\\\\','').replace('\\\\/','').replace('&','').replace('\\\\'','').replace('\\\\<','').replace('\\\\>','').replace('@','').replace('-','').replace('#','').replace('$','').replace('\\\\%','').replace('%','').replace('^','').replace(':','').replace(';','').replace('\\\\\\\"','').replace('(','').replace('\\\\(','').replace(')','').replace('\\\\)','')\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"ratings\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"Ratings\",
+                    \"hasBaseURI\": false,
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"name_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"image_url\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantImageUrl\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"image_url\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"image_url\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"name_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"name_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"url\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantImageUrl\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"url\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"url\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"display_phone\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantPhone\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"display_phone\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"display_phone\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"display_address\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantAddress\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"display_address\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"display_address\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"review_count\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasReviewCount\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"review_count\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"review_count\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"categories\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantCuisine\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"categories\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"categories\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rating\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasReviewRating\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rating\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rating\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"rating_image_url\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasReviewRatingImageUrl\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rating_image_url\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"rating_image_url\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"snippet_image_url\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant\",
+                    \"DomainId\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.semanticweb.org/asu/yelp-review-data#hasReviewSnippetImageUrl\",
+                    \"DomainLabel\": \"http://www.semanticweb.org/asu/yelp-review-data#Restaurant/Restaurant1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"snippet_image_url\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"snippet_image_url\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f a rr:TriplesMap .
+
+_:node1a5outeu1x1 km-dev:hasTriplesMap km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x2 rr:tableName "Ratings_Test.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasLogicalTable _:node1a5outeu1x2 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:logicalTable _:node1a5outeu1x2 ;
+	rr:subjectMap _:node1a5outeu1x3 .
+
+_:node1a5outeu1x1 km-dev:hasSubjectMap _:node1a5outeu1x3 .
+
+_:node1a5outeu1x3 km-dev:isPartOfMapping _:node1a5outeu1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.semanticweb.org/asu/yelp-review-data#Restaurant1" ;
+	rr:class <http://www.semanticweb.org/asu/yelp-review-data#Restaurant> ;
+	rr:template "{name_uri}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_60d85363-2750-4f03-aa27-b8e637a590d5 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantAddress> .
+
+_:node1a5outeu1x4 rr:column "display_address" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x4 .
+
+km-dev:PredicateObjectMap_60d85363-2750-4f03-aa27-b8e637a590d5 rr:objectMap _:node1a5outeu1x4 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_60d85363-2750-4f03-aa27-b8e637a590d5 .
+
+km-dev:PredicateObjectMap_60d85363-2750-4f03-aa27-b8e637a590d5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_60d85363-2750-4f03-aa27-b8e637a590d5 .
+
+km-dev:PredicateObjectMap_c7abf5bc-d319-4021-ae9b-4fd0168627a9 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantCuisine> .
+
+_:node1a5outeu1x5 rr:column "categories" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x5 .
+
+km-dev:PredicateObjectMap_c7abf5bc-d319-4021-ae9b-4fd0168627a9 rr:objectMap _:node1a5outeu1x5 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_c7abf5bc-d319-4021-ae9b-4fd0168627a9 .
+
+km-dev:PredicateObjectMap_c7abf5bc-d319-4021-ae9b-4fd0168627a9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c7abf5bc-d319-4021-ae9b-4fd0168627a9 .
+
+km-dev:PredicateObjectMap_5b600898-b867-4bec-af42-8b4ef2704c65 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantImageUrl> .
+
+_:node1a5outeu1x6 rr:column "image_url" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x6 .
+
+km-dev:PredicateObjectMap_5b600898-b867-4bec-af42-8b4ef2704c65 rr:objectMap _:node1a5outeu1x6 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_5b600898-b867-4bec-af42-8b4ef2704c65 .
+
+km-dev:PredicateObjectMap_5b600898-b867-4bec-af42-8b4ef2704c65 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5b600898-b867-4bec-af42-8b4ef2704c65 .
+
+km-dev:PredicateObjectMap_f637ab82-8d7b-40c8-bc49-2107a017e385 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantImageUrl> .
+
+_:node1a5outeu1x7 rr:column "url" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x7 .
+
+km-dev:PredicateObjectMap_f637ab82-8d7b-40c8-bc49-2107a017e385 rr:objectMap _:node1a5outeu1x7 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_f637ab82-8d7b-40c8-bc49-2107a017e385 .
+
+km-dev:PredicateObjectMap_f637ab82-8d7b-40c8-bc49-2107a017e385 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f637ab82-8d7b-40c8-bc49-2107a017e385 .
+
+km-dev:PredicateObjectMap_12232a2b-fec2-4906-bdea-dabd212ff4e6 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasRestaurantPhone> .
+
+_:node1a5outeu1x8 rr:column "display_phone" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x8 .
+
+km-dev:PredicateObjectMap_12232a2b-fec2-4906-bdea-dabd212ff4e6 rr:objectMap _:node1a5outeu1x8 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_12232a2b-fec2-4906-bdea-dabd212ff4e6 .
+
+km-dev:PredicateObjectMap_12232a2b-fec2-4906-bdea-dabd212ff4e6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_12232a2b-fec2-4906-bdea-dabd212ff4e6 .
+
+km-dev:PredicateObjectMap_b6e47d0b-a94c-44da-ae6a-e5a2c5667d0d rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasReviewCount> .
+
+_:node1a5outeu1x9 rr:column "review_count" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x9 .
+
+km-dev:PredicateObjectMap_b6e47d0b-a94c-44da-ae6a-e5a2c5667d0d rr:objectMap _:node1a5outeu1x9 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_b6e47d0b-a94c-44da-ae6a-e5a2c5667d0d .
+
+km-dev:PredicateObjectMap_b6e47d0b-a94c-44da-ae6a-e5a2c5667d0d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b6e47d0b-a94c-44da-ae6a-e5a2c5667d0d .
+
+km-dev:PredicateObjectMap_625db46d-978d-4275-a8b9-62850e1b59ad rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasReviewRating> .
+
+_:node1a5outeu1x10 rr:column "rating" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x10 .
+
+km-dev:PredicateObjectMap_625db46d-978d-4275-a8b9-62850e1b59ad rr:objectMap _:node1a5outeu1x10 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_625db46d-978d-4275-a8b9-62850e1b59ad .
+
+km-dev:PredicateObjectMap_625db46d-978d-4275-a8b9-62850e1b59ad a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_625db46d-978d-4275-a8b9-62850e1b59ad .
+
+km-dev:PredicateObjectMap_63cc5e92-0b2d-4980-9e27-16f0502f582f rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasReviewRatingImageUrl> .
+
+_:node1a5outeu1x11 rr:column "rating_image_url" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x11 .
+
+km-dev:PredicateObjectMap_63cc5e92-0b2d-4980-9e27-16f0502f582f rr:objectMap _:node1a5outeu1x11 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_63cc5e92-0b2d-4980-9e27-16f0502f582f .
+
+km-dev:PredicateObjectMap_63cc5e92-0b2d-4980-9e27-16f0502f582f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_63cc5e92-0b2d-4980-9e27-16f0502f582f .
+
+km-dev:PredicateObjectMap_63c5e79c-18f1-483f-8e23-2ae2cfea7639 rr:predicate <http://www.semanticweb.org/asu/yelp-review-data#hasReviewSnippetImageUrl> .
+
+_:node1a5outeu1x12 rr:column "snippet_image_url" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasObjectMap _:node1a5outeu1x12 .
+
+km-dev:PredicateObjectMap_63c5e79c-18f1-483f-8e23-2ae2cfea7639 rr:objectMap _:node1a5outeu1x12 .
+
+km-dev:TriplesMap_9fd58ad6-ae62-4f7d-bb1c-2893f195fc3f rr:predicateObjectMap km-dev:PredicateObjectMap_63c5e79c-18f1-483f-8e23-2ae2cfea7639 .
+
+km-dev:PredicateObjectMap_63c5e79c-18f1-483f-8e23-2ae2cfea7639 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a5outeu1x1 .
+
+_:node1a5outeu1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_63c5e79c-18f1-483f-8e23-2ae2cfea7639 .
