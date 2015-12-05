@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:insp="http://www.semanticweb.org/asu/health-inspection-data#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/0">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>3304</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>86</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20140410</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/1">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>3304</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>87</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20131105</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/2">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>3304</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>92</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20130506</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/3">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>35660</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20140205</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Reinspection/Followup</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/4">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>35660</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>91</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20140204</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/5">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>35660</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>75</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20130731</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/6">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>35660</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>89</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20130123</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/7">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>60484</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20140623</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Reinspection/Followup</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/8">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>60484</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>78</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20140609</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/9">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>60484</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>86</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20130822</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/10">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>60484</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20130702</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Complaint Reinspection/Followup</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/11">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>60484</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20130522</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Foodborne Illness Investigation</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/12">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>60484</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>74</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20130314</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/13">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>65240</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20140813</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Reinspection/Followup</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/14">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>65240</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>86</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20140807</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/15">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>65240</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20140528</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Non-inspection site visit</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/16">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>65240</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>98</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20130320</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/17">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>77086</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>77</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20150331</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/18">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>77086</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20140121</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>New Construction</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/19">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>77086</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>100</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20140121</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/20">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>77086</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20140108</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Reinspection/Followup</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/21">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>77086</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20131218</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Non-inspection site visit</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/22">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79052</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>90</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20151021</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/23">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79052</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20150320</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Reinspection/Followup</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/24">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79052</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20150312</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Complaint</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/25">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79052</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>85</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20150312</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/26">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79052</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20140625</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>New Ownership</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/27">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79052</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>100</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20140602</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/28">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79247</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20140805</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>New Ownership</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/29">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79247</insp:OnRestaurantInspection>
+	<insp:hasInspectionScore>90</insp:hasInspectionScore>
+	<insp:hasInspectionDated>20140805</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Unscheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/30">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>79498</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20141215</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>Routine - Scheduled</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/inspections/31">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Inspection"/>
+	<insp:OnRestaurantInspection>83566</insp:OnRestaurantInspection>
+	<insp:hasInspectionDated>20151008</insp:hasInspectionDated>
+	<insp:hasInspectionTypeOf>New Construction</insp:hasInspectionTypeOf>
+</rdf:Description>
+
+</rdf:RDF>

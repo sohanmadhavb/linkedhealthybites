@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rest="http://www.semanticweb.org/asu/health-inspection-data#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/3304">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>3304</rdfs:label>
+	<rest:hasName>Round Table Pizza</rest:hasName>
+	<rest:hasAddress>801 Van Ness Ave</rest:hasAddress>
+	<rest:hasCity>San Francisco</rest:hasCity>
+	<rest:hasPostalCode>94109</rest:hasPostalCode>
+	<rest:hasLatitude>37.783025</rest:hasLatitude>
+	<rest:hasLongitude>-122.420954</rest:hasLongitude>
+	<rest:hasTaxCode>H26</rest:hasTaxCode>
+	<rest:hasOwnerName>Pizza Food Inc</rest:hasOwnerName>
+	<rest:hasOwnerAddress>801 Van Ness Ave</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>San Francisco</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94102</rest:hasOwnerZip>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/35660">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>35660</rdfs:label>
+	<rest:hasName>Bissap Baobab</rest:hasName>
+	<rest:hasAddress>3376 19th St </rest:hasAddress>
+	<rest:hasCity>SF</rest:hasCity>
+	<rest:hasPostalCode>94110</rest:hasPostalCode>
+	<rest:hasLatitude>37.760278</rest:hasLatitude>
+	<rest:hasLongitude>-122.418722</rest:hasLongitude>
+	<rest:hasTaxCode>H24</rest:hasTaxCode>
+	<rest:hasBusinessCertificate>417539</rest:hasBusinessCertificate>
+	<rest:hasApplicationDate>8/25/2007</rest:hasApplicationDate>
+	<rest:hasOwnerName>Bollyhood Inc.</rest:hasOwnerName>
+	<rest:hasOwnerAddress>356 12th St., #101</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>SF</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94103</rest:hasOwnerZip>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/60484">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>60484</rdfs:label>
+	<rest:hasName>Clay Oven Indian Restaurant</rest:hasName>
+	<rest:hasAddress>385 WEST PORTAL Ave </rest:hasAddress>
+	<rest:hasCity>SF</rest:hasCity>
+	<rest:hasPostalCode>94127</rest:hasPostalCode>
+	<rest:hasLatitude>37.73678</rest:hasLatitude>
+	<rest:hasLongitude>-122.470377</rest:hasLongitude>
+	<rest:hasTaxCode>H25</rest:hasTaxCode>
+	<rest:hasBusinessCertificate>439886</rest:hasBusinessCertificate>
+	<rest:hasApplicationDate>7/16/2009</rest:hasApplicationDate>
+	<rest:hasOwnerName>N. Malhi (SF) Corp.</rest:hasOwnerName>
+	<rest:hasOwnerAddress>385 West Portal</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>SF</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94127</rest:hasOwnerZip>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/65240">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>65240</rdfs:label>
+	<rest:hasName>Smitten Ice Cream</rest:hasName>
+	<rest:hasAddress>432 Octavia St </rest:hasAddress>
+	<rest:hasPostalCode>94102</rest:hasPostalCode>
+	<rest:hasLatitude>37.776085</rest:hasLatitude>
+	<rest:hasLongitude>-122.424189</rest:hasLongitude>
+	<rest:hasTaxCode>H24</rest:hasTaxCode>
+	<rest:hasBusinessCertificate>454419</rest:hasBusinessCertificate>
+	<rest:hasApplicationDate>2/3/2011</rest:hasApplicationDate>
+	<rest:hasOwnerName>Smitten Ice Cream, LLC / Robyn Goldman</rest:hasOwnerName>
+	<rest:hasOwnerAddress>1459 18th Street PMB 312</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>San Francisco</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94107</rest:hasOwnerZip>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/77086">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>77086</rdfs:label>
+	<rest:hasName>Oolong Noodles Restaurant</rest:hasName>
+	<rest:hasAddress>646 Washington St </rest:hasAddress>
+	<rest:hasPostalCode>94111</rest:hasPostalCode>
+	<rest:hasTaxCode>H26</rest:hasTaxCode>
+	<rest:hasBusinessCertificate>387801</rest:hasBusinessCertificate>
+	<rest:hasApplicationDate>12/9/2013</rest:hasApplicationDate>
+	<rest:hasOwnerName>Jeffrey Zhi Li</rest:hasOwnerName>
+	<rest:hasOwnerAddress>1535 Franklin Street</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>San Francisco</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94109</rest:hasOwnerZip>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/79052">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>79052</rdfs:label>
+	<rest:hasName>Street Taco</rest:hasName>
+	<rest:hasAddress>1607 Haight St </rest:hasAddress>
+	<rest:hasPostalCode>94117</rest:hasPostalCode>
+	<rest:hasTaxCode>H25</rest:hasTaxCode>
+	<rest:hasBusinessCertificate>484458</rest:hasBusinessCertificate>
+	<rest:hasApplicationDate>5/28/2014</rest:hasApplicationDate>
+	<rest:hasOwnerName>DF LA CAPITAL LLC</rest:hasOwnerName>
+	<rest:hasOwnerAddress>1607 Haight St.</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>SF</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94117</rest:hasOwnerZip>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/79247">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>79247</rdfs:label>
+	<rest:hasName>Delicateses La Plaza</rest:hasName>
+	<rest:hasAddress>2598 Folsom St </rest:hasAddress>
+	<rest:hasPostalCode>94110</rest:hasPostalCode>
+	<rest:hasTaxCode>H07</rest:hasTaxCode>
+	<rest:hasBusinessCertificate>488605</rest:hasBusinessCertificate>
+	<rest:hasApplicationDate>6/16/2014</rest:hasApplicationDate>
+	<rest:hasOwnerName>Delicateses La Plaza Inc</rest:hasOwnerName>
+	<rest:hasOwnerAddress>2598 Folsom St.</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>San Francisco</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94110</rest:hasOwnerZip>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/79498">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>79498</rdfs:label>
+	<rest:hasName>Picnic On Third</rest:hasName>
+	<rest:hasAddress>493 03rd St </rest:hasAddress>
+	<rest:hasPostalCode>94107</rest:hasPostalCode>
+	<rest:hasTaxCode>H26</rest:hasTaxCode>
+	<rest:hasBusinessCertificate>478711</rest:hasBusinessCertificate>
+	<rest:hasApplicationDate>7/9/2014</rest:hasApplicationDate>
+	<rest:hasOwnerName>Tag'd LLC</rest:hasOwnerName>
+	<rest:hasOwnerAddress>79 Hill St., #B</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>San Francisco</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94110</rest:hasOwnerZip>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/business/83566">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Restaurant"/>
+	<rdfs:label>83566</rdfs:label>
+	<rest:hasName>Elixiria</rest:hasName>
+	<rest:hasAddress>77 Beale St </rest:hasAddress>
+	<rest:hasCity>SF</rest:hasCity>
+	<rest:hasPostalCode>94105</rest:hasPostalCode>
+	<rest:hasTaxCode>H24</rest:hasTaxCode>
+	<rest:hasBusinessCertificate>1006354</rest:hasBusinessCertificate>
+	<rest:hasApplicationDate>6/3/2015</rest:hasApplicationDate>
+	<rest:hasOwnerName>Byblos Enterprise LLC</rest:hasOwnerName>
+	<rest:hasOwnerAddress>32821 Mono Lake Ln</rest:hasOwnerAddress>
+	<rest:hasOwnerCity>Fremont</rest:hasOwnerCity>
+	<rest:hasOwnerState>CA</rest:hasOwnerState>
+	<rest:hasOwnerZip>94555</rest:hasOwnerZip>
+</rdf:Description>
+
+</rdf:RDF>

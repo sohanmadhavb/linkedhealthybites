@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:deals="http://www.semanticweb.org/asu/8coupons-deals-data#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/13516077">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>13516077</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/13516077/3449003</deals:hasDUrl>
+	<deals:hasRName>Round Table Pizza</deals:hasRName>
+	<deals:hasRPhone>650.697.5520</deals:hasRPhone>
+	<deals:hasRLatitude>37.602</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.393</deals:hasRLongitude>
+	<deals:hasExpiry>12/13/2015</deals:hasExpiry>
+	<deals:hasDPostDate>8/4/2015 5:15</deals:hasDPostDate>
+	<deals:hasDProvider>valpak</deals:hasDProvider>
+	<deals:hasDTitle>$4 Off Any X-L Pizza, 3 Off Any Large Pizza, &amp; $2 Off Any Medium Pizza    </deals:hasDTitle>
+	<deals:hasDInStore>11</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/round-table-pizza-millbrae-94031</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/13516077</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/12310617">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>12310617</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/12310617/3449003/aff</deals:hasDUrl>
+	<deals:hasRName>Bissap Baobab</deals:hasRName>
+	<deals:hasRPhone>415.643.3558</deals:hasRPhone>
+	<deals:hasRLatitude>37.7604</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.419</deals:hasRLongitude>
+	<deals:hasExpiry>12/6/2015</deals:hasExpiry>
+	<deals:hasDPostDate>12/4/2015 0:24</deals:hasDPostDate>
+	<deals:hasDProvider>Amazon Local</deals:hasDProvider>
+	<deals:hasDTitle>$38 for $74.25 - Dinner for Two at Bissap Baobab </deals:hasDTitle>
+	<deals:hasInfo>The staff at Bissap Baobab believes dining out should be a full cultural experience. Named after the Baobab tree, this Mission District restaurant brings the flavors of Senegal to life with gourmet African dishes in a worldly community atmosphere.   $38 (up to $74.25 value) for a West African and Caribbean dinner for two, valid Tuesday through Thursday or Sunday  $45 (up to $74.25 value) for a West African and Caribbean dinner for two, valid Friday or Saturday  Menu includes lamb, tacos, prawns, spirits, infused cocktails, and more  Restaurant is also a community center with special events  In business since 1996  Bissap Baobab's  Website  |  Menu  |  Events</deals:hasInfo>
+	<deals:hasDOriginalPrice>74</deals:hasDOriginalPrice>
+	<deals:hasPrice>38</deals:hasPrice>
+	<deals:hasDiscount>49</deals:hasDiscount>
+	<deals:hasSavings>36</deals:hasSavings>
+	<deals:hasDInStore>50</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/little-baobab-san-francisco-94110</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/12310617</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/14342389">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>14342389</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/14342389/3449003/aff</deals:hasDUrl>
+	<deals:hasRName>Picnic on Third</deals:hasRName>
+	<deals:hasRPhone>415.590.7121</deals:hasRPhone>
+	<deals:hasRLatitude>37.7816</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.396</deals:hasRLongitude>
+	<deals:hasExpiry>12/5/2015</deals:hasExpiry>
+	<deals:hasDPostDate>12/3/2015 11:31</deals:hasDPostDate>
+	<deals:hasDProvider>Gilt City</deals:hasDProvider>
+	<deals:hasDTitle>Up to 33% Off Dinner, Brunch, Drinks, Gourmet Gift Bags &amp; More</deals:hasDTitle>
+	<deals:hasInfo>One bottle of Blue Plate grenache, Allagash Interlude beer or Bonny Doon Querry cider One mason jar of a house-made item; the rotating selection may include pickles and sauerkraut, granola or chai tea mix One packaged item: choose from 4505 kettle-cooked chicharrones, PapaBubble SF candies or Picnic. s signature. Jumpin.  Jambalaya Spice Mix.</deals:hasInfo>
+	<deals:hasDOriginalPrice>40</deals:hasDOriginalPrice>
+	<deals:hasPrice>28</deals:hasPrice>
+	<deals:hasDiscount>30</deals:hasDiscount>
+	<deals:hasSavings>10</deals:hasSavings>
+	<deals:hasDInStore>50</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/picnic-on-third-san-francisco-94107</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/14342389</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/14385287">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>14385287</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/14385287/3449003/aff</deals:hasDUrl>
+	<deals:hasRName>Smitten Ice Cream</deals:hasRName>
+	<deals:hasRPhone>415.863.1518</deals:hasRPhone>
+	<deals:hasRLatitude>37.7761</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.424</deals:hasRLongitude>
+	<deals:hasExpiry>12/6/2015</deals:hasExpiry>
+	<deals:hasDPostDate>12/4/2015 5:33</deals:hasDPostDate>
+	<deals:hasDProvider>Gilt City</deals:hasDProvider>
+	<deals:hasDTitle>Pints To-Go, Sundae Bars &amp; Catering</deals:hasDTitle>
+	<deals:hasInfo>Two-hour holiday party catering for up to 50 guests Three flavors of your choice Three pairings of your choice Brrr churning ice cream on-site with liquid nitrogen One or two Smitten team members on-site</deals:hasInfo>
+	<deals:hasDOriginalPrice>2185</deals:hasDOriginalPrice>
+	<deals:hasPrice>1850</deals:hasPrice>
+	<deals:hasDiscount>15</deals:hasDiscount>
+	<deals:hasSavings>11</deals:hasSavings>
+	<deals:hasDInStore>50</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/smitten-ice-cream-san-francisco-94102</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/14385287</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/12998415">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>12998415</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/12998415/3449003/aff</deals:hasDUrl>
+	<deals:hasRName>Clay Oven Indian Restaurant</deals:hasRName>
+	<deals:hasRPhone>415.731.2400</deals:hasRPhone>
+	<deals:hasRLatitude>37.7367</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.47</deals:hasRLongitude>
+	<deals:hasExpiry>12/6/2015</deals:hasExpiry>
+	<deals:hasDPostDate>12/4/2015 0:24</deals:hasDPostDate>
+	<deals:hasDProvider>Amazon Local</deals:hasDProvider>
+	<deals:hasDTitle>$16 to Spend at Clay Oven Indian Restaurant</deals:hasDTitle>
+	<deals:hasInfo>Get your fill of rich, authentically prepared Indian food at Clay Oven Indian Restaurant. Their menu is packed with traditional Indian dishes made with the freshest, most flavorful meats, vegetables, and spices.    $8 for $16 to spend on food and drink  Start with samosas or pakora  Chicken, lamb, seafood, and vegetarian dishes made with potent spices  Soups, salads, and plenty of sides round out the menu   Clay Oven Indian Restaurant:  Website  |  Menu</deals:hasInfo>
+	<deals:hasDOriginalPrice>16</deals:hasDOriginalPrice>
+	<deals:hasPrice>8</deals:hasPrice>
+	<deals:hasDiscount>50</deals:hasDiscount>
+	<deals:hasSavings>8</deals:hasSavings>
+	<deals:hasDInStore>50</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/clay-oven-indian-restaurant-san-francisco-94127</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/12998415</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/12847793">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>12847793</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/12847793/3449003/aff</deals:hasDUrl>
+	<deals:hasRName>Delicateses La Plaza</deals:hasRName>
+	<deals:hasRPhone>415.341.8542</deals:hasRPhone>
+	<deals:hasRLatitude>37.7557</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.414</deals:hasRLongitude>
+	<deals:hasExpiry>12/13/2015</deals:hasExpiry>
+	<deals:hasDPostDate>12/2/2015 10:51</deals:hasDPostDate>
+	<deals:hasDProvider>yelp</deals:hasDProvider>
+	<deals:hasDTitle>$50 for $75 Certificate</deals:hasDTitle>
+	<deals:hasInfo>You get a voucher redeemable for $75 at Delicateses La Plaza. Print out your voucher, or redeem on your phone with the  Yelp app .</deals:hasInfo>
+	<deals:hasDOriginalPrice>75</deals:hasDOriginalPrice>
+	<deals:hasPrice>50</deals:hasPrice>
+	<deals:hasDiscount>33</deals:hasDiscount>
+	<deals:hasSavings>25</deals:hasSavings>
+	<deals:hasDInStore>1</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/delicateses-la-plaza-san-francisco-94110</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/12847793</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/11140611">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>11140611</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/11140611/3449003/aff</deals:hasDUrl>
+	<deals:hasRName>Bissap Baobab</deals:hasRName>
+	<deals:hasRPhone>415.826.9287</deals:hasRPhone>
+	<deals:hasRLatitude>37.7598</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.419</deals:hasRLongitude>
+	<deals:hasExpiry>12/14/2015</deals:hasExpiry>
+	<deals:hasDPostDate>12/3/2015 0:06</deals:hasDPostDate>
+	<deals:hasDProvider>yelp</deals:hasDProvider>
+	<deals:hasDTitle>$28 for $40 Certificate</deals:hasDTitle>
+	<deals:hasInfo>You get a voucher redeemable for $40 at Bissap Baobab. Print out your voucher, or redeem on your phone with the  Yelp app .</deals:hasInfo>
+	<deals:hasDOriginalPrice>40</deals:hasDOriginalPrice>
+	<deals:hasPrice>28</deals:hasPrice>
+	<deals:hasDiscount>30</deals:hasDiscount>
+	<deals:hasSavings>12</deals:hasSavings>
+	<deals:hasDInStore>1</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/bissap-baobab-san-francisco-94110</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/11140611</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/14205621">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>14205621</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/14205621/3449003/aff</deals:hasDUrl>
+	<deals:hasRName>Elixiria</deals:hasRName>
+	<deals:hasRPhone>415.948.6537</deals:hasRPhone>
+	<deals:hasRLatitude>37.792</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.396</deals:hasRLongitude>
+	<deals:hasExpiry>12/15/2015</deals:hasExpiry>
+	<deals:hasDPostDate>12/4/2015 0:59</deals:hasDPostDate>
+	<deals:hasDProvider>yelp</deals:hasDProvider>
+	<deals:hasDTitle>$25 for $30 Certificate</deals:hasDTitle>
+	<deals:hasInfo>You get a voucher redeemable for $30 at Elixiria. Print out your voucher, or redeem on your phone with the  Yelp app .</deals:hasInfo>
+	<deals:hasDOriginalPrice>30</deals:hasDOriginalPrice>
+	<deals:hasPrice>25</deals:hasPrice>
+	<deals:hasDiscount>17</deals:hasDiscount>
+	<deals:hasSavings>5</deals:hasSavings>
+	<deals:hasDInStore>1</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/elixiria-san-francisco-94105-415-948-6537</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/14205621</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/14324975">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>14324975</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/14324975/3449003/aff</deals:hasDUrl>
+	<deals:hasRName>Oolong Noodles Restaurant</deals:hasRName>
+	<deals:hasRPhone>415.819.5668</deals:hasRPhone>
+	<deals:hasRLatitude>37.7956</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.404</deals:hasRLongitude>
+	<deals:hasExpiry>12/15/2015</deals:hasExpiry>
+	<deals:hasDPostDate>12/4/2015 0:59</deals:hasDPostDate>
+	<deals:hasDProvider>yelp</deals:hasDProvider>
+	<deals:hasDTitle>$10 for $20 Certificate</deals:hasDTitle>
+	<deals:hasInfo>You get a voucher redeemable for $20 at Oolong Noodles Restaurant. Print out your voucher, or redeem on your phone with the  Yelp app .</deals:hasInfo>
+	<deals:hasDOriginalPrice>20</deals:hasDOriginalPrice>
+	<deals:hasPrice>10</deals:hasPrice>
+	<deals:hasDiscount>50</deals:hasDiscount>
+	<deals:hasSavings>10</deals:hasSavings>
+	<deals:hasDInStore>1</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/oolong-noodles-restaurant-san-francisco-94111</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/14324975</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/12820957">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>12820957</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/12820957/3449003</deals:hasDUrl>
+	<deals:hasRName>Street Taco</deals:hasRName>
+	<deals:hasRPhone>415.525.4435</deals:hasRPhone>
+	<deals:hasRLatitude>37.7698</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.449</deals:hasRLongitude>
+	<deals:hasExpiry>12/6/2015</deals:hasExpiry>
+	<deals:hasDPostDate>7/28/2015 5:15</deals:hasDPostDate>
+	<deals:hasDProvider>valpak</deals:hasDProvider>
+	<deals:hasDTitle>Free Burrito Order 1 Regular Burrito and 2 Drinks, Get a 2nd Burrito of Equal of Lesser Value FREE!</deals:hasDTitle>
+	<deals:hasDInStore>2</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/street-taco-san-francisco-94117</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/12820957</deals:hasImageStandardSmall>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/deals/13516073">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/8coupons-deals-data#Deal"/>
+	<rdfs:label>13516073</rdfs:label>
+	<deals:hasDUrl>http://www.8coupons.com/apiout/showdeal/deal/13516073/3449003</deals:hasDUrl>
+	<deals:hasRName>Round Table Pizza</deals:hasRName>
+	<deals:hasRPhone>415.387.5054</deals:hasRPhone>
+	<deals:hasRLatitude>37.781</deals:hasRLatitude>
+	<deals:hasRLongitude>-122.457</deals:hasRLongitude>
+	<deals:hasExpiry>12/13/2015</deals:hasExpiry>
+	<deals:hasDPostDate>8/4/2015 5:15</deals:hasDPostDate>
+	<deals:hasDProvider>valpak</deals:hasDProvider>
+	<deals:hasDTitle>$4 Off Any X-L Pizza, 3 Off Any Large Pizza, &amp; $2 Off Any Medium Pizza    </deals:hasDTitle>
+	<deals:hasDInStore>6</deals:hasDInStore>
+	<deals:hasDStoreUrl>http://www.8coupons.com/discounts/round-table-pizza-3567-geary-st-san-francisco-94118</deals:hasDStoreUrl>
+	<deals:hasImageStandardSmall>http://www.8coupons.com/image/deal/13516073</deals:hasImageStandardSmall>
+</rdf:Description>
+
+</rdf:RDF>

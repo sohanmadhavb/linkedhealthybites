@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rat="http://www.semanticweb.org/asu/yelp-review-data#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/smitten-ice-cream-san-francisco-3">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>smitten-ice-cream-san-francisco-3</rdfs:label>
+	<rat:hasName>Smitten Ice Cream</rat:hasName>
+	<rat:hasImageUrl>http://s3-media3.fl.yelpcdn.com/bphoto/ezFsiouhePtO-dAv3pTh3g/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-415-863-1518</rat:hasPhone>
+	<rat:hasAddress>432 Octavia St</rat:hasAddress>
+	<rat:hasReviewCount>1932</rat:hasReviewCount>
+	<rat:hasCuisine>Food Stands</rat:hasCuisine>
+	<rat:hasRating>4</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media2.fl.yelpcdn.com/photo/rGvMAdg88Ozxina_HAeOCA/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/street-taco-san-francisco">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>street-taco-san-francisco</rdfs:label>
+	<rat:hasName>Street Taco</rat:hasName>
+	<rat:hasImageUrl>http://s3-media2.fl.yelpcdn.com/bphoto/I7vX0kFLv0rrhCJqhcOkDA/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-415-525-4435</rat:hasPhone>
+	<rat:hasAddress>1607 Haight St</rat:hasAddress>
+	<rat:hasReviewCount>233</rat:hasReviewCount>
+	<rat:hasCuisine>Mexican</rat:hasCuisine>
+	<rat:hasRating>4.5</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media1.fl.yelpcdn.com/photo/QIVi_XU30ptrTt0_sT9-Gw/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/clay-oven-indian-restaurant-san-francisco-2">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>clay-oven-indian-restaurant-san-francisco-2</rdfs:label>
+	<rat:hasName>Clay Oven Indian Restaurant</rat:hasName>
+	<rat:hasImageUrl>http://s3-media2.fl.yelpcdn.com/bphoto/sBfYXttptkYFraW-UU4inw/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-415-731-2400</rat:hasPhone>
+	<rat:hasAddress>385 W Portal Ave</rat:hasAddress>
+	<rat:hasReviewCount>355</rat:hasReviewCount>
+	<rat:hasCuisine>Indian</rat:hasCuisine>
+	<rat:hasRating>3.5</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media4.fl.yelpcdn.com/photo/JZwCHHIHq7hu93t8WxxrIQ/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/bissap-baobab-san-francisco-3">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>bissap-baobab-san-francisco-3</rdfs:label>
+	<rat:hasName>Bissap Baobab</rat:hasName>
+	<rat:hasImageUrl>http://s3-media1.fl.yelpcdn.com/bphoto/HpRj0mWdE5VCaoakHgjFIQ/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-415-826-9287</rat:hasPhone>
+	<rat:hasAddress>3372 19th St</rat:hasAddress>
+	<rat:hasReviewCount>787</rat:hasReviewCount>
+	<rat:hasCuisine>Senegalese</rat:hasCuisine>
+	<rat:hasRating>3.5</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media4.fl.yelpcdn.com/photo/9CwahzwhJeb0K2Txp4bUHQ/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/delicateses-la-plaza-san-francisco">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>delicateses-la-plaza-san-francisco</rdfs:label>
+	<rat:hasName>Delicateses La Plaza</rat:hasName>
+	<rat:hasImageUrl>http://s3-media4.fl.yelpcdn.com/bphoto/KodKl_Y8eGggZqnzsxHRaw/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-415-341-8542</rat:hasPhone>
+	<rat:hasAddress>2598 Folsom St</rat:hasAddress>
+	<rat:hasReviewCount>15</rat:hasReviewCount>
+	<rat:hasCuisine>Delis</rat:hasCuisine>
+	<rat:hasRating>3.5</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media4.fl.yelpcdn.com/photo/swf5uL9Hz_2Ic6TEuG7QuQ/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/round-table-pizza-daly-city-2">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>round-table-pizza-daly-city-2</rdfs:label>
+	<rat:hasName>Round Table Pizza</rat:hasName>
+	<rat:hasImageUrl>http://s3-media2.fl.yelpcdn.com/bphoto/FIo2NQN2PWeQTUOJSyF7UQ/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-650-991-3339</rat:hasPhone>
+	<rat:hasAddress>6222 Mission Street</rat:hasAddress>
+	<rat:hasReviewCount>52</rat:hasReviewCount>
+	<rat:hasCuisine>Pizza</rat:hasCuisine>
+	<rat:hasRating>2.5</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media4.fl.yelpcdn.com/assets/2/www/img/8e8633e5f8f0/ico/stars/v1/stars_small_2_half.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media1.fl.yelpcdn.com/photo/LYD7yfD-5fMkXxymPsGj2Q/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/picnic-on-third-san-francisco">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>picnic-on-third-san-francisco</rdfs:label>
+	<rat:hasName>Picnic on Third</rat:hasName>
+	<rat:hasImageUrl>http://s3-media2.fl.yelpcdn.com/bphoto/Ey3Enn920ZhyvJbA3Bfaww/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-415-590-7121</rat:hasPhone>
+	<rat:hasAddress>493 3rd St</rat:hasAddress>
+	<rat:hasReviewCount>111</rat:hasReviewCount>
+	<rat:hasCuisine>American (New)</rat:hasCuisine>
+	<rat:hasRating>4.5</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media1.fl.yelpcdn.com/photo/FkYB6hJ2YjXPneBSRNdykw/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/elixiria-san-francisco">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>elixiria-san-francisco</rdfs:label>
+	<rat:hasName>Elixiria</rat:hasName>
+	<rat:hasImageUrl>http://s3-media4.fl.yelpcdn.com/bphoto/Vs1cl8ZO9WM9JqmcrHXXaQ/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-415-948-6537</rat:hasPhone>
+	<rat:hasAddress>25 Beale St</rat:hasAddress>
+	<rat:hasReviewCount>29</rat:hasReviewCount>
+	<rat:hasCuisine>Juice Bars &amp; Smoothies</rat:hasCuisine>
+	<rat:hasRating>4.5</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media3.fl.yelpcdn.com/photo/faw7O2lK2WV_NuL3ZnkTQQ/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/ratings/oolong-noodles-restaurant-san-francisco-2">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/yelp-review-data#Restaurant"/>
+	<rdfs:label>oolong-noodles-restaurant-san-francisco-2</rdfs:label>
+	<rat:hasName>Oolong Noodles Restaurant</rat:hasName>
+	<rat:hasImageUrl>http://s3-media3.fl.yelpcdn.com/bphoto/6PMQ3lpq_Dyh2fFUi6OhRw/ms.jpg</rat:hasImageUrl>
+	<rat:hasPhone>1-415-819-5668</rat:hasPhone>
+	<rat:hasAddress>646 Washington St</rat:hasAddress>
+	<rat:hasReviewCount>194</rat:hasReviewCount>
+	<rat:hasCuisine>Japanese</rat:hasCuisine>
+	<rat:hasRating>3</rat:hasRating>
+	<rat:hasRatingImageUrl>http://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png</rat:hasRatingImageUrl>
+	<rat:hasSnippetImageUrl>http://s3-media1.fl.yelpcdn.com/photo/w0iiKVDaOQ7VA166WzI74Q/ms.jpg</rat:hasSnippetImageUrl>
+</rdf:Description>
+
+</rdf:RDF>

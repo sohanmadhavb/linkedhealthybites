@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:viol="http://www.semanticweb.org/asu/health-inspection-data#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/0">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140410</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103145</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Improper storage of equipment utensils or linens</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/1">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140410</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103157</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Food safety certificate or food handler card not available</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/2">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140410</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103154</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean or degraded floors walls or ceilings</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/3">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140410</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103142</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean nonfood contact surfaces</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/4">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140410</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103120</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/5">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140410</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103156</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Permit license or inspection report not posted</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/6">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20131105</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103103</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>High risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/7">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20131105</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103156</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Permit license or inspection report not posted</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/8">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20131105</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103131</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk vermin infestation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/9">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130506</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103116</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate food safety knowledge or lack of certified food safety manager</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/10">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>3304</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130506</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103120</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/11">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140204</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103114</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>High risk vermin infestation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/12">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140204</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103156</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Permit license or inspection report not posted</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/13">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130731</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103103</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>High risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/14">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130731</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103154</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean or degraded floors walls or ceilings</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/15">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130731</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103149</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Wiping cloths not clean or properly stored or inadequate sanitizer</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/16">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130731</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103109</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean or unsanitary food contact surfaces</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/17">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130731</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103107</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Improper reheating of food</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/18">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130123</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103114</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>High risk vermin infestation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/19">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>35660</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130123</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103132</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Improper thawing methods </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/20">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130822</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103144</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unapproved or unmaintained equipment or utensils</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/21">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130822</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103120</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/22">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130822</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103131</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk vermin infestation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/23">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130822</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103124</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequately cleaned or sanitized food contact surfaces</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/24">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140609</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103109</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean or unsanitary food contact surfaces</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/25">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140623</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103120</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/26">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140609</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103116</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate food safety knowledge or lack of certified food safety manager</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/27">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140609</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103103</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>High risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/28">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140609</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103131</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk vermin infestation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/29">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130314</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103154</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean or degraded floors walls or ceilings</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/30">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130314</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103138</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Improper storage use or identification of toxic substances</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/31">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130314</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103105</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Improper cooling methods</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/32">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130314</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103129</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Insufficient hot water or running water</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/33">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130314</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103114</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>High risk vermin infestation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/34">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130314</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103120</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/35">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130315</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103131</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk vermin infestation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/36">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130405</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103102</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean hands or improper use of gloves</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/37">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>60484</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130405</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103145</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Improper storage of equipment utensils or linens</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/38">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>65240</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140807</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103129</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Insufficient hot water or running water</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/39">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>65240</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140807</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103133</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Foods not protected from contamination</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/40">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>65240</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140807</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103147</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate ventilation or lighting</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/41">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>65240</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140807</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103124</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequately cleaned or sanitized food contact surfaces</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/42">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>65240</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20130320</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103154</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean or degraded floors walls or ceilings</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/43">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>77086</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150331</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103119</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate and inaccessible handwashing facilities</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/44">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>77086</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150331</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103130</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate sewage or wastewater disposal</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/45">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>77086</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150331</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103147</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate ventilation or lighting</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/46">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>77086</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150331</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103157</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Food safety certificate or food handler card not available</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/47">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>77086</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150331</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103102</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean hands or improper use of gloves</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/48">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>77086</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150331</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103139</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Improper food storage</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/49">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>77086</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150331</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103148</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>No thermometers or uncalibrated thermometers </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/50">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79052</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20151021</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103119</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate and inaccessible handwashing facilities</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/51">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79052</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20151021</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103162</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Other low risk violation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/52">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79052</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20151021</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103133</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Foods not protected from contamination</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/53">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79052</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150312</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103119</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate and inaccessible handwashing facilities</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/54">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79052</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150312</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103162</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Other low risk violation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/55">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79052</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150312</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103149</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Wiping cloths not clean or properly stored or inadequate sanitizer</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/56">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79052</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20150312</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103103</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>High Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>High risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/57">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79247</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140805</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103154</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unclean or degraded floors walls or ceilings</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/58">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79247</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140805</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103161</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Low risk vermin infestation</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/59">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79247</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140805</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103120</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Moderate risk food holding temperature </viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/60">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79247</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20140805</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103144</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unapproved or unmaintained equipment or utensils</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/61">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79498</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20141215</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103144</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Low Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Unapproved or unmaintained equipment or utensils</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/asu/health-inspection-data/violations/62">
+	<rdf:type rdf:resource="http://www.semanticweb.org/asu/health-inspection-data#Violation"/>
+	<viol:OnRestaurantViolation>79498</viol:OnRestaurantViolation>
+	<viol:hasViolationDated>20141215</viol:hasViolationDated>
+	<viol:hasViolatedTypeOf>103116</viol:hasViolatedTypeOf>
+	<viol:hasViolationRiskCategoriedUnder>Moderate Risk</viol:hasViolationRiskCategoriedUnder>
+	<viol:hasViolationDescribedAs>Inadequate food safety knowledge or lack of certified food safety manager</viol:hasViolationDescribedAs>
+</rdf:Description>
+
+</rdf:RDF>
