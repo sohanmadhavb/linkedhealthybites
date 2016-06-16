@@ -36,10 +36,10 @@ def get_search_parameters(location, offset):
 
 def get_results(params):
 
-  CONSUMER_KEY = 'uJ0d4zqfYb2-HPcRWHQMeQ'
-  CONSUMER_SECRET = 'gGL7EWVXQQXNzdTaO1ecR-5rC0c'
-  TOKEN = 'HQfCLQx5llcGq8uPaEFNTYouKnr-Mtmu'
-  TOKEN_SECRET = 'dIajmSm-h9ag-0DLKY8Uo7fh_fk'
+  CONSUMER_KEY = ''
+  CONSUMER_SECRET = ''
+  TOKEN = ''
+  TOKEN_SECRET = ''
 
   session = rauth.OAuth1Session(
     consumer_key = CONSUMER_KEY
