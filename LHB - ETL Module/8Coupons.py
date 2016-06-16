@@ -6,7 +6,7 @@ import pandas as pd
 zips = [94102, 94103, 94104, 94105, 94107, 94108, 94109, 94110, 94111, 94112, 94114, 94115, 94116, 94117, 94118, 94121, 94122, 94123, 94124, 94127, 94129, 94130, 94131, 94132, 94133, 94134, 94158]
 coupon_data = []
 for i in zips:
-    url = 'http://api.8coupons.com/v1/getdeals?key=d841b6b29b12bbbcccdda65391b6ded14207444cea0b03f28486e0d1f37880cb921acfe2438dc1e3fba07724c39bfdec&zip='+str(i)+'&mileradius=20&limit=1000&orderby=radius&categoryid=1'
+    url = 'http://api.8coupons.com/v1/getdeals?key=&zip='+str(i)+'&mileradius=20&limit=1000&orderby=radius&categoryid=1'
     payload = { 'key' : 'val' }
     headers = {}
     res = requests.post(url, data=payload, headers=headers)
